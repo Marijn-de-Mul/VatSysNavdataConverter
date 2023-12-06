@@ -1,0 +1,15 @@
+C:\Users\MarijndeMul\OneDrive - Office 365 Fontys\Documents\Github\IDvACC-Navdata-Manager-CLI\bin\Debug\net8.0\IDvACC-Navdata-Manager-CLI.exe
+C:\Users\MarijndeMul\OneDrive - Office 365 Fontys\Documents\Github\IDvACC-Navdata-Manager-CLI\bin\Debug\net8.0\IDvACC-Navdata-Manager-CLI.deps.json
+C:\Users\MarijndeMul\OneDrive - Office 365 Fontys\Documents\Github\IDvACC-Navdata-Manager-CLI\bin\Debug\net8.0\IDvACC-Navdata-Manager-CLI.runtimeconfig.json
+C:\Users\MarijndeMul\OneDrive - Office 365 Fontys\Documents\Github\IDvACC-Navdata-Manager-CLI\bin\Debug\net8.0\IDvACC-Navdata-Manager-CLI.dll
+C:\Users\MarijndeMul\OneDrive - Office 365 Fontys\Documents\Github\IDvACC-Navdata-Manager-CLI\bin\Debug\net8.0\IDvACC-Navdata-Manager-CLI.pdb
+C:\Users\MarijndeMul\OneDrive - Office 365 Fontys\Documents\Github\IDvACC-Navdata-Manager-CLI\obj\Debug\net8.0\IDvACC-Navdata-Manager-CLI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MarijndeMul\OneDrive - Office 365 Fontys\Documents\Github\IDvACC-Navdata-Manager-CLI\obj\Debug\net8.0\IDvACC-Navdata-Manager-CLI.AssemblyInfoInputs.cache
+C:\Users\MarijndeMul\OneDrive - Office 365 Fontys\Documents\Github\IDvACC-Navdata-Manager-CLI\obj\Debug\net8.0\IDvACC-Navdata-Manager-CLI.AssemblyInfo.cs
+C:\Users\MarijndeMul\OneDrive - Office 365 Fontys\Documents\Github\IDvACC-Navdata-Manager-CLI\obj\Debug\net8.0\IDvACC-Navdata-Manager-CLI.csproj.CoreCompileInputs.cache
+C:\Users\MarijndeMul\OneDrive - Office 365 Fontys\Documents\Github\IDvACC-Navdata-Manager-CLI\obj\Debug\net8.0\IDvACC-Navdata-Manager-CLI.sourcelink.json
+C:\Users\MarijndeMul\OneDrive - Office 365 Fontys\Documents\Github\IDvACC-Navdata-Manager-CLI\obj\Debug\net8.0\IDvACC-Navdata-Manager-CLI.dll
+C:\Users\MarijndeMul\OneDrive - Office 365 Fontys\Documents\Github\IDvACC-Navdata-Manager-CLI\obj\Debug\net8.0\refint\IDvACC-Navdata-Manager-CLI.dll
+C:\Users\MarijndeMul\OneDrive - Office 365 Fontys\Documents\Github\IDvACC-Navdata-Manager-CLI\obj\Debug\net8.0\IDvACC-Navdata-Manager-CLI.pdb
+C:\Users\MarijndeMul\OneDrive - Office 365 Fontys\Documents\Github\IDvACC-Navdata-Manager-CLI\obj\Debug\net8.0\IDvACC-Navdata-Manager-CLI.genruntimeconfig.cache
+C:\Users\MarijndeMul\OneDrive - Office 365 Fontys\Documents\Github\IDvACC-Navdata-Manager-CLI\obj\Debug\net8.0\ref\IDvACC-Navdata-Manager-CLI.dll

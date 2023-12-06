@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "IDvACC-Navdata-Manager-CLI/1.0.0": {
+        "runtime": {
+          "IDvACC-Navdata-Manager-CLI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IDvACC-Navdata-Manager-CLI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
