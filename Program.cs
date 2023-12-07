@@ -334,7 +334,6 @@ class Program
                 {
                     if (route.Count > 0 && approachesNode.HasChildNodes)
                     {
-                        // Add the route to the previous approach
                         XmlNode previousRouteNode = approachesNode.LastChild;
                         XmlNode previousRunwayNode = previousRouteNode.LastChild;
                         previousRunwayNode.InnerText = string.Join("/", route);
@@ -343,7 +342,6 @@ class Program
 
                     if (currentApproach != attributes[1])
                     {
-                        // New approach
                         currentApproach = attributes[1];
 
                         XmlNode approachNode = doc.CreateElement("Approach");
@@ -366,17 +364,41 @@ class Program
                 }
                 else if (attributes[0] == "TF" || attributes[0] == "CF" || attributes[0] == "IF" || attributes[0] == "DF")
                 {
-                    // Add the waypoint to the route
                     route.Add(attributes[1]);
                 }
             }
 
             if (route.Count > 0 && approachesNode.HasChildNodes)
             {
-                // Add the route to the last approach
                 XmlNode lastRouteNode = approachesNode.LastChild;
                 XmlNode lastRunwayNode = lastRouteNode.LastChild;
                 lastRunwayNode.InnerText = string.Join("/", route);
+            }
+        }
+
+        XmlNode airportsNode = doc.CreateElement("Airports");
+        root.AppendChild(airportsNode);
+
+        XmlNode currentAirportNode = null;
+
+        foreach (string line in File.ReadLines("navdata/Airports.txt"))
+        {
+            string[] attributes = line.Split(',');
+
+            if (attributes[0] == "A")
+            {
+                currentAirportNode = doc.CreateElement("Airport");
+                currentAirportNode.Attributes.Append(doc.CreateAttribute("ICAO")).Value = attributes[1];
+                currentAirportNode.Attributes.Append(doc.CreateAttribute("FullName")).Value = attributes[2];
+                currentAirportNode.Attributes.Append(doc.CreateAttribute("Position")).Value = $"{attributes[3]}{attributes[4]}";
+                airportsNode.AppendChild(currentAirportNode);
+            }
+            else if (attributes[0] == "R" && currentAirportNode != null)
+            {
+                XmlNode runwayNode = doc.CreateElement("Runway");
+                runwayNode.Attributes.Append(doc.CreateAttribute("Name")).Value = attributes[1];
+                runwayNode.Attributes.Append(doc.CreateAttribute("Position")).Value = $"{attributes[8]}{attributes[9]}";
+                currentAirportNode.AppendChild(runwayNode);
             }
         }
 
