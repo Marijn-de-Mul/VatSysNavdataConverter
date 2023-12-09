@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MarijndeMul\\OneDrive - Office 365 Fontys\\Documents\\Github\\IDvACC-Navdata-Manager-CLI\\IDvACC-Navdata-Manager-CLI.csproj",
+      "projectUniqueName": "C:\\Users\\MarijndeMul\\OneDrive - Office 365 Fontys\\Documents\\Github\\Marijn-de-MulProjects\\IDvACCNavdataConverter\\IDvACC-Navdata-Manager-CLI.csproj",
       "projectName": "IDvACC-Navdata-Manager-CLI",
-      "projectPath": "C:\\Users\\MarijndeMul\\OneDrive - Office 365 Fontys\\Documents\\Github\\IDvACC-Navdata-Manager-CLI\\IDvACC-Navdata-Manager-CLI.csproj",
+      "projectPath": "C:\\Users\\MarijndeMul\\OneDrive - Office 365 Fontys\\Documents\\Github\\Marijn-de-MulProjects\\IDvACCNavdataConverter\\IDvACC-Navdata-Manager-CLI.csproj",
       "packagesPath": "C:\\Users\\MarijndeMul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MarijndeMul\\OneDrive - Office 365 Fontys\\Documents\\Github\\IDvACC-Navdata-Manager-CLI\\obj\\",
+      "outputPath": "C:\\Users\\MarijndeMul\\OneDrive - Office 365 Fontys\\Documents\\Github\\Marijn-de-MulProjects\\IDvACCNavdataConverter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

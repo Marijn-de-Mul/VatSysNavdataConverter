@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IDvACC-Navdata-Manager-CLI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3822aa0b17d41a014ed3ca78a8959db6801b46f8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("IDvACC-Navdata-Manager-CLI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IDvACC-Navdata-Manager-CLI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
