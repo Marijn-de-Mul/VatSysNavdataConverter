@@ -42,15 +42,17 @@ sidstars = ET.SubElement(root, 'SIDSTARs')
 for filename in os.listdir('Navdata/Proc/'):
     if filename.startswith(('WI', 'WA')) and filename.endswith('.txt'):
         airport_code = filename[:-4] 
+        airport = system_runways.find(f"./Airport[@Name='{airport_code}']")
         sids = {}
         stars = {}
         approaches = {}
         current_procedure = None
         current_dict = None
-        airport = system_runways.find(f"./Airport[@Name='{airport_code}']")
         if airport is not None:
             valid_runways = {runway.get('Name') for runway in airport.findall('Runway')}
             valid_procedures = {procedure for procedure, runway in procedure_to_runway.items() if runway in valid_runways}
+            if not valid_runways or not valid_procedures:  # Skip this airport if there are no valid runways or procedures
+                continue
             with open(f'Navdata/Proc/{filename}', 'r') as f:
                 for line in f:
                     data = line.strip().split(',')
@@ -73,34 +75,50 @@ for filename in os.listdir('Navdata/Proc/'):
                             current_dict[current_procedure].append({'type': data[0], 'name': data[1]})
 
             for procedure_name, waypoints in sids.items():
-                    if procedure_name in valid_procedures:
-                        procedure = ET.SubElement(sidstars, 'SID', Name=procedure_name, Airport=airport_code, Runways=procedure_to_runway.get(procedure_name, 'Unknown'))
-                        waypoint_names = [waypoint['name'] for waypoint in waypoints if waypoint['type'] == 'TF']
-                        if waypoint_names:
-                            ET.SubElement(procedure, 'Route', Runway=procedure_to_runway.get(procedure_name, 'Unknown')).text = '/'.join(waypoint_names)
-                        added_transitions = set()
-                        for waypoint in waypoints:
-                            if waypoint['type'] != 'TF' and waypoint['name'] not in added_transitions:
-                                ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
-                                added_transitions.add(waypoint['name'])
-            # for procedure_name, waypoints in stars.items():
-            #         if procedure_name in valid_procedures:
-            #             procedure = ET.SubElement(sidstars, 'STAR', Name=procedure_name, Airport=airport_code, Runways=procedure_to_runway.get(procedure_name, 'Unknown'))
-            #             waypoint_names = [waypoint['name'] for waypoint in waypoints if waypoint['type'] == 'TF']
-            #             if waypoint_names:
-            #                 ET.SubElement(procedure, 'Route', Runway=procedure_to_runway.get(procedure_name, 'Unknown')).text = '/'.join(waypoint_names)
-            #             added_transitions = set()
-            #             for waypoint in waypoints:
-            #                 if waypoint['type'] != 'TF' and waypoint['name'] not in added_transitions:
-            #                     ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
-            #                     added_transitions.add(waypoint['name']) 
-            # for procedure_name, waypoints in approaches.items():
-            #     procedure = ET.SubElement(sidstars, 'Approach', Name=procedure_name, Airport=airport_code, Runway=procedure_to_runway.get(procedure_name, 'Unknown'))
-            #     for waypoint in waypoints:
-            #         if waypoint['type'] == 'TF':
-            #             ET.SubElement(procedure, 'Route').text = waypoint['name']
-            #         else:
-            #             ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
+                if procedure_name in valid_procedures:
+                    runways = procedure_to_runway.get(procedure_name, 'Unknown')
+                    if runways == 'ALL':
+                        runways = ','.join(valid_runways)
+                    procedure = ET.SubElement(sidstars, 'SID', Name=procedure_name, Airport=airport_code, Runways=runways)
+                    waypoint_names = [waypoint['name'] for waypoint in waypoints if waypoint['type'] == 'TF']
+                    if waypoint_names:
+                        ET.SubElement(procedure, 'Route', Runway=procedure_to_runway.get(procedure_name, 'Unknown')).text = '/'.join(waypoint_names)
+                    added_transitions = set()
+                    for waypoint in waypoints:
+                        if waypoint['type'] != 'TF' and waypoint['name'] not in added_transitions:
+                            ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
+                            added_transitions.add(waypoint['name'])
+            for procedure_name, waypoints in stars.items():
+                if procedure_name in valid_procedures:
+                    runways = procedure_to_runway.get(procedure_name, 'Unknown')
+                    if 'ALL' in runways:
+                        runways = ','.join(valid_runways)
+                    else:
+                        runways = ','.join(runway for runway in runways.split(',') if runway != 'ALL')
+                    procedure = ET.SubElement(sidstars, 'STAR', Name=procedure_name, Airport=airport_code, Runways=runways)
+                    waypoint_names = [waypoint['name'] for waypoint in waypoints if waypoint['type'] == 'TF']
+                    if waypoint_names:
+                        route_runway = procedure_to_runway.get(procedure_name, 'Unknown')
+                        if 'ALL' in route_runway:
+                            route_runway = ','.join(valid_runways)
+                        else:
+                            route_runway = ','.join(runway for runway in route_runway.split(',') if runway != 'ALL')
+                        ET.SubElement(procedure, 'Route', Runway=route_runway).text = '/'.join(waypoint_names)
+                    added_transitions = set()
+                    for waypoint in waypoints:
+                        if waypoint['type'] != 'TF' and waypoint['name'] not in added_transitions:
+                            ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
+                            added_transitions.add(waypoint['name'])
+            for procedure_name, waypoints in approaches.items():
+                runways = procedure_to_runway.get(procedure_name, 'Unknown')
+                if runways == 'ALL':
+                    runways = ','.join(valid_runways)
+                procedure = ET.SubElement(sidstars, 'Approach', Name=procedure_name, Airport=airport_code, Runway=runways)
+                for waypoint in waypoints:
+                    if waypoint['type'] == 'TF':
+                        ET.SubElement(procedure, 'Route').text = waypoint['name']
+                    else:
+                        ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
 
 pretty_xml = format_xml(root)
 with open('Airspace.xml', 'w') as f:
