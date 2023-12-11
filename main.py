@@ -178,7 +178,7 @@ with open('Navdata/ATS.txt', 'r') as f:
             continue
         if data[0] == 'A':
             if airway is not None and waypoints:
-                airway.text = '/'.join(waypoints)
+                airway.text = '/\n'.join(waypoints)  # change here
                 waypoints = []
             airway = None
             airway_name = data[1]
@@ -187,15 +187,15 @@ with open('Navdata/ATS.txt', 'r') as f:
             waypoint = data[1]
             lat = float(data[2])
             lon = float(data[3])
-            lat_range = (-20, +20)
-            lon_range = (+80, +150)
-            if lat_range[0] <= lat <= lat_range[1] and lon_range[0] <= lon <= lon_range[1]:
-                if airway is None:
-                    airway_name_with_count = f"{airway_name}_{airway_counts[airway_name]}" if airway_counts[airway_name] > 1 else airway_name
-                    airway = ET.SubElement(airways, 'Airway', Name=airway_name_with_count)
-                waypoints.append(waypoint)
+            # lat_range = (-13, +7) 
+            # lon_range = (+91, +142) 
+            # if lat_range[0] <= lat <= lat_range[1] and lon_range[0] <= lon <= lon_range[1]:
+            if airway is None:
+                airway_name_with_count = f"{airway_name}_{airway_counts[airway_name]}" if airway_counts[airway_name] > 1 else airway_name
+                airway = ET.SubElement(airways, 'Airway', Name=airway_name_with_count)
+            waypoints.append(waypoint)
     if airway is not None and waypoints:
-        airway.text = '/'.join(waypoints)
+        airway.text = '/\n'.join(waypoints)  # change here
 
 intersections = ET.SubElement(root, 'Intersections')
 
@@ -207,11 +207,11 @@ with open('Navdata/Waypoints.txt', 'r') as f:
         name = data[0]
         lat = float(data[1])
         lon = float(data[2])
-        lat_range = (-20, +20)
-        lon_range = (+80, +150)
-        if lat_range[0] <= lat <= lat_range[1] and lon_range[0] <= lon <= lon_range[1]:
-            point = ET.SubElement(intersections, 'Point', Name=name, Type="Fix")
-            point.text = format_position(lat, lon)
+        # lat_range = (-13, +7) 
+        # lon_range = (+91, +142) 
+        # if lat_range[0] <= lat <= lat_range[1] and lon_range[0] <= lon <= lon_range[1]:
+        point = ET.SubElement(intersections, 'Point', Name=name, Type="Fix")
+        point.text = format_position(lat, lon)
 
 with open('Navdata/Navaids.txt', 'r') as f:
     for line in f:
@@ -222,11 +222,11 @@ with open('Navdata/Navaids.txt', 'r') as f:
         frequency = data[2]
         lat = float(data[6])
         lon = float(data[7])
-        lat_range = (-20, +20)
-        lon_range = (+80, +150)
-        if lat_range[0] <= lat <= lat_range[1] and lon_range[0] <= lon <= lon_range[1]:
-            point = ET.SubElement(intersections, 'Point', Name=name, Type="Navaid", NavaidType="VOR", Frequency=frequency)
-            point.text = format_position(lat, lon)
+        # lat_range = (-13, +7) 
+        # lon_range = (+91, +142) 
+        # if lat_range[0] <= lat <= lat_range[1] and lon_range[0] <= lon <= lon_range[1]:
+        point = ET.SubElement(intersections, 'Point', Name=name, Type="Navaid", NavaidType="None", Frequency=frequency)
+        point.text = format_position(lat, lon)
 
 pretty_xml = format_xml(root)
 with open('Airspace.xml', 'w') as f:
