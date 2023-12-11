@@ -85,16 +85,6 @@
 				<STAR Name="VENR1D"/>
 				<STAR Name="ZELD1D"/>
 			</Runway>
-			<Runway Name="" DataRunway="">
-				<STAR Name="BIMA1F"/>
-				<STAR Name="ENDO1L"/>
-				<STAR Name="LEKE1H"/>
-				<STAR Name="LIPO1L"/>
-				<STAR Name="NIVE1E"/>
-				<STAR Name="NUKP1H"/>
-				<STAR Name="SUGT1H"/>
-				<STAR Name="VENR1H"/>
-			</Runway>
 			<Runway Name="13" DataRunway="13">
 				<STAR Name="BIMA1F"/>
 				<STAR Name="ENDO1L"/>
@@ -149,26 +139,10 @@
 				<SID Name="SEGL1C"/>
 				<SID Name="SEGL1D"/>
 			</Runway>
-			<Runway Name="" DataRunway="">
-				<STAR Name="FILM1E"/>
-				<STAR Name="IBOG1K"/>
-				<STAR Name="JODR1F"/>
-				<STAR Name="LINL1F"/>
-				<STAR Name="NOBY1F"/>
-				<STAR Name="ONTA1F"/>
-				<STAR Name="PEBD1F"/>
-				<STAR Name="SEGL1E"/>
-			</Runway>
 		</Airport>
-		<Airport Name="WABF"/>
-		<Airport Name="WABI"/>
-		<Airport Name="WADB">
-			<Runway Name="" DataRunway="">
-				<STAR Name="MUBO1A"/>
-				<STAR Name="RUTE1A"/>
-				<STAR Name="UNSE1A"/>
-			</Runway>
-		</Airport>
+		<Airport Name="WADB"/>
+		<Airport Name="WADB"/>
+		<Airport Name="WADB"/>
 		<Airport Name="WADD">
 			<Runway Name="09" DataRunway="09">
 				<SID Name="ANGS3A"/>
@@ -284,7 +258,6 @@
 				<STAR Name="SOVK1B"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WADS"/>
 		<Airport Name="WADY">
 			<Runway Name="08" DataRunway="08">
 				<SID Name="AGUN1E"/>
@@ -342,8 +315,6 @@
 				<SID Name="TEPU1A"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WAEG"/>
-		<Airport Name="WAEK"/>
 		<Airport Name="WAEL">
 			<Runway Name="06" DataRunway="06">
 				<STAR Name="BULI1A"/>
@@ -353,14 +324,11 @@
 				<STAR Name="UGUB1A"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WAEM"/>
-		<Airport Name="WAEW"/>
 		<Airport Name="WAFB">
 			<Runway Name="04" DataRunway="04">
 				<STAR Name="VENR1J"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WAFD"/>
 		<Airport Name="WAFF">
 			<Runway Name="33" DataRunway="33">
 				<SID Name="ARIN1A"/>
@@ -402,9 +370,6 @@
 				<STAR Name="PAL1E"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WAFL"/>
-		<Airport Name="WAFU"/>
-		<Airport Name="WAFW"/>
 		<Airport Name="WAGB">
 			<Runway Name="14" DataRunway="14">
 				<SID Name="DUDU1A"/>
@@ -572,11 +537,6 @@
 				<SID Name="LILP1B"/>
 				<SID Name="YOGY1B"/>
 			</Runway>
-			<Runway Name="" DataRunway="">
-				<STAR Name="ANY1A"/>
-				<STAR Name="LASE1F"/>
-				<STAR Name="LILP1C"/>
-			</Runway>
 		</Airport>
 		<Airport Name="WAHI">
 			<Runway Name="11" DataRunway="11">
@@ -591,12 +551,7 @@
 				<SID Name="PROG1B"/>
 				<SID Name="SO2B"/>
 			</Runway>
-			<Runway Name="" DataRunway="">
-				<STAR Name="CLP2H"/>
-				<STAR Name="SO2C"/>
-			</Runway>
 		</Airport>
-		<Airport Name="WAHL"/>
 		<Airport Name="WAHP">
 			<Runway Name="10" DataRunway="10">
 				<SID Name="BND1E"/>
@@ -608,11 +563,6 @@
 				<SID Name="CA1G"/>
 				<SID Name="LILP1G"/>
 			</Runway>
-			<Runway Name="" DataRunway="">
-				<STAR Name="BND1G"/>
-				<STAR Name="CA1H"/>
-				<STAR Name="LILP1H"/>
-			</Runway>
 		</Airport>
 		<Airport Name="WAHQ">
 			<Runway Name="08" DataRunway="08">
@@ -622,12 +572,6 @@
 			<Runway Name="26" DataRunway="26">
 				<SID Name="JOG1B"/>
 				<SID Name="PURW1B"/>
-			</Runway>
-			<Runway Name="" DataRunway="">
-				<STAR Name="JOG1C"/>
-				<STAR Name="JOG1D"/>
-				<STAR Name="PURW1C"/>
-				<STAR Name="PURW1D"/>
 			</Runway>
 		</Airport>
 		<Airport Name="WAHS">
@@ -684,7 +628,6 @@
 				<STAR Name="WAWA1D"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WAJI"/>
 		<Airport Name="WAJJ">
 			<Runway Name="12" DataRunway="12">
 				<SID Name="ANLE1A"/>
@@ -703,11 +646,6 @@
 				<STAR Name="VANK2B"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WAKE"/>
-		<Airport Name="WAKG"/>
-		<Airport Name="WAKJ"/>
-		<Airport Name="WAKK"/>
-		<Airport Name="WAKT"/>
 		<Airport Name="WALL">
 			<Runway Name="07" DataRunway="07">
 				<SID Name="AJAM1A"/>
@@ -746,7 +684,6 @@
 				<STAR Name="SILJ1B"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WALS"/>
 		<Airport Name="WAMG">
 			<Runway Name="09" DataRunway="09">
 				<SID Name="ENTE1A"/>
@@ -767,7 +704,6 @@
 				<STAR Name="UDEV1A"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WAMH"/>
 		<Airport Name="WAMM">
 			<Runway Name="18" DataRunway="18">
 				<SID Name="ARIT1A"/>
@@ -829,17 +765,7 @@
 				<STAR Name="RUMB1L"/>
 				<STAR Name="SOSO1L"/>
 			</Runway>
-			<Runway Name="" DataRunway="">
-				<STAR Name="BOND1E"/>
-				<STAR Name="GONT1E"/>
-				<STAR Name="GOTS1E"/>
-				<STAR Name="HALM1G"/>
-				<STAR Name="LUAN1E"/>
-				<STAR Name="RUMB1E"/>
-				<STAR Name="SOSO1E"/>
-			</Runway>
 		</Airport>
-		<Airport Name="WAMN"/>
 		<Airport Name="WAMO">
 			<Runway Name="02" DataRunway="02">
 				<SID Name="BOND1G"/>
@@ -850,11 +776,6 @@
 				<STAR Name="NAHA1B"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WAMP"/>
-		<Airport Name="WAMS"/>
-		<Airport Name="WAOC"/>
-		<Airport Name="WAOK"/>
-		<Airport Name="WAON"/>
 		<Airport Name="WAOO">
 			<Runway Name="10" DataRunway="10">
 				<SID Name="ATSI1C"/>
@@ -914,9 +835,6 @@
 				<STAR Name="TUTK1G"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WAPD"/>
-		<Airport Name="WAPF"/>
-		<Airport Name="WAPN"/>
 		<Airport Name="WAPP">
 			<Runway Name="22" DataRunway="22">
 				<SID Name="ATOM1A"/>
@@ -972,24 +890,7 @@
 				<STAR Name="SOBI1H"/>
 				<STAR Name="SULI1D"/>
 			</Runway>
-			<Runway Name="" DataRunway="">
-				<STAR Name="ATOM1B"/>
-				<STAR Name="BELB1B"/>
-				<STAR Name="BUBT1B"/>
-				<STAR Name="FALA1B"/>
-				<STAR Name="GOMB1B"/>
-				<STAR Name="HANT1B"/>
-				<STAR Name="HOLB1B"/>
-				<STAR Name="SASK1B"/>
-				<STAR Name="SOBI1B"/>
-				<STAR Name="SULI1B"/>
-				<STAR Name="TARI1A"/>
-			</Runway>
 		</Airport>
-		<Airport Name="WAPS"/>
-		<Airport Name="WAQA"/>
-		<Airport Name="WAQD"/>
-		<Airport Name="WAQM"/>
 		<Airport Name="WAQQ">
 			<Runway Name="24" DataRunway="24">
 				<SID Name="BAXA1A"/>
@@ -1024,11 +925,7 @@
 				<SID Name="SBR1B"/>
 				<SID Name="SBR1C"/>
 			</Runway>
-			<Runway Name="" DataRunway="">
-				<STAR Name="SBR1D"/>
-			</Runway>
 		</Airport>
-		<Airport Name="WARC"/>
 		<Airport Name="WARD">
 			<Runway Name="14" DataRunway="14">
 				<SID Name="LASE1H"/>
@@ -1039,7 +936,6 @@
 				<STAR Name="BA1J"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WARE"/>
 		<Airport Name="WARR">
 			<Runway Name="10" DataRunway="10">
 				<SID Name="AGUD1E"/>
@@ -1074,13 +970,6 @@
 				<STAR Name="SUMD1J"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WART"/>
-		<Airport Name="WARW"/>
-		<Airport Name="WASA"/>
-		<Airport Name="WASF"/>
-		<Airport Name="WASI"/>
-		<Airport Name="WASK"/>
-		<Airport Name="WASO"/>
 		<Airport Name="WASS">
 			<Runway Name="09" DataRunway="09">
 				<SID Name="DAPT1A"/>
@@ -1115,9 +1004,6 @@
 				<STAR Name="RUMI1D"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WAST"/>
-		<Airport Name="WASU"/>
-		<Airport Name="WATB"/>
 		<Airport Name="WATC">
 			<Runway Name="05" DataRunway="05">
 				<SID Name="APOR1A"/>
@@ -1131,9 +1017,6 @@
 				<STAR Name="RURS1B"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WATE"/>
-		<Airport Name="WATK"/>
-		<Airport Name="WATL"/>
 		<Airport Name="WATO">
 			<Runway Name="35" DataRunway="35">
 				<SID Name="RUTE1B"/>
@@ -1144,7 +1027,6 @@
 				<STAR Name="NAFI2A"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WATR"/>
 		<Airport Name="WATT">
 			<Runway Name="08" DataRunway="08">
 				<SID Name="ALEG2A"/>
@@ -1175,8 +1057,6 @@
 				<STAR Name="WGP1D"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WAUB"/>
-		<Airport Name="WAUM"/>
 		<Airport Name="WAUU">
 			<Runway Name="17" DataRunway="17">
 				<SID Name="BIK1A"/>
@@ -1192,11 +1072,6 @@
 				<STAR Name="ONTA1B"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WAVV"/>
-		<Airport Name="WAWB"/>
-		<Airport Name="WAWD"/>
-		<Airport Name="WAWP"/>
-		<Airport Name="WAWR"/>
 		<Airport Name="WAWW">
 			<Runway Name="08" DataRunway="08">
 				<SID Name="HIPN1A"/>
@@ -1217,7 +1092,6 @@
 				<STAR Name="SUGT1L"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WAYK"/>
 		<Airport Name="WAYY">
 			<Runway Name="12" DataRunway="12">
 				<SID Name="ANRO1A"/>
@@ -1302,9 +1176,6 @@
 				<STAR Name="UGIG1D"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WIBD"/>
-		<Airport Name="WIBJ"/>
-		<Airport Name="WIBL"/>
 		<Airport Name="WICA">
 			<Runway Name="14" DataRunway="14">
 				<SID Name="CA1N"/>
@@ -1362,8 +1233,6 @@
 				<STAR Name="PW1N"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WICD"/>
-		<Airport Name="WICN"/>
 		<Airport Name="WIDD">
 			<Runway Name="04" DataRunway="04">
 				<SID Name="BOBA1C"/>
@@ -1388,14 +1257,6 @@
 				<STAR Name="NE1D"/>
 				<STAR Name="VTK1D"/>
 				<STAR Name="WPON2D"/>
-			</Runway>
-			<Runway Name="MK" DataRunway="MK">
-				<SID Name="HOSB1C"/>
-				<SID Name="HOSB1D"/>
-			</Runway>
-			<Runway Name="RN" DataRunway="RN">
-				<SID Name="HOSB1C"/>
-				<SID Name="HOSB1D"/>
 			</Runway>
 		</Airport>
 		<Airport Name="WIDL">
@@ -1439,20 +1300,7 @@
 				<STAR Name="VTK1B"/>
 				<STAR Name="WPON1B"/>
 			</Runway>
-			<Runway Name="MK" DataRunway="MK">
-				<SID Name="TOMA1A"/>
-				<SID Name="TOMA1B"/>
-				<STAR Name="TOMA1A"/>
-				<STAR Name="TOMA1B"/>
-			</Runway>
-			<Runway Name="NAT" DataRunway="NAT">
-				<SID Name="TOMA1A"/>
-				<SID Name="TOMA1B"/>
-				<STAR Name="TOMA1A"/>
-				<STAR Name="TOMA1B"/>
-			</Runway>
 		</Airport>
-		<Airport Name="WIEB"/>
 		<Airport Name="WIEE">
 			<Runway Name="15" DataRunway="15">
 				<SID Name="BEPN1A"/>
@@ -1524,7 +1372,6 @@
 				<STAR Name="UDUT1D"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WIGM"/>
 		<Airport Name="WIHH">
 			<Runway Name="06" DataRunway="06">
 				<SID Name="ABAS1E"/>
@@ -1722,7 +1569,6 @@
 				<STAR Name="TKG2M"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WIJB"/>
 		<Airport Name="WIJJ">
 			<Runway Name="13" DataRunway="13">
 				<SID Name="BIDK1A"/>
@@ -1848,9 +1694,6 @@
 				<STAR Name="UDOK1D"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WIMA"/>
-		<Airport Name="WIMB"/>
-		<Airport Name="WIML"/>
 		<Airport Name="WIMM">
 			<Runway Name="05" DataRunway="05">
 				<SID Name="AKPA1A"/>
@@ -1971,9 +1814,6 @@
 				<STAR Name="TOGA1C"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WIMP"/>
-		<Airport Name="WIMS"/>
-		<Airport Name="WIOK"/>
 		<Airport Name="WIOO">
 			<Runway Name="15" DataRunway="15">
 				<SID Name="ADKO1A"/>
@@ -1991,16 +1831,7 @@
 				<SID Name="TEPE1B"/>
 				<SID Name="UNTE1B"/>
 			</Runway>
-			<Runway Name="" DataRunway="">
-				<STAR Name="ADKO1C"/>
-				<STAR Name="BAVU1C"/>
-				<STAR Name="OLVE1A"/>
-				<STAR Name="PAPS1C"/>
-				<STAR Name="TEPE1C"/>
-				<STAR Name="UNTE1C"/>
-			</Runway>
 		</Airport>
-		<Airport Name="WIOP"/>
 		<Airport Name="WIOS">
 			<Runway Name="09" DataRunway="09">
 				<SID Name="ADKO1E"/>
@@ -2015,8 +1846,6 @@
 				<STAR Name="OSRU1D"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WIPB"/>
-		<Airport Name="WIPO"/>
 		<Airport Name="WIPP">
 			<Runway Name="11" DataRunway="11">
 				<SID Name="BORA2A"/>
@@ -2073,8 +1902,6 @@
 				<STAR Name="TODA1D"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WIRR"/>
-		<Airport Name="WITC"/>
 		<Airport Name="WITK">
 			<Runway Name="09" DataRunway="09">
 				<SID Name="JILA1A"/>
@@ -2085,7 +1912,6 @@
 				<STAR Name="JILA1B"/>
 			</Runway>
 		</Airport>
-		<Airport Name="WITN"/>
 		<Airport Name="WITT">
 			<Runway Name="17" DataRunway="17">
 				<SID Name="ANSA1A"/>
@@ -2608,63 +2434,6 @@
 			<Route Runway="29">SEGLO</Route>
 			<Transition Name="BIK">BIK</Transition>
 		</SID>
-		<STAR Name="FILM1E" Airport="WABB" Runways="11,,29">
-			<Route Runway="11,,29">BI60A/BIK</Route>
-			<Transition Name="FILMO">FILMO</Transition>
-		</STAR>
-		<STAR Name="IBOG1K" Airport="WABB" Runways="11,,29">
-			<Route Runway="11,,29">BI60C/BIK</Route>
-			<Transition Name="IBOGO">IBOGO</Transition>
-		</STAR>
-		<STAR Name="JODR1F" Airport="WABB" Runways="11,,29">
-			<Route Runway="11,,29">BI60D/BIK</Route>
-			<Transition Name="JODRA">JODRA</Transition>
-		</STAR>
-		<STAR Name="LINL1F" Airport="WABB" Runways="11,,29">
-			<Route Runway="11,,29">BI60C/BIK</Route>
-			<Transition Name="LINLU">LINLU</Transition>
-		</STAR>
-		<STAR Name="NOBY1F" Airport="WABB" Runways="11,,29">
-			<Route Runway="11,,29">BIK</Route>
-			<Transition Name="NOBBY">NOBBY</Transition>
-		</STAR>
-		<STAR Name="ONTA1F" Airport="WABB" Runways="11,,29">
-			<Route Runway="11,,29">BI60B/BIK</Route>
-			<Transition Name="ONTAL">ONTAL</Transition>
-		</STAR>
-		<STAR Name="PEBD1F" Airport="WABB" Runways="11,,29">
-			<Route Runway="11,,29">BI60B/BIK</Route>
-			<Transition Name="PEBDA">PEBDA</Transition>
-		</STAR>
-		<STAR Name="SEGL1E" Airport="WABB" Runways="11,,29">
-			<Route Runway="11,,29">BI60A/BIK/ANEPO/GERAL/RILGA/BB503/BB502/BB501/RW11/JAKMA/NULOF/HADEE/BB602/BB601/BB603</Route>
-			<Transition Name="SEGLO">SEGLO</Transition>
-			<Transition Name="BIK">BIK</Transition>
-			<Transition Name="CI11">CI11</Transition>
-			<Transition Name="FI11">FI11</Transition>
-			<Transition Name="RW11">RW11</Transition>
-			<Transition Name="ZM">ZM</Transition>
-			<Transition Name="FN11">FN11</Transition>
-			<Transition Name="EP11">EP11</Transition>
-			<Transition Name="BIYAX">BIYAX</Transition>
-			<Transition Name="BB503">BB503</Transition>
-			<Transition Name="BB602">BB602</Transition>
-			<Transition Name="FS11">FS11</Transition>
-		</STAR>
-		<STAR Name="MUBO1A" Airport="WADB" Runways="">
-			<Route Runway="">NMA/SARIR</Route>
-			<Transition Name="MUBOT">MUBOT</Transition>
-		</STAR>
-		<STAR Name="RUTE1A" Airport="WADB" Runways="">
-			<Route Runway="">NMA/SARIR</Route>
-			<Transition Name="RUTEN">RUTEN</Transition>
-		</STAR>
-		<STAR Name="UNSE1A" Airport="WADB" Runways="">
-			<Route Runway="">NMA/SARIR</Route>
-			<Transition Name="UNSEP">UNSEP</Transition>
-			<Transition Name="SARIR">SARIR</Transition>
-			<Transition Name="NMA">NMA</Transition>
-		</STAR>
 		<SID Name="ANGS3A" Airport="WADD" Runways="09">
 			<Route Runway="09">CODOT/RUTRI/ANGSA</Route>
 			<Transition Name="BAWAL">BAWAL</Transition>
@@ -4000,29 +3769,6 @@
 			<Route Runway="27">PURWO</Route>
 			<Transition Name="SO">SO</Transition>
 		</SID>
-		<STAR Name="ANY1A" Airport="WAHH" Runways="09,27,">
-			<Route Runway="09,27,">PURWO/SO/OF/GURLA</Route>
-			<Transition Name="ANY">ANY</Transition>
-		</STAR>
-		<STAR Name="LASE1F" Airport="WAHH" Runways="09,27,">
-			<Route Runway="09,27,">PURWO/SO/OF/GURLA</Route>
-			<Transition Name="LASEM">LASEM</Transition>
-		</STAR>
-		<STAR Name="LILP1C" Airport="WAHH" Runways="09,27,">
-			<Route Runway="09,27,">GURLA/HH401/HH402/RW09</Route>
-			<Transition Name="LILPO">LILPO</Transition>
-			<Transition Name="GURLA">GURLA</Transition>
-			<Transition Name="CD09">CD09</Transition>
-			<Transition Name="JOG">JOG</Transition>
-			<Transition Name="MD09">MD09</Transition>
-			<Transition Name="CF09">CF09</Transition>
-			<Transition Name="FF09">FF09</Transition>
-			<Transition Name="RW09">RW09</Transition>
-			<Transition Name="OF">OF</Transition>
-			<Transition Name="FN09">FN09</Transition>
-			<Transition Name="EP09">EP09</Transition>
-			<Transition Name="HH401">HH401</Transition>
-		</STAR>
 		<SID Name="CA2L" Airport="WAHI" Runways="11">
 			<Route Runway="11">SEGTU/SUWUN/IGRIT/AKLUK/BUSRO/PONUT/AFNOP/MUMID/HUSNE/CA</Route>
 			<Transition Name="NASWA">NASWA</Transition>
@@ -4055,20 +3801,6 @@
 			<Route Runway="29">SERMO/MULUS/OPIRO/RINOH/VASRI/IFADI/JOG/OF/SO</Route>
 			<Transition Name="PAWON">PAWON</Transition>
 		</SID>
-		<STAR Name="CLP2H" Airport="WAHI" Runways="11,,29">
-			<Route Runway="11,,29">VASRI/IKORA/ABDEG/OGOMA</Route>
-			<Transition Name="CLP">CLP</Transition>
-		</STAR>
-		<STAR Name="SO2C" Airport="WAHI" Runways="11,,29">
-			<Route Runway="11,,29">OF/JOG/VASRI/IKORA/ABDEG/OGOMA/OGENI/ASIAM/DUKIK/UDUGU/HK402/OGOMA/OGENI/ASIAM/DUKIK/UDUGU/HK402/HK401/RW11/OGOMA/OGENI/DEHEN/HK502/HK501/RW29</Route>
-			<Transition Name="SO">SO</Transition>
-			<Transition Name="OGOMA">OGOMA</Transition>
-			<Transition Name="HK402">HK402</Transition>
-			<Transition Name="FF11">FF11</Transition>
-			<Transition Name="RW11">RW11</Transition>
-			<Transition Name="IGDAN">IGDAN</Transition>
-			<Transition Name="HK502">HK502</Transition>
-		</STAR>
 		<SID Name="BND1E" Airport="WAHP" Runways="10">
 			<Route Runway="10">IDGOS/APONA/DUBIG/SUSVI/DOVUS/REGIP/BND</Route>
 			<Transition Name="ESLAP">ESLAP</Transition>
@@ -4093,21 +3825,6 @@
 			<Route Runway="28">DUBIG/BIBIA/LILPO</Route>
 			<Transition Name="LUXOP">LUXOP</Transition>
 		</SID>
-		<STAR Name="BND1G" Airport="WAHP" Runways="10,,28">
-			<Route Runway="10,,28">UDOPI/PAGTO/UPRAS</Route>
-			<Transition Name="BND">BND</Transition>
-		</STAR>
-		<STAR Name="CA1H" Airport="WAHP" Runways="10,,28">
-			<Route Runway="10,,28">MALAM/PAGTO/UPRAS</Route>
-			<Transition Name="CA">CA</Transition>
-		</STAR>
-		<STAR Name="LILP1H" Airport="WAHP" Runways="10,,28">
-			<Route Runway="10,,28">SAPON/REGON/UPRAS/TURTI/SAMDA/RW10/UPRAS/TURTI/POXEN/OLKAM/KAMOP/NILEG</Route>
-			<Transition Name="LILPO">LILPO</Transition>
-			<Transition Name="UPRAS">UPRAS</Transition>
-			<Transition Name="TURTI">TURTI</Transition>
-			<Transition Name="OLKAM">OLKAM</Transition>
-		</STAR>
 		<SID Name="JOG1A" Airport="WAHQ" Runways="08">
 			<Route Runway="08">JOG</Route>
 			<Transition Name="OF">OF</Transition>
@@ -4122,33 +3839,6 @@
 		<SID Name="PURW1B" Airport="WAHQ" Runways="26">
 			<Transition Name="PURWO">PURWO</Transition>
 		</SID>
-		<STAR Name="JOG1C" Airport="WAHQ" Runways=",26,08">
-			<Route Runway=",26,08">OF/SO/SLO</Route>
-			<Transition Name="JOG">JOG</Transition>
-		</STAR>
-		<STAR Name="JOG1D" Airport="WAHQ" Runways=",26,08">
-			<Route Runway=",26,08">OF/SO</Route>
-			<Transition Name="JOG">JOG</Transition>
-		</STAR>
-		<STAR Name="PURW1C" Airport="WAHQ" Runways=",26,08">
-			<Route Runway=",26,08">SO/SLO</Route>
-			<Transition Name="PURWO">PURWO</Transition>
-		</STAR>
-		<STAR Name="PURW1D" Airport="WAHQ" Runways=",26,08">
-			<Route Runway=",26,08">SO/HQ601/HQ602/HQ603/HQ604/HQ605/RW26</Route>
-			<Transition Name="PURWO">PURWO</Transition>
-			<Transition Name="SLO">SLO</Transition>
-			<Transition Name="CD26Y">CD26Y</Transition>
-			<Transition Name="FD26">FD26</Transition>
-			<Transition Name="CD26Z">CD26Z</Transition>
-			<Transition Name="CF26">CF26</Transition>
-			<Transition Name="FF26">FF26</Transition>
-			<Transition Name="RW26">RW26</Transition>
-			<Transition Name="SO">SO</Transition>
-			<Transition Name="FN26">FN26</Transition>
-			<Transition Name="EP26">EP26</Transition>
-			<Transition Name="HQ603">HQ603</Transition>
-		</STAR>
 		<SID Name="BA1E" Airport="WAHS" Runways="13">
 			<Route Runway="13">OKAPU/VEKLU/BA</Route>
 			<Transition Name="AVKAT">AVKAT</Transition>
@@ -4790,10 +4480,6 @@
 			<Route Runway="36">ASATU/SUREG/PINOS/NOMOG/PONAR</Route>
 			<Transition Name="ARITO">ARITO</Transition>
 		</STAR>
-		<STAR Name="BOND1E" Airport="WAMM" Runways=",36,18">
-			<Route Runway=",36,18">MNO</Route>
-			<Transition Name="BONDA">BONDA</Transition>
-		</STAR>
 		<STAR Name="DIAN1C" Airport="WAMM" Runways="18">
 			<Route Runway="18">LAVOD/POPAF/NOKOV/MULAN</Route>
 			<Transition Name="DIANI">DIANI</Transition>
@@ -4801,10 +4487,6 @@
 		<STAR Name="DIAN1D" Airport="WAMM" Runways="36">
 			<Route Runway="36">ASATU/SUREG/PINOS/NOMOG/PONAR</Route>
 			<Transition Name="DIANI">DIANI</Transition>
-		</STAR>
-		<STAR Name="GONT1E" Airport="WAMM" Runways=",36,18">
-			<Route Runway=",36,18">MWB/MNO</Route>
-			<Transition Name="GONTA">GONTA</Transition>
 		</STAR>
 		<STAR Name="GONT1L" Airport="WAMM" Runways="18">
 			<Route Runway="18">MAMKO/LESBO/LEGUS/GOPRI/NOKOV/MULAN</Route>
@@ -4814,10 +4496,6 @@
 			<Route Runway="36">ESLAT/PINOS/NOMOG/PONAR</Route>
 			<Transition Name="GONTA">GONTA</Transition>
 		</STAR>
-		<STAR Name="GOTS1E" Airport="WAMM" Runways=",36,18">
-			<Route Runway=",36,18">MWB/MNO</Route>
-			<Transition Name="GOTSA">GOTSA</Transition>
-		</STAR>
 		<STAR Name="GOTS1L" Airport="WAMM" Runways="18">
 			<Route Runway="18">TEBAX/ONOTA/LEGUS/GOPRI/NOKOV/MULAN</Route>
 			<Transition Name="GOTSA">GOTSA</Transition>
@@ -4826,10 +4504,6 @@
 			<Route Runway="36">ESLAT/PINOS/NOMOG/PONAR</Route>
 			<Transition Name="GOTSA">GOTSA</Transition>
 		</STAR>
-		<STAR Name="HALM1G" Airport="WAMM" Runways=",36,18">
-			<Route Runway=",36,18">MWB/MNO</Route>
-			<Transition Name="HALMO">HALMO</Transition>
-		</STAR>
 		<STAR Name="HALM1M" Airport="WAMM" Runways="18">
 			<Route Runway="18">SUKMA/DONSU/DUBMI/BUSKI/NOBES/MULAN</Route>
 			<Transition Name="HALMO">HALMO</Transition>
@@ -4837,10 +4511,6 @@
 		<STAR Name="HALM1N" Airport="WAMM" Runways="36">
 			<Route Runway="36">SUPOP/BILAV/MENOT</Route>
 			<Transition Name="HALMO">HALMO</Transition>
-		</STAR>
-		<STAR Name="LUAN1E" Airport="WAMM" Runways=",36,18">
-			<Route Runway=",36,18">MWB/MNO</Route>
-			<Transition Name="LUANG">LUANG</Transition>
 		</STAR>
 		<STAR Name="LUAN1K" Airport="WAMM" Runways="18">
 			<Route Runway="18">MAMKO/LESBO/LEGUS/GOPRI/NOKOV/MULAN</Route>
@@ -4866,10 +4536,6 @@
 			<Route Runway="36">RISTA/BONDA/ALGIV/SUSIM/KARSO/MENOT</Route>
 			<Transition Name="PEDNO">PEDNO</Transition>
 		</STAR>
-		<STAR Name="RUMB1E" Airport="WAMM" Runways=",36,18">
-			<Route Runway=",36,18">MWB/MNO</Route>
-			<Transition Name="RUMBO">RUMBO</Transition>
-		</STAR>
 		<STAR Name="RUMB1K" Airport="WAMM" Runways="18">
 			<Route Runway="18">PUBOS/MILEV/DUBMI/BUSKI/NOBES/MULAN</Route>
 			<Transition Name="RUMBO">RUMBO</Transition>
@@ -4877,10 +4543,6 @@
 		<STAR Name="RUMB1L" Airport="WAMM" Runways="36">
 			<Route Runway="36">PASTU/MENOT</Route>
 			<Transition Name="RUMBO">RUMBO</Transition>
-		</STAR>
-		<STAR Name="SOSO1E" Airport="WAMM" Runways=",36,18">
-			<Route Runway=",36,18">MWB/MNO</Route>
-			<Transition Name="SOSOK">SOSOK</Transition>
 		</STAR>
 		<STAR Name="SOSO1K" Airport="WAMM" Runways="18">
 			<Route Runway="18">PUBOS/MILEV/DUBMI/BUSKI/NOBES/MULAN</Route>
@@ -5310,10 +4972,6 @@
 			<Route Runway="22">KANBA/ENBIN/ATREN/VIGAL/OLPIN/SULIS</Route>
 			<Transition Name="MUDEK">MUDEK</Transition>
 		</SID>
-		<STAR Name="ATOM1B" Airport="WAPP" Runways="22,,04">
-			<Route Runway="22,,04">AMN/AUDRI</Route>
-			<Transition Name="ATOMY">ATOMY</Transition>
-		</STAR>
 		<STAR Name="ATOM1E" Airport="WAPP" Runways="04">
 			<Route Runway="04">SUKTI/BIGRI/GORGU</Route>
 			<Transition Name="ATOMY">ATOMY</Transition>
@@ -5325,10 +4983,6 @@
 		<STAR Name="ATOM1H" Airport="WAPP" Runways="04">
 			<Route Runway="04">VIGIN/AKORI/IBUKO/AUDRI</Route>
 			<Transition Name="ATOMY">ATOMY</Transition>
-		</STAR>
-		<STAR Name="BELB1B" Airport="WAPP" Runways="22,,04">
-			<Route Runway="22,,04">AMN/AUDRI</Route>
-			<Transition Name="BELBA">BELBA</Transition>
 		</STAR>
 		<STAR Name="BELB1D" Airport="WAPP" Runways="04">
 			<Route Runway="04">BEDOG/NONOR/IBUKO/AUDRI</Route>
@@ -5342,17 +4996,9 @@
 			<Route Runway="22">MULSA/ENLAS</Route>
 			<Transition Name="BELBA">BELBA</Transition>
 		</STAR>
-		<STAR Name="BUBT1B" Airport="WAPP" Runways="22,,04">
-			<Route Runway="22,,04">AM30D/AUDRI</Route>
-			<Transition Name="BUBTU">BUBTU</Transition>
-		</STAR>
 		<STAR Name="BUBT1D" Airport="WAPP" Runways="04">
 			<Route Runway="04">BIRUK/LAGIK/IPLIN/AUDRI</Route>
 			<Transition Name="BUBTU">BUBTU</Transition>
-		</STAR>
-		<STAR Name="FALA1B" Airport="WAPP" Runways="22,,04">
-			<Route Runway="22,,04">AMN/AUDRI</Route>
-			<Transition Name="FALAM">FALAM</Transition>
 		</STAR>
 		<STAR Name="FALA1E" Airport="WAPP" Runways="04">
 			<Route Runway="04">GIVED/PAPNI/GORGU</Route>
@@ -5366,25 +5012,13 @@
 			<Route Runway="04">VIGIN/AKORI/IBUKO/AUDRI</Route>
 			<Transition Name="FALAM">FALAM</Transition>
 		</STAR>
-		<STAR Name="GOMB1B" Airport="WAPP" Runways="22,,04">
-			<Route Runway="22,,04">AM30C/D131T/D184O/AUDRI</Route>
-			<Transition Name="GOMBY">GOMBY</Transition>
-		</STAR>
 		<STAR Name="GOMB1D" Airport="WAPP" Runways="04">
 			<Route Runway="04">LUGNI/LAGIK/IPLIN/AUDRI</Route>
 			<Transition Name="GOMBY">GOMBY</Transition>
 		</STAR>
-		<STAR Name="HANT1B" Airport="WAPP" Runways="22,,04">
-			<Route Runway="22,,04">AMN/AUDRI</Route>
-			<Transition Name="HANTA">HANTA</Transition>
-		</STAR>
 		<STAR Name="HANT1D" Airport="WAPP" Runways="04">
 			<Route Runway="04">REKAG/KAMOR/IPLIN/AUDRI</Route>
 			<Transition Name="HANTA">HANTA</Transition>
-		</STAR>
-		<STAR Name="HOLB1B" Airport="WAPP" Runways="22,,04">
-			<Route Runway="22,,04">AM30E/AUDRI</Route>
-			<Transition Name="HOLBA">HOLBA</Transition>
 		</STAR>
 		<STAR Name="HOLB1D" Airport="WAPP" Runways="04">
 			<Route Runway="04">BIBRO/AUDRI</Route>
@@ -5398,10 +5032,6 @@
 			<Route Runway="22">PUSRI/ATMUR/DAKIB</Route>
 			<Transition Name="HOLBA">HOLBA</Transition>
 		</STAR>
-		<STAR Name="SASK1B" Airport="WAPP" Runways="22,,04">
-			<Route Runway="22,,04">AM30A/AUDRI</Route>
-			<Transition Name="SASKA">SASKA</Transition>
-		</STAR>
 		<STAR Name="SASK1D" Airport="WAPP" Runways="04">
 			<Route Runway="04">BIBRO/AUDRI</Route>
 			<Transition Name="SASKA">SASKA</Transition>
@@ -5414,56 +5044,13 @@
 			<Route Runway="22">PULUK/ATMUR/DAKIB</Route>
 			<Transition Name="SASKA">SASKA</Transition>
 		</STAR>
-		<STAR Name="SOBI1B" Airport="WAPP" Runways="22,,04">
-			<Route Runway="22,,04">AMN/AUDRI</Route>
-			<Transition Name="SOBIA">SOBIA</Transition>
-		</STAR>
 		<STAR Name="SOBI1H" Airport="WAPP" Runways="04">
 			<Route Runway="04">REKAG/KAMOR/IPLIN/AUDRI</Route>
 			<Transition Name="SOBIA">SOBIA</Transition>
 		</STAR>
-		<STAR Name="SULI1B" Airport="WAPP" Runways="22,,04">
-			<Route Runway="22,,04">AM30B/AUDRI</Route>
-			<Transition Name="SULIS">SULIS</Transition>
-		</STAR>
 		<STAR Name="SULI1D" Airport="WAPP" Runways="04">
 			<Route Runway="04">PAKDU/NONOR/IBUKO/AUDRI</Route>
 			<Transition Name="SULIS">SULIS</Transition>
-		</STAR>
-		<STAR Name="TARI1A" Airport="WAPP" Runways="22,,04">
-			<Route Runway="22,,04">GOMBY/AM30C/D131T/D184O/AUDRI/CD04/AUDRI/AUDRI/PP417/PP413/PP411/PP410/PP407/PP404/PP403/PP402/GORGU/PP421/PP422/RW04/PP424/ASSAN/AUDRI/PP610/PP609/PP608/PP616/PP613/PP609/PP608/PP619/PP618/PP614/PP613/PP609/PP608/PP607/PP605/RW22/PP603/PP602/DAKIB</Route>
-			<Transition Name="TARIV">TARIV</Transition>
-			<Transition Name="AUDRI">AUDRI</Transition>
-			<Transition Name="CD04">CD04</Transition>
-			<Transition Name="FD04">FD04</Transition>
-			<Transition Name="MD04">MD04</Transition>
-			<Transition Name="PMA">PMA</Transition>
-			<Transition Name="CF04">CF04</Transition>
-			<Transition Name="FF04">FF04</Transition>
-			<Transition Name="RW04">RW04</Transition>
-			<Transition Name="ENLIM">ENLIM</Transition>
-			<Transition Name="PP409">PP409</Transition>
-			<Transition Name="PP408">PP408</Transition>
-			<Transition Name="GORGU">GORGU</Transition>
-			<Transition Name="PP412">PP412</Transition>
-			<Transition Name="PULUK">PULUK</Transition>
-			<Transition Name="PP410">PP410</Transition>
-			<Transition Name="PUSRI">PUSRI</Transition>
-			<Transition Name="PP406">PP406</Transition>
-			<Transition Name="PP405">PP405</Transition>
-			<Transition Name="PP401">PP401</Transition>
-			<Transition Name="PP421">PP421</Transition>
-			<Transition Name="PP423">PP423</Transition>
-			<Transition Name="DAKIB">DAKIB</Transition>
-			<Transition Name="PP613">PP613</Transition>
-			<Transition Name="DOLOK">DOLOK</Transition>
-			<Transition Name="PP614">PP614</Transition>
-			<Transition Name="ENLAS">ENLAS</Transition>
-			<Transition Name="PP608">PP608</Transition>
-			<Transition Name="GUPIR">GUPIR</Transition>
-			<Transition Name="PP606">PP606</Transition>
-			<Transition Name="PP604">PP604</Transition>
-			<Transition Name="PP601">PP601</Transition>
 		</STAR>
 		<SID Name="BAXA1A" Airport="WAQQ" Runways="24">
 			<Route Runway="24">BAXAL</Route>
@@ -5555,20 +5142,6 @@
 			<Route Runway="35">SBR</Route>
 			<Transition Name="ABD">ABD</Transition>
 		</SID>
-		<STAR Name="SBR1D" Airport="WARA" Runways="35,17,">
-			<Route Runway="35,17,">ABD/GUSER/LEDUK/ISPAD/AKBAT/RA601/RA602/RW35/LEDUK/ISPAD/AKBAT/RA601/RA602/RWY35/ABD/GUSER/LEDUK/ISPAD/AKBAT/RA601/RA602/RA603/LEDUK/ISPAD/AKBAT/RA601/RA602/RA603/ABD</Route>
-			<Transition Name="SBR">SBR</Transition>
-			<Transition Name="ABD">ABD</Transition>
-			<Transition Name="CD35">CD35</Transition>
-			<Transition Name="VOR11">VOR11</Transition>
-			<Transition Name="FD35">FD35</Transition>
-			<Transition Name="MD35">MD35</Transition>
-			<Transition Name="CF35">CF35</Transition>
-			<Transition Name="FF35">FF35</Transition>
-			<Transition Name="RW35">RW35</Transition>
-			<Transition Name="RA601">RA601</Transition>
-			<Transition Name="GUSER">GUSER</Transition>
-		</STAR>
 		<SID Name="LASE1H" Airport="WARD" Runways="14">
 			<Route Runway="14">AMVIM/LUMSA/IGNAR/EKELA/FUSAL/LASEM</Route>
 			<Transition Name="VAGMA">VAGMA</Transition>
@@ -6658,12 +6231,12 @@
 			<Route Runway="22">BOBAG/TAROS</Route>
 			<Transition Name="SAMKO">SAMKO</Transition>
 		</SID>
-		<SID Name="HOSB1C" Airport="WIDD" Runways="RN">
-			<Route Runway="RN">66NM/RN</Route>
+		<SID Name="HOSB1C" Airport="WIDD" Runways="04">
+			<Route Runway="04">66NM/RN</Route>
 			<Transition Name="HOSBA">HOSBA</Transition>
 		</SID>
-		<SID Name="HOSB1D" Airport="WIDD" Runways="RN">
-			<Route Runway="RN">66NM/RN</Route>
+		<SID Name="HOSB1D" Airport="WIDD" Runways="22">
+			<Route Runway="22">66NM/RN</Route>
 			<Transition Name="HOSBA">HOSBA</Transition>
 		</SID>
 		<SID Name="JITL2C" Airport="WIDD" Runways="04">
@@ -8797,39 +8370,6 @@
 			<Transition Name="PNK">PNK</Transition>
 			<Transition Name="UNTEP">UNTEP</Transition>
 		</SID>
-		<STAR Name="ADKO1C" Airport="WIOO" Runways="33,,15">
-			<Route Runway="33,,15">PNK</Route>
-			<Transition Name="ADKON">ADKON</Transition>
-		</STAR>
-		<STAR Name="BAVU1C" Airport="WIOO" Runways="33,,15">
-			<Route Runway="33,,15">PNK</Route>
-			<Transition Name="BAVUS">BAVUS</Transition>
-		</STAR>
-		<STAR Name="OLVE1A" Airport="WIOO" Runways="33,,15">
-			<Route Runway="33,,15">PNK</Route>
-			<Transition Name="OLVES">OLVES</Transition>
-		</STAR>
-		<STAR Name="PAPS1C" Airport="WIOO" Runways="33,,15">
-			<Route Runway="33,,15">PNK</Route>
-			<Transition Name="PAPSA">PAPSA</Transition>
-		</STAR>
-		<STAR Name="TEPE1C" Airport="WIOO" Runways="33,,15">
-			<Route Runway="33,,15">PNK</Route>
-			<Transition Name="TEPEV">TEPEV</Transition>
-		</STAR>
-		<STAR Name="UNTE1C" Airport="WIOO" Runways="33,,15">
-			<Route Runway="33,,15">PNK/OVNAT/URBUS/MUKBO/ONTIA/RW15</Route>
-			<Transition Name="UNTEP">UNTEP</Transition>
-			<Transition Name="PNK">PNK</Transition>
-			<Transition Name="CF15">CF15</Transition>
-			<Transition Name="FD15">FD15</Transition>
-			<Transition Name="MA15">MA15</Transition>
-			<Transition Name="FF15">FF15</Transition>
-			<Transition Name="RW15">RW15</Transition>
-			<Transition Name="IRVAT">IRVAT</Transition>
-			<Transition Name="MUKBO">MUKBO</Transition>
-			<Transition Name="CS15">CS15</Transition>
-		</STAR>
 		<SID Name="ADKO1E" Airport="WIOS" Runways="09">
 			<Route Runway="09">ISKOK/ADKON</Route>
 			<Transition Name="PEDBU">PEDBU</Transition>
@@ -9329,4 +8869,1222 @@
 			<Transition Name="TT501">TT501</Transition>
 		</STAR>
 	</SIDSTARs>
+	<Airports>
+		<Airport ICAO="WA09" Position="+48.6123-123.1385" Elevation="100">
+			<Runway Name="07" Position="+48.6112-123.1438"/>
+			<Runway Name="25" Position="+48.6116-123.1288"/>
+		</Airport>
+		<Airport ICAO="WA14" Position="+46.6613-118.8306" Elevation="925">
+			<Runway Name="07" Position="+46.6614-118.8368"/>
+			<Runway Name="25" Position="+46.6612-118.8244"/>
+		</Airport>
+		<Airport ICAO="WA20" Position="+48.2044-120.1207" Elevation="1340">
+			<Runway Name="11" Position="+48.2051-120.1222"/>
+			<Runway Name="29" Position="+48.2036-120.1192"/>
+		</Airport>
+		<Airport ICAO="WA25" Position="+48.0930-122.0145" Elevation="315">
+			<Runway Name="12" Position="+48.0977-122.0165"/>
+			<Runway Name="17" Position="+48.0941-122.0137"/>
+			<Runway Name="30" Position="+48.0941-122.0136"/>
+			<Runway Name="35" Position="+48.0881-122.0146"/>
+		</Airport>
+		<Airport ICAO="WA39" Position="+48.6504-122.9536" Elevation="113">
+			<Runway Name="03" Position="+48.6490-122.9547"/>
+			<Runway Name="21" Position="+48.6518-122.9524"/>
+		</Airport>
+		<Airport ICAO="WA46" Position="+45.8303-122.6375" Elevation="25">
+			<Runway Name="13" Position="+45.8303-122.6375"/>
+			<Runway Name="31" Position="+45.8303-122.6375"/>
+		</Airport>
+		<Airport ICAO="WA61" Position="+47.7983-122.5297" Elevation="50">
+			<Runway Name="05" Position="+47.7983-122.5297"/>
+			<Runway Name="23" Position="+47.7983-122.5297"/>
+		</Airport>
+		<Airport ICAO="WA67" Position="+45.6631-122.4726" Elevation="270">
+			<Runway Name="09" Position="+45.6633-122.4761"/>
+			<Runway Name="27" Position="+45.6628-122.4692"/>
+		</Airport>
+		<Airport ICAO="WA76" Position="+46.8581-120.7789" Elevation="2410">
+			<Runway Name="06" Position="+46.8567-120.7819"/>
+			<Runway Name="24" Position="+46.8594-120.7758"/>
+		</Airport>
+		<Airport ICAO="WAAA" Position="-05.0608+119.5544" Elevation="44">
+			<Runway Name="03" Position="-05.0923+119.5440"/>
+			<Runway Name="13" Position="-05.0543+119.5455"/>
+			<Runway Name="21" Position="-05.0680+119.5580"/>
+			<Runway Name="31" Position="-05.0690+119.5626"/>
+		</Airport>
+		<Airport ICAO="WABA" Position="-04.0675+136.2736" Elevation="1779">
+			<Runway Name="04" Position="-04.0675+136.2736"/>
+			<Runway Name="22" Position="-04.0675+136.2736"/>
+		</Airport>
+		<Airport ICAO="WABB" Position="-01.1919+136.1100" Elevation="38">
+			<Runway Name="11" Position="-01.1848+136.0927"/>
+			<Runway Name="29" Position="-01.1953+136.1230"/>
+		</Airport>
+		<Airport ICAO="WABD" Position="-04.0089+136.0369" Elevation="5113">
+			<Runway Name="03" Position="-04.0104+136.0356"/>
+			<Runway Name="21" Position="-04.0029+136.0399"/>
+		</Airport>
+		<Airport ICAO="WABF" Position="-00.9364+134.8664" Elevation="23">
+			<Runway Name="09" Position="-00.9356+134.8642"/>
+			<Runway Name="27" Position="-00.9359+134.8799"/>
+		</Airport>
+		<Airport ICAO="WABI" Position="-03.3681+135.4972" Elevation="25">
+			<Runway Name="16" Position="-03.3621+135.4945"/>
+			<Runway Name="34" Position="-03.3740+135.4987"/>
+		</Airport>
+		<Airport ICAO="WABO" Position="-01.8300+136.0694" Elevation="75">
+			<Runway Name="10" Position="-01.8281+136.0611"/>
+			<Runway Name="28" Position="-01.8300+136.0693"/>
+		</Airport>
+		<Airport ICAO="WABS" Position="-03.8219+137.8381" Elevation="7299">
+			<Runway Name="17" Position="-03.8173+137.8382"/>
+			<Runway Name="35" Position="-03.8270+137.8404"/>
+		</Airport>
+		<Airport ICAO="WADB" Position="-08.5406+118.6903" Elevation="7">
+			<Runway Name="14" Position="-08.5303+118.6789"/>
+			<Runway Name="32" Position="-08.5451+118.6923"/>
+		</Airport>
+		<Airport ICAO="WADD" Position="-08.7475+115.1692" Elevation="14">
+			<Runway Name="09" Position="-08.7489+115.1538"/>
+			<Runway Name="27" Position="-08.7479+115.1811"/>
+		</Airport>
+		<Airport ICAO="WADE" Position="-08.1406+114.6175" Elevation="72">
+			<Runway Name="14" Position="-08.1358+114.6127"/>
+			<Runway Name="32" Position="-08.1428+114.6184"/>
+		</Airport>
+		<Airport ICAO="WADL" Position="-08.7572+116.2767" Elevation="343">
+			<Runway Name="13" Position="-08.7494+116.2656"/>
+			<Runway Name="31" Position="-08.7682+116.2889"/>
+		</Airport>
+		<Airport ICAO="WADS" Position="-08.4886+117.4142" Elevation="38">
+			<Runway Name="14" Position="-08.4815+117.4060"/>
+			<Runway Name="32" Position="-08.4940+117.4165"/>
+		</Airport>
+		<Airport ICAO="WADY" Position="-08.3106+114.3403" Elevation="124">
+			<Runway Name="08" Position="-08.3118+114.3287"/>
+			<Runway Name="26" Position="-08.3085+114.3507"/>
+		</Airport>
+		<Airport ICAO="WAEB" Position="+01.1019+127.7033" Elevation="114">
+			<Runway Name="15" Position="+01.1019+127.7033"/>
+			<Runway Name="33" Position="+01.1019+127.7033"/>
+		</Airport>
+		<Airport ICAO="WAEE" Position="+00.8311+127.3803" Elevation="81">
+			<Runway Name="14" Position="+00.8398+127.3746"/>
+			<Runway Name="32" Position="+00.8235+127.3878"/>
+		</Airport>
+		<Airport ICAO="WAEG" Position="+01.8367+127.7869" Elevation="157">
+			<Runway Name="04" Position="+01.8329+127.7826"/>
+			<Runway Name="22" Position="+01.8434+127.7898"/>
+		</Airport>
+		<Airport ICAO="WAEH" Position="+00.4681+127.9461" Elevation="11">
+			<Runway Name="09" Position="+00.4680+127.9408"/>
+			<Runway Name="27" Position="+00.4679+127.9556"/>
+		</Airport>
+		<Airport ICAO="WAEJ" Position="-00.0803+129.4569" Elevation="125">
+			<Runway Name="18" Position="-00.0803+129.4569"/>
+			<Runway Name="36" Position="-00.0803+129.4569"/>
+		</Airport>
+		<Airport ICAO="WAEK" Position="+01.1869+127.8950" Elevation="40">
+			<Runway Name="18" Position="+01.1995+127.8964"/>
+			<Runway Name="36" Position="+01.1778+127.8957"/>
+		</Airport>
+		<Airport ICAO="WAEL" Position="-00.6372+127.5019" Elevation="67">
+			<Runway Name="06" Position="-00.6373+127.4990"/>
+			<Runway Name="24" Position="-00.6311+127.5100"/>
+		</Airport>
+		<Airport ICAO="WAEM" Position="+00.9194+128.3825" Elevation="8">
+			<Runway Name="07" Position="+00.9152+128.3757"/>
+			<Runway Name="25" Position="+00.9191+128.3885"/>
+		</Airport>
+		<Airport ICAO="WAEO" Position="-01.7822+125.4822" Elevation="10">
+			<Runway Name="11" Position="-01.7805+125.4772"/>
+			<Runway Name="29" Position="-01.7839+125.4871"/>
+		</Airport>
+		<Airport ICAO="WAES" Position="-02.0978+125.9639" Elevation="11">
+			<Runway Name="18" Position="-02.0952+125.9661"/>
+			<Runway Name="36" Position="-02.1051+125.9656"/>
+		</Airport>
+		<Airport ICAO="WAEW" Position="+02.0500+128.3167" Elevation="94">
+			<Runway Name="09" Position="+02.0458+128.3138"/>
+			<Runway Name="27" Position="+02.0463+128.3354"/>
+		</Airport>
+		<Airport ICAO="WAFB" Position="-03.1856+119.9172" Elevation="3029">
+			<Runway Name="04" Position="-03.1903+119.9142"/>
+			<Runway Name="22" Position="-03.1774+119.9248"/>
+		</Airport>
+		<Airport ICAO="WAFC" Position="-02.2500+120.6333" Elevation="1755">
+			<Runway Name="03" Position="-02.2500+120.6333"/>
+			<Runway Name="21" Position="-02.2500+120.6333"/>
+		</Airport>
+		<Airport ICAO="WAFD" Position="-03.0844+120.2450" Elevation="24">
+			<Runway Name="17" Position="-03.0748+120.2429"/>
+			<Runway Name="35" Position="-03.0893+120.2467"/>
+		</Airport>
+		<Airport ICAO="WAFF" Position="-00.9167+119.9103" Elevation="284">
+			<Runway Name="15" Position="-00.9098+119.9057"/>
+			<Runway Name="33" Position="-00.9271+119.9135"/>
+		</Airport>
+		<Airport ICAO="WAFJ" Position="-02.5928+119.0158" Elevation="11">
+			<Runway Name="05" Position="-02.5963+119.0166"/>
+			<Runway Name="23" Position="-02.5842+119.0328"/>
+		</Airport>
+		<Airport ICAO="WAFK" Position="-02.1239+120.2939" Elevation="3220">
+			<Runway Name="12" Position="-02.1240+120.2939"/>
+			<Runway Name="30" Position="-02.1282+120.3019"/>
+		</Airport>
+		<Airport ICAO="WAFL" Position="+01.1231+120.7931" Elevation="16">
+			<Runway Name="11" Position="+01.1260+120.7874"/>
+			<Runway Name="29" Position="+01.1213+120.7991"/>
+		</Airport>
+		<Airport ICAO="WAFM" Position="-02.5542+120.3244" Elevation="146">
+			<Runway Name="02" Position="-02.5663+120.3216"/>
+			<Runway Name="20" Position="-02.5544+120.3256"/>
+		</Airport>
+		<Airport ICAO="WAFN" Position="-02.2719+119.8950" Elevation="3510">
+			<Runway Name="09" Position="-02.2706+119.8936"/>
+			<Runway Name="27" Position="-02.2714+119.9025"/>
+		</Airport>
+		<Airport ICAO="WAFO" Position="-02.2022+121.6617" Elevation="20">
+			<Runway Name="05" Position="-02.2055+121.6580"/>
+			<Runway Name="23" Position="-02.1965+121.6680"/>
+		</Airport>
+		<Airport ICAO="WAFP" Position="-01.4169+120.6592" Elevation="21">
+			<Runway Name="03" Position="-01.4211+120.6547"/>
+			<Runway Name="21" Position="-01.4071+120.6638"/>
+		</Airport>
+		<Airport ICAO="WAFS" Position="-03.1478+119.3033" Elevation="3033">
+			<Runway Name="17" Position="-03.1441+119.3010"/>
+			<Runway Name="35" Position="-03.1542+119.3031"/>
+		</Airport>
+		<Airport ICAO="WAFU" Position="-00.8639+121.6250" Elevation="104">
+			<Runway Name="12" Position="-00.8606+121.6205"/>
+			<Runway Name="30" Position="-00.8703+121.6368"/>
+		</Airport>
+		<Airport ICAO="WAFW" Position="-01.0406+122.7725" Elevation="62">
+			<Runway Name="04" Position="-01.0437+122.7685"/>
+			<Runway Name="22" Position="-01.0271+122.7802"/>
+		</Airport>
+		<Airport ICAO="WAFY" Position="+01.1053+121.4156" Elevation="12">
+			<Runway Name="06" Position="+01.0991+121.4071"/>
+			<Runway Name="24" Position="+01.1055+121.4195"/>
+		</Airport>
+		<Airport ICAO="WAGA" Position="-01.1264+113.8747" Elevation="127">
+			<Runway Name="05" Position="-01.1321+113.8688"/>
+			<Runway Name="23" Position="-01.1256+113.8773"/>
+		</Airport>
+		<Airport ICAO="WAGB" Position="-01.0219+114.9264" Elevation="145">
+			<Runway Name="14" Position="-01.0212+114.9244"/>
+			<Runway Name="32" Position="-01.0304+114.9332"/>
+		</Airport>
+		<Airport ICAO="WAGF" Position="-03.3781+112.5417" Elevation="13">
+			<Runway Name="10" Position="-03.3750+112.5312"/>
+			<Runway Name="28" Position="-03.3771+112.5418"/>
+		</Airport>
+		<Airport ICAO="WAGG" Position="-02.2267+113.9444" Elevation="40">
+			<Runway Name="16" Position="-02.2170+113.9395"/>
+			<Runway Name="34" Position="-02.2381+113.9476"/>
+		</Airport>
+		<Airport ICAO="WAGI" Position="-02.7042+111.6706" Elevation="78">
+			<Runway Name="13" Position="-02.6989+111.6664"/>
+			<Runway Name="31" Position="-02.7118+111.6804"/>
+		</Airport>
+		<Airport ICAO="WAGM" Position="-01.6692+114.8978" Elevation="23">
+			<Runway Name="15" Position="-01.6665+114.8975"/>
+			<Runway Name="33" Position="-01.6724+114.9008"/>
+		</Airport>
+		<Airport ICAO="WAGP" Position="-00.6892+114.4450" Elevation="442">
+			<Runway Name="04" Position="-00.6915+114.4422"/>
+			<Runway Name="22" Position="-00.6857+114.4471"/>
+		</Airport>
+		<Airport ICAO="WAGS" Position="-02.5014+112.9756" Elevation="24">
+			<Runway Name="13" Position="-02.4921+112.9673"/>
+			<Runway Name="31" Position="-02.5048+112.9811"/>
+		</Airport>
+		<Airport ICAO="WAGT" Position="-01.4675+113.0831" Elevation="115">
+			<Runway Name="09" Position="-01.4681+113.0756"/>
+			<Runway Name="27" Position="-01.4699+113.0865"/>
+		</Airport>
+		<Airport ICAO="WAHH" Position="-07.7867+110.4319" Elevation="379">
+			<Runway Name="09" Position="-07.7886+110.4220"/>
+			<Runway Name="27" Position="-07.7878+110.4420"/>
+		</Airport>
+		<Airport ICAO="WAHI" Position="-07.9042+110.0575" Elevation="24">
+			<Runway Name="11" Position="-07.9003+110.0434"/>
+			<Runway Name="29" Position="-07.9104+110.0711"/>
+		</Airport>
+		<Airport ICAO="WAHL" Position="-07.6444+109.0347" Elevation="84">
+			<Runway Name="13" Position="-07.6407+109.0294"/>
+			<Runway Name="31" Position="-07.6494+109.0387"/>
+		</Airport>
+		<Airport ICAO="WAHP" Position="-07.4625+109.4217" Elevation="160">
+			<Runway Name="10" Position="-07.4595+109.4072"/>
+			<Runway Name="28" Position="-07.4630+109.4212"/>
+		</Airport>
+		<Airport ICAO="WAHQ" Position="-07.5136+110.7506" Elevation="418">
+			<Runway Name="08" Position="-07.5184+110.7465"/>
+			<Runway Name="26" Position="-07.5135+110.7686"/>
+		</Airport>
+		<Airport ICAO="WAHS" Position="-06.9764+110.3772" Elevation="11">
+			<Runway Name="13" Position="-06.9623+110.3633"/>
+			<Runway Name="31" Position="-06.9773+110.3811"/>
+		</Airport>
+		<Airport ICAO="WAHU" Position="-05.8011+110.4778" Elevation="15">
+			<Runway Name="13" Position="-05.7983+110.4755"/>
+			<Runway Name="31" Position="-05.8039+110.4821"/>
+		</Airport>
+		<Airport ICAO="WAJC" Position="-03.2704+138.6122" Elevation="192">
+			<Runway Name="06" Position="-03.2721+138.6112"/>
+			<Runway Name="24" Position="-03.2694+138.6156"/>
+		</Airport>
+		<Airport ICAO="WAJG" Position="-04.4442+140.8817" Elevation="354">
+			<Runway Name="07" Position="-04.4428+140.8836"/>
+			<Runway Name="25" Position="-04.4419+140.8870"/>
+		</Airport>
+		<Airport ICAO="WAJI" Position="-01.8747+138.7544" Elevation="12">
+			<Runway Name="13" Position="-01.8710+138.7514"/>
+			<Runway Name="31" Position="-01.8759+138.7561"/>
+		</Airport>
+		<Airport ICAO="WAJJ" Position="-02.5719+140.5117" Elevation="289">
+			<Runway Name="12" Position="-02.5711+140.5086"/>
+			<Runway Name="30" Position="-02.5873+140.5302"/>
+		</Airport>
+		<Airport ICAO="WAJK" Position="-04.7133+140.7394" Elevation="5446">
+			<Runway Name="07" Position="-04.7141+140.7385"/>
+			<Runway Name="25" Position="-04.7126+140.7428"/>
+		</Airport>
+		<Airport ICAO="WAJM" Position="-03.4133+140.5528" Elevation="699">
+			<Runway Name="05" Position="-03.4133+140.5528"/>
+			<Runway Name="23" Position="-03.4133+140.5528"/>
+		</Airport>
+		<Airport ICAO="WAJO" Position="-04.9072+140.6303" Elevation="4284">
+			<Runway Name="11" Position="-04.9048+140.6225"/>
+			<Runway Name="29" Position="-04.9099+140.6337"/>
+		</Airport>
+		<Airport ICAO="WAJR" Position="-03.2333+140.9667" Elevation="1476">
+			<Runway Name="07" Position="-03.2333+140.9667"/>
+			<Runway Name="25" Position="-03.2333+140.9667"/>
+		</Airport>
+		<Airport ICAO="WAJS" Position="-03.4428+140.7783" Elevation="680">
+			<Runway Name="01" Position="-03.4428+140.7783"/>
+			<Runway Name="19" Position="-03.4428+140.7783"/>
+		</Airport>
+		<Airport ICAO="WAJU" Position="-03.6753+140.8814" Elevation="1476">
+			<Runway Name="09" Position="-03.6757+140.8817"/>
+			<Runway Name="27" Position="-03.6757+140.8878"/>
+		</Airport>
+		<Airport ICAO="WAKD" Position="-05.8792+140.7086" Elevation="121">
+			<Runway Name="16" Position="-05.8743+140.7087"/>
+			<Runway Name="34" Position="-05.8822+140.7109"/>
+		</Airport>
+		<Airport ICAO="WAKE" Position="-07.1753+139.5842" Elevation="28">
+			<Runway Name="02" Position="-07.1788+139.5822"/>
+			<Runway Name="20" Position="-07.1737+139.5843"/>
+		</Airport>
+		<Airport ICAO="WAKG" Position="-05.4961+138.0803" Elevation="7">
+			<Runway Name="06" Position="-05.4997+138.0715"/>
+			<Runway Name="24" Position="-05.4929+138.0847"/>
+		</Airport>
+		<Airport ICAO="WAKJ" Position="-07.9792+138.8525" Elevation="14">
+			<Runway Name="13" Position="-07.9751+138.8486"/>
+			<Runway Name="31" Position="-07.9806+138.8549"/>
+		</Airport>
+		<Airport ICAO="WAKK" Position="-08.5211+140.4169" Elevation="10">
+			<Runway Name="16" Position="-08.5124+140.4156"/>
+			<Runway Name="34" Position="-08.5325+140.4228"/>
+		</Airport>
+		<Airport ICAO="WAKL" Position="-05.8050+139.8678" Elevation="49">
+			<Runway Name="15" Position="-05.8050+139.8678"/>
+			<Runway Name="33" Position="-05.8050+139.8678"/>
+		</Airport>
+		<Airport ICAO="WAKM" Position="-06.1853+138.6408" Elevation="33">
+			<Runway Name="09" Position="-06.1853+138.6408"/>
+			<Runway Name="27" Position="-06.1853+138.6408"/>
+		</Airport>
+		<Airport ICAO="WAKO" Position="-08.0950+139.7225" Elevation="11">
+			<Runway Name="08" Position="-08.0947+139.7207"/>
+			<Runway Name="26" Position="-08.0945+139.7260"/>
+		</Airport>
+		<Airport ICAO="WAKP" Position="-06.5422+139.3317" Elevation="24">
+			<Runway Name="15" Position="-06.5394+139.3307"/>
+			<Runway Name="33" Position="-06.5509+139.3361"/>
+		</Airport>
+		<Airport ICAO="WAKQ" Position="-05.6906+139.3497" Elevation="50">
+			<Runway Name="09" Position="-05.6906+139.3497"/>
+			<Runway Name="27" Position="-05.6906+139.3497"/>
+		</Airport>
+		<Airport ICAO="WAKT" Position="-06.0961+140.3000" Elevation="86">
+			<Runway Name="07" Position="-06.0981+140.2991"/>
+			<Runway Name="25" Position="-06.0944+140.3112"/>
+		</Airport>
+		<Airport ICAO="WAKY" Position="-05.2139+140.0233" Elevation="340">
+			<Runway Name="16" Position="-05.2076+140.0160"/>
+			<Runway Name="34" Position="-05.2145+140.0182"/>
+		</Airport>
+		<Airport ICAO="WALA" Position="+00.3836+117.5425" Elevation="105">
+			<Runway Name="02" Position="+00.3804+117.5412"/>
+			<Runway Name="20" Position="+00.3870+117.5438"/>
+		</Airport>
+		<Airport ICAO="WALB" Position="+00.5614+117.6450" Elevation="50">
+			<Runway Name="04" Position="+00.5575+117.6419"/>
+			<Runway Name="22" Position="+00.5633+117.6464"/>
+		</Airport>
+		<Airport ICAO="WALC" Position="+00.1181+117.4736" Elevation="56">
+			<Runway Name="04" Position="+00.1181+117.4737"/>
+			<Runway Name="22" Position="+00.1252+117.4795"/>
+		</Airport>
+		<Airport ICAO="WALE" Position="-00.2058+115.7606" Elevation="331">
+			<Runway Name="03" Position="-00.2085+115.7573"/>
+			<Runway Name="21" Position="-00.1982+115.7630"/>
+		</Airport>
+		<Airport ICAO="WALJ" Position="+00.8078+114.5294" Elevation="514">
+			<Runway Name="02" Position="+00.8037+114.5279"/>
+			<Runway Name="20" Position="+00.8111+114.5304"/>
+		</Airport>
+		<Airport ICAO="WALL" Position="-01.2675+116.8939" Elevation="12">
+			<Runway Name="07" Position="-01.2727+116.8841"/>
+			<Runway Name="25" Position="-01.2639+116.9048"/>
+		</Airport>
+		<Airport ICAO="WALN" Position="+01.7978+114.9039" Elevation="2425">
+			<Runway Name="18" Position="+01.7978+114.9039"/>
+			<Runway Name="36" Position="+01.7978+114.9039"/>
+		</Airport>
+		<Airport ICAO="WALQ" Position="-00.3056+117.4153" Elevation="48">
+			<Runway Name="01" Position="-00.3113+117.4148"/>
+			<Runway Name="19" Position="-00.3005+117.4164"/>
+		</Airport>
+		<Airport ICAO="WALS" Position="-00.3756+117.2514" Elevation="73">
+			<Runway Name="04" Position="-00.3815+117.2425"/>
+			<Runway Name="22" Position="-00.3669+117.2567"/>
+		</Airport>
+		<Airport ICAO="WALT" Position="-00.0833+117.4333" Elevation="121">
+			<Runway Name="08" Position="-00.0938+117.4331"/>
+			<Runway Name="26" Position="-00.0914+117.4452"/>
+		</Airport>
+		<Airport ICAO="WALW" Position="+01.1217+116.8517" Elevation="214">
+			<Runway Name="10" Position="+01.1224+116.8477"/>
+			<Runway Name="28" Position="+01.1209+116.8548"/>
+		</Airport>
+		<Airport ICAO="WAMG" Position="+00.6381+122.8522" Elevation="125">
+			<Runway Name="09" Position="+00.6386+122.8380"/>
+			<Runway Name="27" Position="+00.6357+122.8603"/>
+		</Airport>
+		<Airport ICAO="WAMH" Position="+03.6856+125.5292" Elevation="63">
+			<Runway Name="15" Position="+03.6908+125.5239"/>
+			<Runway Name="33" Position="+03.6789+125.5306"/>
+		</Airport>
+		<Airport ICAO="WAMM" Position="+01.5456+124.9250" Elevation="328">
+			<Runway Name="18" Position="+01.5613+124.9267"/>
+			<Runway Name="36" Position="+01.5373+124.9260"/>
+		</Airport>
+		<Airport ICAO="WAMN" Position="+04.0061+126.6747" Elevation="12">
+			<Runway Name="18" Position="+04.0157+126.6731"/>
+			<Runway Name="36" Position="+04.0030+126.6733"/>
+		</Airport>
+		<Airport ICAO="WAMO" Position="+02.6531+125.4247" Elevation="155">
+			<Runway Name="02" Position="+02.6431+125.4214"/>
+			<Runway Name="20" Position="+02.6544+125.4255"/>
+		</Airport>
+		<Airport ICAO="WAMP" Position="-02.8014+122.1411" Elevation="24">
+			<Runway Name="13" Position="-02.7929+122.1341"/>
+			<Runway Name="31" Position="-02.8036+122.1462"/>
+		</Airport>
+		<Airport ICAO="WAMS" Position="+05.5561+126.5767" Elevation="9">
+			<Runway Name="03" Position="+05.5547+126.5768"/>
+			<Runway Name="21" Position="+05.5657+126.5829"/>
+		</Airport>
+		<Airport ICAO="WAOC" Position="-03.4133+116.0008" Elevation="20">
+			<Runway Name="09" Position="-03.4124+115.9872"/>
+			<Runway Name="27" Position="-03.4128+116.0021"/>
+		</Airport>
+		<Airport ICAO="WAOG" Position="-03.6267+116.3686" Elevation="7">
+			<Runway Name="14" Position="-03.6267+116.3686"/>
+			<Runway Name="32" Position="-03.6267+116.3686"/>
+		</Airport>
+		<Airport ICAO="WAOH" Position="-03.9917+116.1042" Elevation="60">
+			<Runway Name="12" Position="-03.9872+116.0968"/>
+			<Runway Name="30" Position="-03.9919+116.1058"/>
+		</Airport>
+		<Airport ICAO="WAOK" Position="-03.2950+116.1658" Elevation="12">
+			<Runway Name="16" Position="-03.2876+116.1610"/>
+			<Runway Name="34" Position="-03.3015+116.1665"/>
+		</Airport>
+		<Airport ICAO="WAON" Position="-02.2128+115.4425" Elevation="187">
+			<Runway Name="06" Position="-02.2197+115.4309"/>
+			<Runway Name="24" Position="-02.2135+115.4418"/>
+		</Airport>
+		<Airport ICAO="WAOO" Position="-03.4397+114.7528" Elevation="66">
+			<Runway Name="10" Position="-03.4403+114.7516"/>
+			<Runway Name="28" Position="-03.4444+114.7737"/>
+		</Airport>
+		<Airport ICAO="WAPA" Position="-03.3461+128.9272" Elevation="260">
+			<Runway Name="13" Position="-03.3444+128.9236"/>
+			<Runway Name="31" Position="-03.3494+128.9286"/>
+		</Airport>
+		<Airport ICAO="WAPC" Position="-04.5217+129.9047" Elevation="94">
+			<Runway Name="10" Position="-04.5201+129.9012"/>
+			<Runway Name="28" Position="-04.5226+129.9090"/>
+		</Airport>
+		<Airport ICAO="WAPD" Position="-05.7742+134.2100" Elevation="59">
+			<Runway Name="05" Position="-05.7769+134.2038"/>
+			<Runway Name="23" Position="-05.7705+134.2148"/>
+		</Airport>
+		<Airport ICAO="WAPF" Position="-05.7575+132.7614" Elevation="109">
+			<Runway Name="13" Position="-05.7513+132.7504"/>
+			<Runway Name="31" Position="-05.7658+132.7659"/>
+		</Airport>
+		<Airport ICAO="WAPG" Position="-03.8528+126.7025" Elevation="10">
+			<Runway Name="06" Position="-03.8569+126.6968"/>
+			<Runway Name="24" Position="-03.8533+126.7046"/>
+		</Airport>
+		<Airport ICAO="WAPL" Position="-05.6617+132.7300" Elevation="131">
+			<Runway Name="09" Position="-05.6614+132.7257"/>
+			<Runway Name="27" Position="-05.6619+132.7374"/>
+		</Airport>
+		<Airport ICAO="WAPM" Position="-08.1392+127.9033" Elevation="43">
+			<Runway Name="10" Position="-08.1391+127.9035"/>
+			<Runway Name="28" Position="-08.1423+127.9159"/>
+		</Airport>
+		<Airport ICAO="WAPN" Position="-03.1436+126.9764" Elevation="7">
+			<Runway Name="11" Position="-03.1409+126.9699"/>
+			<Runway Name="29" Position="-03.1455+126.9835"/>
+		</Airport>
+		<Airport ICAO="WAPO" Position="-07.1281+131.7669" Elevation="42">
+			<Runway Name="09" Position="-07.1278+131.7636"/>
+			<Runway Name="27" Position="-07.1286+131.7708"/>
+		</Airport>
+		<Airport ICAO="WAPP" Position="-03.7075+128.0894" Elevation="62">
+			<Runway Name="04" Position="-03.7183+128.0817"/>
+			<Runway Name="22" Position="-03.7023+128.0976"/>
+		</Airport>
+		<Airport ICAO="WAPR" Position="-03.2381+127.0992" Elevation="108">
+			<Runway Name="15" Position="-03.2339+127.0989"/>
+			<Runway Name="33" Position="-03.2400+127.1017"/>
+		</Airport>
+		<Airport ICAO="WAPS" Position="-07.8481+131.3347" Elevation="452">
+			<Runway Name="11" Position="-07.8433+131.3267"/>
+			<Runway Name="29" Position="-07.8523+131.3455"/>
+		</Airport>
+		<Airport ICAO="WAPU" Position="-03.4633+130.7878" Elevation="19">
+			<Runway Name="13" Position="-03.4633+130.7878"/>
+			<Runway Name="31" Position="-03.4633+130.7878"/>
+		</Airport>
+		<Airport ICAO="WAPV" Position="-02.8111+129.4850" Elevation="551">
+			<Runway Name="05" Position="-02.8137+129.4813"/>
+			<Runway Name="23" Position="-02.8093+129.4863"/>
+		</Airport>
+		<Airport ICAO="WAQA" Position="+04.1333+117.6667" Elevation="46">
+			<Runway Name="13" Position="+04.1383+117.6647"/>
+			<Runway Name="31" Position="+04.1295+117.6745"/>
+		</Airport>
+		<Airport ICAO="WAQB" Position="+03.4667+117.8667" Elevation="112">
+			<Runway Name="04" Position="+03.4667+117.8667"/>
+			<Runway Name="22" Position="+03.4667+117.8667"/>
+		</Airport>
+		<Airport ICAO="WAQC" Position="+02.2033+118.5925" Elevation="43">
+			<Runway Name="13" Position="+02.2021+118.5938"/>
+			<Runway Name="31" Position="+02.1927+118.6048"/>
+		</Airport>
+		<Airport ICAO="WAQD" Position="+02.8375+117.3733" Elevation="20">
+			<Runway Name="03" Position="+02.8316+117.3711"/>
+			<Runway Name="21" Position="+02.8443+117.3780"/>
+		</Airport>
+		<Airport ICAO="WAQG" Position="+03.7727+115.8562" Elevation="2500">
+			<Runway Name="17" Position="+03.7727+115.8562"/>
+			<Runway Name="35" Position="+03.7727+115.8562"/>
+		</Airport>
+		<Airport ICAO="WAQJ" Position="+03.9011+115.6925" Elevation="3108">
+			<Runway Name="04" Position="+03.8945+115.6855"/>
+			<Runway Name="22" Position="+03.9059+115.6943"/>
+		</Airport>
+		<Airport ICAO="WAQK" Position="+02.0050+117.7419" Elevation="47">
+			<Runway Name="07" Position="+02.0050+117.7419"/>
+			<Runway Name="25" Position="+02.0050+117.7419"/>
+		</Airport>
+		<Airport ICAO="WAQL" Position="+01.7056+114.9714" Elevation="2437">
+			<Runway Name="17" Position="+01.7098+114.9696"/>
+			<Runway Name="35" Position="+01.7017+114.9705"/>
+		</Airport>
+		<Airport ICAO="WAQM" Position="+03.5739+116.6164" Elevation="24">
+			<Runway Name="04" Position="+03.5699+116.6143"/>
+			<Runway Name="22" Position="+03.5791+116.6237"/>
+		</Airport>
+		<Airport ICAO="WAQQ" Position="+03.3267+117.5694" Elevation="40">
+			<Runway Name="06" Position="+03.3198+117.5556"/>
+			<Runway Name="24" Position="+03.3305+117.5729"/>
+		</Airport>
+		<Airport ICAO="WAQT" Position="+02.1536+117.4311" Elevation="33">
+			<Runway Name="01" Position="+02.1378+117.4283"/>
+			<Runway Name="19" Position="+02.1578+117.4331"/>
+		</Airport>
+		<Airport ICAO="WAQU" Position="+03.6108+115.6992" Elevation="2795">
+			<Runway Name="01" Position="+03.6108+115.6992"/>
+			<Runway Name="19" Position="+03.6108+115.6992"/>
+		</Airport>
+		<Airport ICAO="WARA" Position="-07.9294+112.7119" Elevation="1729">
+			<Runway Name="17" Position="-07.9181+112.7117"/>
+			<Runway Name="35" Position="-07.9400+112.7170"/>
+		</Airport>
+		<Airport ICAO="WARC" Position="-07.1942+111.5472" Elevation="141">
+			<Runway Name="08" Position="-07.1963+111.5385"/>
+			<Runway Name="26" Position="-07.1946+111.5520"/>
+		</Airport>
+		<Airport ICAO="WARD" Position="-07.7550+111.9478" Elevation="346">
+			<Runway Name="14" Position="-07.7374+111.9382"/>
+			<Runway Name="32" Position="-07.7618+111.9554"/>
+		</Airport>
+		<Airport ICAO="WARE" Position="-08.2433+113.6961" Elevation="264">
+			<Runway Name="02" Position="-08.2490+113.6920"/>
+			<Runway Name="20" Position="-08.2344+113.6955"/>
+		</Airport>
+		<Airport ICAO="WARI" Position="-07.6100+111.4333" Elevation="361">
+			<Runway Name="17L" Position="-07.6032+111.4340"/>
+			<Runway Name="17R" Position="-07.6033+111.4324"/>
+			<Runway Name="35L" Position="-07.6306+111.4343"/>
+			<Runway Name="35R" Position="-07.6262+111.4356"/>
+		</Airport>
+		<Airport ICAO="WARP" Position="-06.9567+115.9325" Elevation="13">
+			<Runway Name="12" Position="-06.9541+115.9277"/>
+			<Runway Name="30" Position="-06.9589+115.9344"/>
+		</Airport>
+		<Airport ICAO="WARR" Position="-07.3808+112.7864" Elevation="11">
+			<Runway Name="10" Position="-07.3777+112.7735"/>
+			<Runway Name="28" Position="-07.3820+112.8003"/>
+		</Airport>
+		<Airport ICAO="WART" Position="-07.0236+113.8908" Elevation="14">
+			<Runway Name="12" Position="-07.0182+113.8817"/>
+			<Runway Name="30" Position="-07.0266+113.8935"/>
+		</Airport>
+		<Airport ICAO="WARW" Position="-05.7236+112.6767" Elevation="180">
+			<Runway Name="09" Position="-05.7235+112.6749"/>
+			<Runway Name="27" Position="-05.7236+112.6835"/>
+		</Airport>
+		<Airport ICAO="WASA" Position="-01.1597+132.4653" Elevation="1525">
+			<Runway Name="09" Position="-01.1592+132.4604"/>
+			<Runway Name="27" Position="-01.1604+132.4681"/>
+		</Airport>
+		<Airport ICAO="WASF" Position="-02.9194+132.2642" Elevation="426">
+			<Runway Name="10" Position="-02.9199+132.2617"/>
+			<Runway Name="28" Position="-02.9212+132.2724"/>
+		</Airport>
+		<Airport ICAO="WASI" Position="-02.1267+132.1631" Elevation="36">
+			<Runway Name="08" Position="-02.1277+132.1569"/>
+			<Runway Name="26" Position="-02.1272+132.1632"/>
+		</Airport>
+		<Airport ICAO="WASK" Position="-03.6447+133.6956" Elevation="14">
+			<Runway Name="01" Position="-03.6533+133.6935"/>
+			<Runway Name="19" Position="-03.6355+133.6968"/>
+		</Airport>
+		<Airport ICAO="WASN" Position="-00.4319+130.7719" Elevation="19">
+			<Runway Name="18" Position="-00.4174+130.7741"/>
+			<Runway Name="36" Position="-00.4311+130.7729"/>
+		</Airport>
+		<Airport ICAO="WASO" Position="-02.5353+133.4389" Elevation="46">
+			<Runway Name="02" Position="-02.5375+133.4367"/>
+			<Runway Name="20" Position="-02.5267+133.4411"/>
+		</Airport>
+		<Airport ICAO="WASS" Position="-00.8917+131.2869" Elevation="17">
+			<Runway Name="09" Position="-00.8934+131.2777"/>
+			<Runway Name="27" Position="-00.8948+131.3002"/>
+		</Airport>
+		<Airport ICAO="WAST" Position="-01.4456+132.0206" Elevation="139">
+			<Runway Name="13" Position="-01.4431+132.0183"/>
+			<Runway Name="31" Position="-01.4477+132.0239"/>
+		</Airport>
+		<Airport ICAO="WASU" Position="-01.3183+132.2825" Elevation="1391">
+			<Runway Name="06" Position="-01.3191+132.2821"/>
+			<Runway Name="24" Position="-01.3145+132.2919"/>
+		</Airport>
+		<Airport ICAO="WATA" Position="-09.0756+124.9031" Elevation="1025">
+			<Runway Name="08" Position="-09.0759+124.8955"/>
+			<Runway Name="26" Position="-09.0739+124.9099"/>
+		</Airport>
+		<Airport ICAO="WATB" Position="-08.7086+121.0572" Elevation="1454">
+			<Runway Name="11" Position="-08.7054+121.0515"/>
+			<Runway Name="29" Position="-08.7102+121.0653"/>
+		</Airport>
+		<Airport ICAO="WATC" Position="-08.6375+122.2369" Elevation="175">
+			<Runway Name="05" Position="-08.6459+122.2302"/>
+			<Runway Name="23" Position="-08.6330+122.2460"/>
+		</Airport>
+		<Airport ICAO="WATE" Position="-08.8481+121.6633" Elevation="43">
+			<Runway Name="09" Position="-08.8492+121.6534"/>
+			<Runway Name="27" Position="-08.8490+121.6684"/>
+		</Airport>
+		<Airport ICAO="WATG" Position="-08.5986+120.4797" Elevation="3777">
+			<Runway Name="09" Position="-08.5957+120.4714"/>
+			<Runway Name="27" Position="-08.5965+120.4849"/>
+		</Airport>
+		<Airport ICAO="WATK" Position="-09.4122+119.2469" Elevation="157">
+			<Runway Name="10" Position="-09.4073+119.2318"/>
+			<Runway Name="28" Position="-09.4107+119.2525"/>
+		</Airport>
+		<Airport ICAO="WATL" Position="-08.2750+123.0000" Elevation="77">
+			<Runway Name="10" Position="-08.2731+122.9941"/>
+			<Runway Name="28" Position="-08.2755+123.0085"/>
+		</Airport>
+		<Airport ICAO="WATM" Position="-08.1353+124.5944" Elevation="17">
+			<Runway Name="03" Position="-08.1388+124.5930"/>
+			<Runway Name="21" Position="-08.1266+124.6008"/>
+		</Airport>
+		<Airport ICAO="WATO" Position="-08.4864+119.8875" Elevation="238">
+			<Runway Name="17" Position="-08.4687+119.8869"/>
+			<Runway Name="35" Position="-08.4925+119.8901"/>
+		</Airport>
+		<Airport ICAO="WATP" Position="-08.2458+124.2186" Elevation="18">
+			<Runway Name="03" Position="-08.2484+124.2175"/>
+			<Runway Name="21" Position="-08.2411+124.2211"/>
+		</Airport>
+		<Airport ICAO="WATQ" Position="-08.0181+127.1997" Elevation="90">
+			<Runway Name="11" Position="-08.0141+127.1963"/>
+			<Runway Name="29" Position="-08.0174+127.2042"/>
+		</Airport>
+		<Airport ICAO="WATR" Position="-10.7669+123.0742" Elevation="463">
+			<Runway Name="04" Position="-10.7714+123.0711"/>
+			<Runway Name="22" Position="-10.7601+123.0811"/>
+		</Airport>
+		<Airport ICAO="WATS" Position="-10.4939+121.8461" Elevation="69">
+			<Runway Name="07" Position="-10.4936+121.8442"/>
+			<Runway Name="25" Position="-10.4911+121.8522"/>
+		</Airport>
+		<Airport ICAO="WATT" Position="-10.1778+123.6639" Elevation="345">
+			<Runway Name="08" Position="-10.1742+123.6600"/>
+			<Runway Name="26" Position="-10.1689+123.6822"/>
+		</Airport>
+		<Airport ICAO="WATU" Position="-09.6681+120.2989" Elevation="22">
+			<Runway Name="15" Position="-09.6612+120.2976"/>
+			<Runway Name="33" Position="-09.6759+120.3057"/>
+		</Airport>
+		<Airport ICAO="WATW" Position="-08.3664+123.4381" Elevation="43">
+			<Runway Name="02" Position="-08.3668+123.4362"/>
+			<Runway Name="20" Position="-08.3569+123.4410"/>
+		</Airport>
+		<Airport ICAO="WAUA" Position="-01.3861+133.8742" Elevation="6070">
+			<Runway Name="06" Position="-01.3861+133.8742"/>
+			<Runway Name="24" Position="-01.3861+133.8742"/>
+		</Airport>
+		<Airport ICAO="WAUB" Position="-02.1008+133.5136" Elevation="29">
+			<Runway Name="13" Position="-02.1001+133.5137"/>
+			<Runway Name="31" Position="-02.1056+133.5188"/>
+		</Airport>
+		<Airport ICAO="WAUE" Position="-00.4225+132.1869" Elevation="26">
+			<Runway Name="06" Position="-00.4238+132.1811"/>
+			<Runway Name="24" Position="-00.4174+132.1940"/>
+		</Airport>
+		<Airport ICAO="WAUK" Position="-00.8097+133.0553" Elevation="1877">
+			<Runway Name="09" Position="-00.8100+133.0514"/>
+			<Runway Name="27" Position="-00.8108+133.0585"/>
+		</Airport>
+		<Airport ICAO="WAUM" Position="-01.5914+133.2958" Elevation="382">
+			<Runway Name="09" Position="-01.5909+133.2931"/>
+			<Runway Name="27" Position="-01.5913+133.2985"/>
+		</Airport>
+		<Airport ICAO="WAUR" Position="-01.5000+134.1833" Elevation="131">
+			<Runway Name="12" Position="-01.5000+134.1833"/>
+			<Runway Name="30" Position="-01.5000+134.1833"/>
+		</Airport>
+		<Airport ICAO="WAUU" Position="-00.8939+134.0503" Elevation="26">
+			<Runway Name="17" Position="-00.8829+134.0486"/>
+			<Runway Name="35" Position="-00.9010+134.0491"/>
+		</Airport>
+		<Airport ICAO="WAUW" Position="-02.7222+134.5064" Elevation="29">
+			<Runway Name="17" Position="-02.7176+134.5058"/>
+			<Runway Name="35" Position="-02.7231+134.5061"/>
+		</Airport>
+		<Airport ICAO="WAVA" Position="-03.7011+137.9603" Elevation="5898">
+			<Runway Name="09" Position="-03.7024+137.9538"/>
+			<Runway Name="27" Position="-03.7015+137.9609"/>
+		</Airport>
+		<Airport ICAO="WAVB" Position="-03.6848+138.6773" Elevation="4475">
+			<Runway Name="10" Position="-03.6841+138.6741"/>
+			<Runway Name="28" Position="-03.6851+138.6811"/>
+		</Airport>
+		<Airport ICAO="WAVC" Position="-03.7083+138.2003" Elevation="6500">
+			<Runway Name="17" Position="-03.7018+138.1998"/>
+			<Runway Name="35" Position="-03.7092+138.2007"/>
+		</Airport>
+		<Airport ICAO="WAVD" Position="-04.8536+139.4867" Elevation="181">
+			<Runway Name="07" Position="-04.8587+139.4716"/>
+			<Runway Name="25" Position="-04.8525+139.4933"/>
+		</Airport>
+		<Airport ICAO="WAVE" Position="-03.7853+139.3842" Elevation="1498">
+			<Runway Name="03" Position="-03.7893+139.3828"/>
+			<Runway Name="21" Position="-03.7821+139.3865"/>
+		</Airport>
+		<Airport ICAO="WAVG" Position="-03.6866+138.4794" Elevation="5137">
+			<Runway Name="17" Position="-03.6813+138.4787"/>
+			<Runway Name="35" Position="-03.6877+138.4793"/>
+		</Airport>
+		<Airport ICAO="WAVL" Position="-03.7281+138.7108" Elevation="4170">
+			<Runway Name="17" Position="-03.7281+138.7108"/>
+			<Runway Name="35" Position="-03.7281+138.7108"/>
+		</Airport>
+		<Airport ICAO="WAVM" Position="-05.4239+140.4339" Elevation="216">
+			<Runway Name="18" Position="-05.4159+140.4363"/>
+			<Runway Name="36" Position="-05.4247+140.4358"/>
+		</Airport>
+		<Airport ICAO="WAVT" Position="-03.9249+138.4541" Elevation="6898">
+			<Runway Name="12" Position="-03.9240+138.4530"/>
+			<Runway Name="30" Position="-03.9274+138.4581"/>
+		</Airport>
+		<Airport ICAO="WAVV" Position="-04.0975+138.9514" Elevation="5435">
+			<Runway Name="15" Position="-04.0878+138.9475"/>
+			<Runway Name="33" Position="-04.1052+138.9565"/>
+		</Airport>
+		<Airport ICAO="WAWA" Position="-04.1814+121.6147" Elevation="98">
+			<Runway Name="08" Position="-04.1814+121.6147"/>
+			<Runway Name="26" Position="-04.1814+121.6147"/>
+		</Airport>
+		<Airport ICAO="WAWB" Position="-05.4869+122.5694" Elevation="105">
+			<Runway Name="04" Position="-05.4922+122.5645"/>
+			<Runway Name="22" Position="-05.4805+122.5746"/>
+		</Airport>
+		<Airport ICAO="WAWC" Position="-05.7672+123.9189" Elevation="76">
+			<Runway Name="13" Position="-05.7618+123.9136"/>
+			<Runway Name="31" Position="-05.7709+123.9237"/>
+		</Airport>
+		<Airport ICAO="WAWD" Position="-05.2906+123.6361" Elevation="77">
+			<Runway Name="14" Position="-05.2852+123.6306"/>
+			<Runway Name="32" Position="-05.2992+123.6420"/>
+		</Airport>
+		<Airport ICAO="WAWH" Position="-06.1767+120.4372" Elevation="23">
+			<Runway Name="16" Position="-06.1710+120.4351"/>
+			<Runway Name="34" Position="-06.1880+120.4403"/>
+		</Airport>
+		<Airport ICAO="WAWN" Position="-04.4589+120.3069" Elevation="131">
+			<Runway Name="11" Position="-04.4577+120.3055"/>
+			<Runway Name="29" Position="-04.4614+120.3150"/>
+		</Airport>
+		<Airport ICAO="WAWP" Position="-04.3450+121.5222" Elevation="40">
+			<Runway Name="18" Position="-04.3293+121.5245"/>
+			<Runway Name="36" Position="-04.3460+121.5237"/>
+		</Airport>
+		<Airport ICAO="WAWR" Position="-04.7619+122.5700" Elevation="144">
+			<Runway Name="08" Position="-04.7646+122.5589"/>
+			<Runway Name="26" Position="-04.7621+122.5732"/>
+		</Airport>
+		<Airport ICAO="WAWS" Position="-02.5303+121.3558" Elevation="1388">
+			<Runway Name="12" Position="-02.5275+121.3519"/>
+			<Runway Name="30" Position="-02.5333+121.3604"/>
+		</Airport>
+		<Airport ICAO="WAWW" Position="-04.0842+122.4131" Elevation="189">
+			<Runway Name="08" Position="-04.0836+122.4086"/>
+			<Runway Name="26" Position="-04.0796+122.4308"/>
+		</Airport>
+		<Airport ICAO="WAYA" Position="-04.3333+137.8333" Elevation="4922">
+			<Runway Name="18" Position="-04.3333+137.8333"/>
+			<Runway Name="36" Position="-04.3333+137.8333"/>
+		</Airport>
+		<Airport ICAO="WAYB" Position="-03.7397+137.0308" Elevation="7316">
+			<Runway Name="09" Position="-03.7390+137.0279"/>
+			<Runway Name="27" Position="-03.7399+137.0346"/>
+		</Airport>
+		<Airport ICAO="WAYE" Position="-03.9261+136.3803" Elevation="5804">
+			<Runway Name="09" Position="-03.9262+136.3742"/>
+			<Runway Name="27" Position="-03.9252+136.3831"/>
+		</Airport>
+		<Airport ICAO="WAYG" Position="-04.6031+137.6592" Elevation="163">
+			<Runway Name="06" Position="-04.6058+137.6552"/>
+			<Runway Name="24" Position="-04.6029+137.6598"/>
+		</Airport>
+		<Airport ICAO="WAYI" Position="-03.7333+136.8333" Elevation="5098">
+			<Runway Name="15" Position="-03.7333+136.8333"/>
+			<Runway Name="33" Position="-03.7333+136.8333"/>
+		</Airport>
+		<Airport ICAO="WAYJ" Position="-04.2469+137.5953" Elevation="4593">
+			<Runway Name="14" Position="-04.2469+137.5953"/>
+			<Runway Name="32" Position="-04.2469+137.5953"/>
+		</Airport>
+		<Airport ICAO="WAYK" Position="-04.7114+136.4361" Elevation="5">
+			<Runway Name="13" Position="-04.7089+136.4332"/>
+			<Runway Name="31" Position="-04.7126+136.4370"/>
+		</Airport>
+		<Airport ICAO="WAYL" Position="-03.9772+137.6203" Elevation="7985">
+			<Runway Name="07" Position="-03.9770+137.6196"/>
+			<Runway Name="25" Position="-03.9760+137.6249"/>
+		</Airport>
+		<Airport ICAO="WAYM" Position="-03.8239+136.3861" Elevation="5499">
+			<Runway Name="01" Position="-03.8239+136.3861"/>
+			<Runway Name="19" Position="-03.8239+136.3861"/>
+		</Airport>
+		<Airport ICAO="WAYN" Position="-04.8575+137.7011" Elevation="49">
+			<Runway Name="02" Position="-04.8575+137.7011"/>
+			<Runway Name="20" Position="-04.8575+137.7011"/>
+		</Airport>
+		<Airport ICAO="WAYO" Position="-03.9167+136.2167" Elevation="5758">
+			<Runway Name="08" Position="-03.9167+136.2167"/>
+			<Runway Name="26" Position="-03.9167+136.2167"/>
+		</Airport>
+		<Airport ICAO="WAYW" Position="-02.2125+136.4403" Elevation="26">
+			<Runway Name="04" Position="-02.2125+136.4403"/>
+			<Runway Name="22" Position="-02.2125+136.4403"/>
+		</Airport>
+		<Airport ICAO="WAYY" Position="-04.5311+136.8833" Elevation="104">
+			<Runway Name="12" Position="-04.5240+136.8783"/>
+			<Runway Name="30" Position="-04.5354+136.8966"/>
+		</Airport>
+		<Airport ICAO="WI31" Position="+46.4102-091.6537" Elevation="1207">
+			<Runway Name="18" Position="+46.4164-091.6535"/>
+			<Runway Name="36" Position="+46.4037-091.6540"/>
+		</Airport>
+		<Airport ICAO="WI33" Position="+46.1036-091.9024" Elevation="1056">
+			<Runway Name="18" Position="+46.1066-091.9024"/>
+			<Runway Name="36" Position="+46.1005-091.9024"/>
+		</Airport>
+		<Airport ICAO="WI36" Position="+45.8266-089.6201" Elevation="1625">
+			<Runway Name="18" Position="+45.8304-089.6200"/>
+			<Runway Name="36" Position="+45.8232-089.6201"/>
+		</Airport>
+		<Airport ICAO="WI46" Position="+43.8828-088.5399" Elevation="830">
+			<Runway Name="09" Position="+43.8828-088.5426"/>
+			<Runway Name="27" Position="+43.8827-088.5373"/>
+		</Airport>
+		<Airport ICAO="WI49" Position="+44.2861-091.2266" Elevation="864">
+			<Runway Name="09" Position="+44.2866-091.2299"/>
+			<Runway Name="27" Position="+44.2865-091.2217"/>
+		</Airport>
+		<Airport ICAO="WI66" Position="+43.0982-089.7748" Elevation="1101">
+			<Runway Name="15" Position="+43.1000-089.7765"/>
+			<Runway Name="33" Position="+43.0965-089.7732"/>
+		</Airport>
+		<Airport ICAO="WI72" Position="+42.7613-088.0423" Elevation="800">
+			<Runway Name="09" Position="+42.7617-088.0470"/>
+			<Runway Name="27" Position="+42.7610-088.0376"/>
+		</Airport>
+		<Airport ICAO="WI80" Position="+43.7763-090.4143" Elevation="1411">
+			<Runway Name="18" Position="+43.7784-090.4145"/>
+			<Runway Name="36" Position="+43.7742-090.4141"/>
+		</Airport>
+		<Airport ICAO="WI89" Position="+42.5722-088.3673" Elevation="880">
+			<Runway Name="04" Position="+42.5700-088.3699"/>
+			<Runway Name="22" Position="+42.5742-088.3643"/>
+		</Airport>
+		<Airport ICAO="WIBB" Position="+00.4622+101.4453" Elevation="134">
+			<Runway Name="18" Position="+00.4710+101.4448"/>
+			<Runway Name="36" Position="+00.4475+101.4441"/>
+		</Airport>
+		<Airport ICAO="WIBD" Position="+01.6122+101.4333" Elevation="43">
+			<Runway Name="03" Position="+01.6021+101.4295"/>
+			<Runway Name="21" Position="+01.6162+101.4376"/>
+		</Airport>
+		<Airport ICAO="WIBG" Position="+00.8467+100.3703" Elevation="260">
+			<Runway Name="18" Position="+00.8514+100.3702"/>
+			<Runway Name="36" Position="+00.8397+100.3701"/>
+		</Airport>
+		<Airport ICAO="WIBI" Position="+00.2161+103.1647" Elevation="21">
+			<Runway Name="14" Position="+00.2214+103.1610"/>
+			<Runway Name="32" Position="+00.2163+103.1647"/>
+		</Airport>
+		<Airport ICAO="WIBJ" Position="-00.3503+102.3344" Elevation="73">
+			<Runway Name="10" Position="-00.3516+102.3283"/>
+			<Runway Name="28" Position="-00.3536+102.3406"/>
+		</Airport>
+		<Airport ICAO="WIBL" Position="+00.5047+101.9228" Elevation="95">
+			<Runway Name="18" Position="+00.5063+101.9233"/>
+			<Runway Name="36" Position="+00.4913+101.9235"/>
+		</Airport>
+		<Airport ICAO="WIBS" Position="+01.3697+102.1400" Elevation="7">
+			<Runway Name="18" Position="+01.3734+102.1400"/>
+			<Runway Name="36" Position="+01.3662+102.1400"/>
+		</Airport>
+		<Airport ICAO="WICA" Position="-06.6483+108.1542" Elevation="134">
+			<Runway Name="14" Position="-06.6370+108.1568"/>
+			<Runway Name="32" Position="-06.6578+108.1743"/>
+		</Airport>
+		<Airport ICAO="WICC" Position="-06.9019+107.5761" Elevation="2445">
+			<Runway Name="11" Position="-06.8974+107.5667"/>
+			<Runway Name="29" Position="-06.9039+107.5857"/>
+		</Airport>
+		<Airport ICAO="WICD" Position="-06.7564+108.5383" Elevation="90">
+			<Runway Name="04" Position="-06.7614+108.5351"/>
+			<Runway Name="22" Position="-06.7526+108.5427"/>
+		</Airport>
+		<Airport ICAO="WICK" Position="-06.9825+107.5725" Elevation="2200">
+			<Runway Name="13" Position="-06.9802+107.5685"/>
+			<Runway Name="31" Position="-06.9850+107.5762"/>
+		</Airport>
+		<Airport ICAO="WICM" Position="-07.3447+108.2431" Elevation="1097">
+			<Runway Name="15" Position="-07.3419+108.2432"/>
+			<Runway Name="33" Position="-07.3541+108.2509"/>
+		</Airport>
+		<Airport ICAO="WICN" Position="-07.7206+108.4892" Elevation="16">
+			<Runway Name="07" Position="-07.7218+108.4829"/>
+			<Runway Name="25" Position="-07.7180+108.4950"/>
+		</Airport>
+		<Airport ICAO="WIDD" Position="+01.1189+104.1139" Elevation="123">
+			<Runway Name="04" Position="+01.1073+104.1068"/>
+			<Runway Name="22" Position="+01.1346+104.1308"/>
+		</Airport>
+		<Airport ICAO="WIDL" Position="+02.9628+105.7497" Elevation="13">
+			<Runway Name="07" Position="+02.9629+105.7498"/>
+			<Runway Name="25" Position="+02.9661+105.7601"/>
+		</Airport>
+		<Airport ICAO="WIDM" Position="+03.3469+106.2583" Elevation="10">
+			<Runway Name="18" Position="+03.3535+106.2581"/>
+			<Runway Name="36" Position="+03.3428+106.2580"/>
+		</Airport>
+		<Airport ICAO="WIDN" Position="+00.9189+104.5269" Elevation="90">
+			<Runway Name="04" Position="+00.9166+104.5266"/>
+			<Runway Name="22" Position="+00.9302+104.5391"/>
+		</Airport>
+		<Airport ICAO="WIDO" Position="+03.9061+108.3881" Elevation="7">
+			<Runway Name="18" Position="+03.9204+108.3883"/>
+			<Runway Name="36" Position="+03.8972+108.3874"/>
+		</Airport>
+		<Airport ICAO="WIDS" Position="-00.4786+104.5781" Elevation="148">
+			<Runway Name="14" Position="-00.4739+104.5753"/>
+			<Runway Name="32" Position="-00.4844+104.5831"/>
+		</Airport>
+		<Airport ICAO="WIDT" Position="+01.0514+103.3900" Elevation="16">
+			<Runway Name="09" Position="+01.0533+103.3853"/>
+			<Runway Name="27" Position="+01.0525+103.3978"/>
+		</Airport>
+		<Airport ICAO="WIEB" Position="-02.0992+099.7058" Elevation="11">
+			<Runway Name="14" Position="-02.0887+099.6952"/>
+			<Runway Name="32" Position="-02.0997+099.7031"/>
+		</Airport>
+		<Airport ICAO="WIEE" Position="-00.7883+100.2864" Elevation="16">
+			<Runway Name="15" Position="-00.7736+100.2747"/>
+			<Runway Name="33" Position="-00.7982+100.2861"/>
+		</Airport>
+		<Airport ICAO="WIET" Position="-00.8756+100.3506" Elevation="9">
+			<Runway Name="16" Position="-00.8665+100.3490"/>
+			<Runway Name="34" Position="-00.8842+100.3554"/>
+		</Airport>
+		<Airport ICAO="WIGE" Position="-05.3019+102.1831" Elevation="27">
+			<Runway Name="12" Position="-05.3020+102.1830"/>
+			<Runway Name="30" Position="-05.3089+102.1958"/>
+		</Airport>
+		<Airport ICAO="WIGG" Position="-03.8611+102.3394" Elevation="74">
+			<Runway Name="13" Position="-03.8570+102.3318"/>
+			<Runway Name="31" Position="-03.8709+102.3466"/>
+		</Airport>
+		<Airport ICAO="WIGM" Position="-02.5411+101.0886" Elevation="17">
+			<Runway Name="14" Position="-02.5363+101.0832"/>
+			<Runway Name="32" Position="-02.5455+101.0918"/>
+		</Airport>
+		<Airport ICAO="WIHC" Position="-06.3569+106.8969" Elevation="210">
+			<Runway Name="09" Position="-06.3563+106.8979"/>
+			<Runway Name="27" Position="-06.3566+106.9045"/>
+		</Airport>
+		<Airport ICAO="WIHG" Position="-05.6444+106.5625" Elevation="10">
+			<Runway Name="07" Position="-05.6456+106.5582"/>
+			<Runway Name="25" Position="-05.6432+106.5664"/>
+		</Airport>
+		<Airport ICAO="WIHH" Position="-06.2675+106.8864" Elevation="91">
+			<Runway Name="06" Position="-06.2722+106.8788"/>
+			<Runway Name="24" Position="-06.2617+106.9018"/>
+		</Airport>
+		<Airport ICAO="WIHI" Position="-06.4931+105.6656" Elevation="19">
+			<Runway Name="07" Position="-06.4926+105.6669"/>
+			<Runway Name="25" Position="-06.4907+105.6720"/>
+		</Airport>
+		<Airport ICAO="WIHP" Position="-06.3361+106.7647" Elevation="221">
+			<Runway Name="18" Position="-06.3281+106.7652"/>
+			<Runway Name="36" Position="-06.3462+106.7640"/>
+		</Airport>
+		<Airport ICAO="WIII" Position="-06.1236+106.6611" Elevation="34">
+			<Runway Name="06" Position="-06.1139+106.6446"/>
+			<Runway Name="07L" Position="-06.1210+106.6388"/>
+			<Runway Name="07R" Position="-06.1426+106.6437"/>
+			<Runway Name="24" Position="-06.1038+106.6698"/>
+			<Runway Name="25L" Position="-06.1303+106.6744"/>
+			<Runway Name="25R" Position="-06.1090+106.6691"/>
+		</Airport>
+		<Airport ICAO="WIJB" Position="-01.5433+102.1786" Elevation="192">
+			<Runway Name="13" Position="-01.5351+102.1728"/>
+			<Runway Name="31" Position="-01.5464+102.1880"/>
+		</Airport>
+		<Airport ICAO="WIJI" Position="-02.0911+101.4631" Elevation="2607">
+			<Runway Name="12" Position="-02.0901+101.4628"/>
+			<Runway Name="30" Position="-02.0977+101.4772"/>
+		</Airport>
+		<Airport ICAO="WIJJ" Position="-01.6356+103.6431" Elevation="92">
+			<Runway Name="13" Position="-01.6323+103.6374"/>
+			<Runway Name="31" Position="-01.6473+103.6555"/>
+		</Airport>
+		<Airport ICAO="WIKK" Position="-02.1625+106.1381" Elevation="108">
+			<Runway Name="16" Position="-02.1513+106.1360"/>
+			<Runway Name="34" Position="-02.1709+106.1413"/>
+		</Airport>
+		<Airport ICAO="WIKT" Position="-02.7453+107.7531" Elevation="176">
+			<Runway Name="18" Position="-02.7328+107.7538"/>
+			<Runway Name="36" Position="-02.7553+107.7553"/>
+		</Airport>
+		<Airport ICAO="WILB" Position="-05.9186+104.5617" Elevation="7">
+			<Runway Name="15" Position="-05.9150+104.5547"/>
+			<Runway Name="33" Position="-05.9271+104.5612"/>
+		</Airport>
+		<Airport ICAO="WILG" Position="-04.6833+105.2667" Elevation="50">
+			<Runway Name="09" Position="-04.6833+105.2667"/>
+			<Runway Name="27" Position="-04.6833+105.2667"/>
+		</Airport>
+		<Airport ICAO="WILL" Position="-05.2406+105.1756" Elevation="273">
+			<Runway Name="14" Position="-05.2375+105.1748"/>
+			<Runway Name="32" Position="-05.2566+105.1910"/>
+		</Airport>
+		<Airport ICAO="WILM" Position="-04.6000+105.2500" Elevation="63">
+			<Runway Name="07" Position="-04.6140+105.2247"/>
+			<Runway Name="25" Position="-04.6090+105.2396"/>
+		</Airport>
+		<Airport ICAO="WILP" Position="-05.2117+103.9394" Elevation="118">
+			<Runway Name="12" Position="-05.2084+103.9315"/>
+			<Runway Name="30" Position="-05.2140+103.9418"/>
+		</Airport>
+		<Airport ICAO="WILW" Position="-05.0489+105.6522" Elevation="965">
+			<Runway Name="12" Position="-05.0490+105.6516"/>
+			<Runway Name="30" Position="-05.0529+105.6583"/>
+		</Airport>
+		<Airport ICAO="WIMA" Position="+05.2289+096.9514" Elevation="98">
+			<Runway Name="06" Position="+05.2228+096.9429"/>
+			<Runway Name="24" Position="+05.2307+096.9577"/>
+		</Airport>
+		<Airport ICAO="WIMB" Position="+01.1656+097.7061" Elevation="28">
+			<Runway Name="09" Position="+01.1667+097.6963"/>
+			<Runway Name="27" Position="+01.1659+097.7165"/>
+		</Airport>
+		<Airport ICAO="WIME" Position="+01.3989+099.4306" Elevation="952">
+			<Runway Name="11" Position="+01.4026+099.4247"/>
+			<Runway Name="29" Position="+01.3977+099.4363"/>
+		</Airport>
+		<Airport ICAO="WIMG" Position="+03.9439+097.3636" Elevation="3509">
+			<Runway Name="13" Position="+03.9486+097.3563"/>
+			<Runway Name="31" Position="+03.9436+097.3618"/>
+		</Airport>
+		<Airport ICAO="WIMI" Position="+02.2725+097.9608" Elevation="14">
+			<Runway Name="12" Position="+02.2722+097.9633"/>
+			<Runway Name="30" Position="+02.2669+097.9727"/>
+		</Airport>
+		<Airport ICAO="WIML" Position="+02.4089+096.3261" Elevation="18">
+			<Runway Name="07" Position="+02.4084+096.3206"/>
+			<Runway Name="25" Position="+02.4143+096.3348"/>
+		</Airport>
+		<Airport ICAO="WIMM" Position="+03.6422+098.8853" Elevation="23">
+			<Runway Name="05" Position="+03.6259+098.8586"/>
+			<Runway Name="23" Position="+03.6498+098.8825"/>
+		</Airport>
+		<Airport ICAO="WIMN" Position="+02.2611+098.9947" Elevation="4721">
+			<Runway Name="09" Position="+02.2602+098.9743"/>
+			<Runway Name="27" Position="+02.2591+098.9981"/>
+		</Airport>
+		<Airport ICAO="WIMO" Position="-00.0197+098.3008" Elevation="7">
+			<Runway Name="06" Position="-00.0212+098.2955"/>
+			<Runway Name="24" Position="-00.0159+098.3068"/>
+		</Airport>
+		<Airport ICAO="WIMP" Position="+02.6019+098.9639" Elevation="4234">
+			<Runway Name="14" Position="+02.6091+098.9566"/>
+			<Runway Name="32" Position="+02.5978+098.9660"/>
+		</Airport>
+		<Airport ICAO="WIMS" Position="+01.5536+098.8939" Elevation="42">
+			<Runway Name="12" Position="+01.5630+098.8786"/>
+			<Runway Name="30" Position="+01.5519+098.8949"/>
+		</Airport>
+		<Airport ICAO="WIMT" Position="+03.1708+097.2886" Elevation="13">
+			<Runway Name="14" Position="+03.1734+097.2847"/>
+			<Runway Name="32" Position="+03.1653+097.2916"/>
+		</Airport>
+		<Airport ICAO="WIMU" Position="+03.3922+097.8650" Elevation="414">
+			<Runway Name="15" Position="+03.3971+097.8599"/>
+			<Runway Name="33" Position="+03.3859+097.8676"/>
+		</Airport>
+		<Airport ICAO="WIOA" Position="-00.0500+111.1167" Elevation="656">
+			<Runway Name="15" Position="-00.0500+111.1167"/>
+			<Runway Name="33" Position="-00.0500+111.1167"/>
+		</Airport>
+		<Airport ICAO="WIOC" Position="-00.6667+110.4833" Elevation="1148">
+			<Runway Name="08" Position="-00.6667+110.4833"/>
+			<Runway Name="26" Position="-00.6667+110.4833"/>
+		</Airport>
+		<Airport ICAO="WIOE" Position="-00.3333+112.1667" Elevation="820">
+			<Runway Name="06" Position="-00.3333+112.1667"/>
+			<Runway Name="24" Position="-00.3333+112.1667"/>
+		</Airport>
+		<Airport ICAO="WIOF" Position="-00.5833+110.4667" Elevation="984">
+			<Runway Name="08" Position="-00.5833+110.4667"/>
+			<Runway Name="26" Position="-00.5833+110.4667"/>
+		</Airport>
+		<Airport ICAO="WIOG" Position="-00.3481+111.7503" Elevation="132">
+			<Runway Name="10" Position="-00.3477+111.7405"/>
+			<Runway Name="28" Position="-00.3495+111.7512"/>
+		</Airport>
+		<Airport ICAO="WIOK" Position="-01.8161+109.9619" Elevation="15">
+			<Runway Name="17" Position="-01.8106+109.9625"/>
+			<Runway Name="35" Position="-01.8231+109.9643"/>
+		</Airport>
+		<Airport ICAO="WIOL" Position="+00.7833+113.6667" Elevation="1969">
+			<Runway Name="17" Position="+00.7833+113.6667"/>
+			<Runway Name="35" Position="+00.7833+113.6667"/>
+		</Airport>
+		<Airport ICAO="WIOO" Position="-00.1456+109.4036" Elevation="8">
+			<Runway Name="15" Position="-00.1413+109.4001"/>
+			<Runway Name="33" Position="-00.1631+109.4089"/>
+		</Airport>
+		<Airport ICAO="WIOP" Position="+00.8383+112.9356" Elevation="110">
+			<Runway Name="10" Position="+00.8369+112.9327"/>
+			<Runway Name="28" Position="+00.8322+112.9483"/>
+		</Airport>
+		<Airport ICAO="WIOR" Position="-00.4167+110.4667" Elevation="656">
+			<Runway Name="01" Position="-00.4167+110.4667"/>
+			<Runway Name="19" Position="-00.4167+110.4667"/>
+		</Airport>
+		<Airport ICAO="WIOS" Position="-00.0417+111.4564" Elevation="97">
+			<Runway Name="09" Position="-00.0452+111.4487"/>
+			<Runway Name="27" Position="-00.0452+111.4650"/>
+		</Airport>
+		<Airport ICAO="WIOY" Position="+00.8833+109.8333" Elevation="1312">
+			<Runway Name="07" Position="+00.8833+109.8333"/>
+			<Runway Name="25" Position="+00.8833+109.8333"/>
+		</Airport>
+		<Airport ICAO="WIPB" Position="-03.2842+102.9142" Elevation="325">
+			<Runway Name="02" Position="-03.2972+102.9115"/>
+			<Runway Name="20" Position="-03.2781+102.9177"/>
+		</Airport>
+		<Airport ICAO="WIPD" Position="-04.8000+103.9500" Elevation="2133">
+			<Runway Name="16" Position="-04.8000+103.9500"/>
+			<Runway Name="34" Position="-04.8000+103.9500"/>
+		</Airport>
+		<Airport ICAO="WIPO" Position="-04.3939+104.4028" Elevation="348">
+			<Runway Name="03" Position="-04.4001+104.3967"/>
+			<Runway Name="21" Position="-04.3835+104.4059"/>
+		</Airport>
+		<Airport ICAO="WIPP" Position="-02.9003+104.7000" Elevation="49">
+			<Runway Name="11" Position="-02.8922+104.6854"/>
+			<Runway Name="29" Position="-02.9026+104.7103"/>
+		</Airport>
+		<Airport ICAO="WIPY" Position="-04.0247+103.3786" Elevation="2093">
+			<Runway Name="06" Position="-04.0256+103.3737"/>
+			<Runway Name="24" Position="-04.0196+103.3842"/>
+		</Airport>
+		<Airport ICAO="WIRR" Position="-06.2933+106.5681" Elevation="140">
+			<Runway Name="04" Position="-06.2952+106.5678"/>
+			<Runway Name="12" Position="-06.2880+106.5608"/>
+			<Runway Name="22" Position="-06.2848+106.5778"/>
+			<Runway Name="30" Position="-06.2961+106.5751"/>
+		</Airport>
+		<Airport ICAO="WISA" Position="+01.0006+109.0464" Elevation="10">
+			<Runway Name="11" Position="+00.9992+109.0486"/>
+			<Runway Name="29" Position="+00.9970+109.0553"/>
+		</Airport>
+		<Airport ICAO="WITC" Position="+04.0481+096.2500" Elevation="6">
+			<Runway Name="14" Position="+04.0471+096.2480"/>
+			<Runway Name="32" Position="+04.0349+096.2587"/>
+		</Airport>
+		<Airport ICAO="WITK" Position="+04.7233+096.8481" Elevation="4629">
+			<Runway Name="09" Position="+04.7211+096.8380"/>
+			<Runway Name="27" Position="+04.7212+096.8583"/>
+		</Airport>
+		<Airport ICAO="WITL" Position="+05.0731+097.2553" Elevation="28">
+			<Runway Name="16" Position="+05.0739+097.2569"/>
+			<Runway Name="34" Position="+05.0647+097.2611"/>
+		</Airport>
+		<Airport ICAO="WITN" Position="+05.8764+095.3375" Elevation="433">
+			<Runway Name="10" Position="+05.8759+095.3311"/>
+			<Runway Name="28" Position="+05.8736+095.3477"/>
+		</Airport>
+		<Airport ICAO="WITT" Position="+05.5169+095.4200" Elevation="69">
+			<Runway Name="17" Position="+05.5391+095.4171"/>
+			<Runway Name="35" Position="+05.5125+095.4226"/>
+		</Airport>
+	</Airports>
 </Airspace>

@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 import os
 import xml.dom.minidom
+import re
 
 def format_xml(element):
     dom = xml.dom.minidom.parseString(ET.tostring(element, 'utf-8')) 
@@ -19,23 +20,25 @@ procedure_to_runway = {}
 for filename in os.listdir('Navdata/Proc/'):
     if filename.startswith(('WI', 'WA')) and filename.endswith('.txt'):
         airport_code = filename[:-4]
-        airport = ET.SubElement(system_runways, 'Airport', Name=airport_code)
         runways = {} 
+        sid_exists = False
+        airport = None  
         with open(f'Navdata/Proc/{filename}', 'r') as f:
             for line in f:
                 data = line.strip().split(',')
                 if len(data) < 2:  
                     continue
-                if data[0] == 'SID':
+                if data[0] in ['SID', 'STAR']:
+                    if not airport: 
+                        airport = ET.SubElement(system_runways, 'Airport', Name=airport_code)
                     if data[2] not in runways:
-                        runways[data[2]] = ET.SubElement(airport, 'Runway', Name=data[2], DataRunway=data[2])
-                    ET.SubElement(runways[data[2]], 'SID', Name=data[1])
-                    procedure_to_runway[data[1]] = data[2] 
-                elif data[0] == 'STAR':
-                    if data[2] not in runways:
-                        runways[data[2]] = ET.SubElement(airport, 'Runway', Name=data[2], DataRunway=data[2])
-                    ET.SubElement(runways[data[2]], 'STAR', Name=data[1])
-                    procedure_to_runway[data[1]] = data[2]  
+                        if re.match(r'^\d{1,2}[A-Z]?$', data[2]):
+                            runways[data[2]] = ET.SubElement(airport, 'Runway', Name=data[2], DataRunway=data[2])
+                    if data[2] in runways: 
+                        # if airport_code == 'WIII' and data[2] in ['06', '24']:
+                        #     continue
+                        ET.SubElement(runways[data[2]], data[0], Name=data[1])
+                        procedure_to_runway[data[1]] = data[2]  
 
 sidstars = ET.SubElement(root, 'SIDSTARs')
 
@@ -119,6 +122,48 @@ for filename in os.listdir('Navdata/Proc/'):
                         ET.SubElement(procedure, 'Route').text = waypoint['name']
                     else:
                         ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
+
+def format_position(lat, lon):
+    lat_sign = '+' if lat >= 0 else '-'
+    lon_sign = '+' if lon >= 0 else '-'
+    lat = abs(lat)
+    lon = abs(lon)
+    lat_str = f"{lat_sign}{lat:02.4f}".zfill(8)
+    lon_str = f"{lon_sign}{lon:03.4f}".zfill(9)
+    return f"{lat_str}{lon_str}"
+
+airports = ET.SubElement(root, 'Airports')
+airport_dict = {}
+
+with open('Navdata/Airports.txt', 'r') as f:
+    for line in f:
+        data = line.strip().split(',')
+        if len(data) < 5:  
+            continue
+        record_type, code, *_ = data
+        if record_type == 'A':
+            airport_code = code
+            _, _, _, lat, lon, elevation, *_ = data
+            try:
+                float_lat = float(lat)
+                float_lon = float(lon)
+            except ValueError:
+                continue
+            if airport_code.startswith(('WI', 'WA')):  
+                position = format_position(float_lat, float_lon)
+                airport = ET.SubElement(airports, 'Airport', ICAO=airport_code, Position=position, Elevation=elevation)
+                airport_dict[airport_code] = airport
+        elif record_type == 'R':
+            _, runway_name, _, _, _, _, _, _, lat, lon, *_ = data
+            try:
+                float_lat = float(lat)
+                float_lon = float(lon)
+            except ValueError:
+                continue
+            position = format_position(float_lat, float_lon)
+            airport = airport_dict.get(airport_code)  # Use airport_code instead of runway_code
+            if airport is not None:
+                ET.SubElement(airport, 'Runway', Name=runway_name, Position=format_position(float_lat, float_lon))
 
 pretty_xml = format_xml(root)
 with open('Airspace.xml', 'w') as f:
