@@ -51,7 +51,6 @@ for filename in os.listdir('Navdata/Proc/'):
         airport = system_runways.find(f"./Airport[@Name='{airport_code}']")
         sids = {}
         stars = {}
-        approaches = {}
         current_procedure = None
         current_dict = None
         if airport is not None:
@@ -71,10 +70,6 @@ for filename in os.listdir('Navdata/Proc/'):
                     elif data[0] == 'STAR':
                         current_procedure = data[1]
                         current_dict = stars
-                        current_dict[current_procedure] = []
-                    elif data[0] == 'APP':
-                        current_procedure = data[1]
-                        current_dict = approaches
                         current_dict[current_procedure] = []
                     elif current_procedure and data[0] in ['TF', 'CA', 'CF', 'DF', 'FA', 'FC', 'FD', 'FM', 'HA', 'HF', 'HM', 'IF', 'RF', 'VA', 'VD', 'VI', 'VM', 'VR', 'HF', 'DF']:
                         if not data[1].isdigit():
@@ -115,16 +110,6 @@ for filename in os.listdir('Navdata/Proc/'):
                         if waypoint['type'] != 'TF' and waypoint['name'] not in added_transitions:
                             ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
                             added_transitions.add(waypoint['name'])
-            for procedure_name, waypoints in approaches.items():
-                runways = procedure_to_runway.get(procedure_name, 'Unknown')
-                if runways == 'ALL':
-                    runways = ','.join(valid_runways)
-                procedure = ET.SubElement(sidstars, 'Approach', Name=procedure_name, Airport=airport_code, Runway=runways)
-                for waypoint in waypoints:
-                    if waypoint['type'] == 'TF':
-                        ET.SubElement(procedure, 'Route').text = waypoint['name']
-                    else:
-                        ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
 
 def format_position(lat, lon):
     lat_sign = '+' if lat >= 0 else '-'
