@@ -15,6 +15,9 @@ root = ET.Element('{http://www.w3.org/2001/XMLSchema-instance}Airspace')
 
 system_runways = ET.SubElement(root, 'SystemRunways')
 
+lat_range = (-13, +7)
+lon_range = (+91, +142)
+
 procedure_to_runway = {}
 
 for filename in os.listdir('Navdata/Proc/'):
@@ -165,10 +168,6 @@ with open('Navdata/Airports.txt', 'r') as f:
             if airport is not None:
                 ET.SubElement(airport, 'Runway', Name=runway_name, Position=format_position(float_lat, float_lon))
 
-# Define the latitude and longitude range
-lat_range = (-13, +7)
-lon_range = (+91, +142)
-
 airways_dict = {}
 
 with open('Navdata/ATS.txt', 'r') as f:
@@ -180,30 +179,29 @@ with open('Navdata/ATS.txt', 'r') as f:
             continue
         if data[0] == 'A':
             if airway_name is not None and waypoints:
-                # If the airway already exists in the dictionary and has fewer waypoints, replace it
                 if airway_name in airways_dict and len(airways_dict[airway_name]) < len(waypoints):
                     airways_dict[airway_name] = waypoints
-                # If the airway does not exist in the dictionary, add it
                 elif airway_name not in airways_dict:
                     airways_dict[airway_name] = waypoints
                 waypoints = []
             airway_name = data[1]
         elif data[0] == 'S' and airway_name is not None:
             waypoint = data[1]
+            next_waypoint = data[4]
             lat = float(data[2])
             lon = float(data[3])
-            # Check if the waypoint is within the specified range
             if lat_range[0] <= lat <= lat_range[1] and lon_range[0] <= lon <= lon_range[1]:
                 waypoints.append(waypoint)
+            lat_next = float(data[5])
+            lon_next = float(data[6])
+            if lat_range[0] <= lat_next <= lat_range[1] and lon_range[0] <= lon_next <= lon_range[1]:
+                waypoints.append(next_waypoint)
     if airway_name is not None and waypoints:
-        # If the airway already exists in the dictionary and has fewer waypoints, replace it
         if airway_name in airways_dict and len(airways_dict[airway_name]) < len(waypoints):
             airways_dict[airway_name] = waypoints
-        # If the airway does not exist in the dictionary, add it
         elif airway_name not in airways_dict:
             airways_dict[airway_name] = waypoints
 
-# Create the XML structure
 airways = ET.SubElement(root, 'Airways')
 for airway_name, waypoints in airways_dict.items():
     airway = ET.SubElement(airways, 'Airway', Name=airway_name)
@@ -225,6 +223,8 @@ with open('Navdata/Waypoints.txt', 'r') as f:
             point = ET.SubElement(intersections, 'Point', Name=name, Type="Fix")
             point.text = format_position(lat, lon)
 
+navaids_set = set()
+
 with open('Navdata/Navaids.txt', 'r') as f:
     for line in f:
         data = line.strip().split(',')
@@ -237,8 +237,10 @@ with open('Navdata/Navaids.txt', 'r') as f:
         lat_range = (-13, +7) 
         lon_range = (+91, +142) 
         if lat_range[0] <= lat <= lat_range[1] and lon_range[0] <= lon <= lon_range[1]:
-            point = ET.SubElement(intersections, 'Point', Name=name, Type="Navaid", NavaidType="None", Frequency=frequency)
-            point.text = format_position(lat, lon)
+            if (name, frequency, lat, lon) not in navaids_set:
+                point = ET.SubElement(intersections, 'Point', Name=name, Type="Navaid", NavaidType="None", Frequency=frequency)
+                point.text = format_position(lat, lon)
+                navaids_set.add((name, frequency, lat, lon))  
 
 pretty_xml = format_xml(root)
 with open('Airspace.xml', 'w') as f:
