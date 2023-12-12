@@ -2017,6 +2017,14 @@
 			<Route Runway="21">DUKUG/WAIDI/ARAYA/IKOWA/GAMAL</Route>
 			<Transition Name="YANKA">YANKA</Transition>
 		</SID>
+		<SID Name="GAMA1E" Airport="WAAA" Runways="31">
+			<Route Runway="23">GAMAL</Route>
+			<Transition Name="MKS">MKS</Transition>
+		</SID>
+		<SID Name="GAMA1F" Airport="WAAA" Runways="31">
+			<Route Runway="05">GAMAL</Route>
+			<Transition Name="MKS">MKS</Transition>
+		</SID>
 		<SID Name="GURN1A" Airport="WAAA" Runways="03">
 			<Route Runway="03">TANTI/WICAK/ENSAG/GURNI</Route>
 			<Transition Name="0">0</Transition>
@@ -2263,6 +2271,14 @@
 			<Transition Name="NETTO">NETTO</Transition>
 			<Transition Name="NIVEK">NIVEK</Transition>
 		</STAR>
+		<STAR Name="NIVE1E" Airport="WAAA" Runways="13">
+			<Route Runway="15">MKS</Route>
+			<Transition Name="NIVEK">NIVEK</Transition>
+		</STAR>
+		<STAR Name="NIVE1E" Airport="WAAA" Runways="31">
+			<Route Runway="15">MKS</Route>
+			<Transition Name="NIVEK">NIVEK</Transition>
+		</STAR>
 		<STAR Name="NUKP1C" Airport="WAAA" Runways="03">
 			<Route Runway="03">SEDSA/SAFRU/ALVIA/EROEL/ALEAS/OLVAS</Route>
 			<Transition Name="NUKPO">NUKPO</Transition>
@@ -2461,6 +2477,18 @@
 		</SID>
 		<SID Name="NOBY1E" Airport="WABB" Runways="29">
 			<Route Runway="29">NOBBY</Route>
+			<Transition Name="BIK">BIK</Transition>
+		</SID>
+		<SID Name="ONTA1A" Airport="WABB" Runways="11">
+			<Route Runway="17">ONTAL</Route>
+			<Transition Name="BIK">BIK</Transition>
+		</SID>
+		<SID Name="ONTA1B" Airport="WABB" Runways="11">
+			<Route Runway="35">ONTAL</Route>
+			<Transition Name="BIK">BIK</Transition>
+		</SID>
+		<SID Name="ONTA1C" Airport="WABB" Runways="29">
+			<Route Runway="17">ONTAL</Route>
 			<Transition Name="BIK">BIK</Transition>
 		</SID>
 		<SID Name="ONTA1D" Airport="WABB" Runways="29">
@@ -3156,6 +3184,19 @@
 			<Route Runway="14">FORMY</Route>
 			<Transition Name="AREXI">AREXI</Transition>
 		</SID>
+		<SID Name="HALM1K" Airport="WAEE" Runways="14">
+			<Route Runway="18">LETVO/HALMO</Route>
+			<Transition Name="D130J">D130J</Transition>
+			<Transition Name="TRN">TRN</Transition>
+		</SID>
+		<SID Name="HALM1M" Airport="WAEE" Runways="14">
+			<Route Runway="18">IPNIS/HALMO</Route>
+			<Transition Name="UBLEL">UBLEL</Transition>
+		</SID>
+		<SID Name="HALM1N" Airport="WAEE" Runways="32">
+			<Route Runway="36">IPNIS/HALMO</Route>
+			<Transition Name="UBLEL">UBLEL</Transition>
+		</SID>
 		<SID Name="KUPA1A" Airport="WAEE" Runways="14">
 			<Route Runway="14">IPNIS/ERVAV/UXALU/UDIBI/KUPAL</Route>
 			<Transition Name="UBLEL">UBLEL</Transition>
@@ -3221,6 +3262,10 @@
 			<Route Runway="32">RURBI/VENED/MABEX</Route>
 			<Transition Name="OSRAL">OSRAL</Transition>
 		</STAR>
+		<STAR Name="SOSO1H" Airport="WAEE" Runways="32">
+			<Route Runway="18">UPNOP/LETRI/OMDUV/MABEX</Route>
+			<Transition Name="SOSOK">SOSOK</Transition>
+		</STAR>
 		<STAR Name="TAVU1A" Airport="WAEE" Runways="32">
 			<Route Runway="32">AVKAK/OMDUV/MABEX</Route>
 			<Transition Name="TAVUD">TAVUD</Transition>
@@ -3259,6 +3304,10 @@
 		<STAR Name="MUDA1B" Airport="WAEL" Runways="06">
 			<Route Runway="06">AKOTO</Route>
 			<Transition Name="MUDAL">MUDAL</Transition>
+		</STAR>
+		<STAR Name="RUMB1H" Airport="WAEL" Runways="06">
+			<Route Runway="18">AKOTO</Route>
+			<Transition Name="RUMBO">RUMBO</Transition>
 		</STAR>
 		<STAR Name="TRN1A" Airport="WAEL" Runways="06">
 			<Route Runway="06">AKOTO</Route>
@@ -3605,6 +3654,14 @@
 		<STAR Name="HAMO1F" Airport="WAGG" Runways="34">
 			<Route Runway="34">PKY/DABEP</Route>
 			<Transition Name="HAMOL">HAMOL</Transition>
+		</STAR>
+		<STAR Name="IKAP1E" Airport="WAGG" Runways="16">
+			<Route Runway="28">ESKIL/OLVUM/DUMOM/LIKLO/ANBER/AKDOK/LERBA</Route>
+			<Transition Name="IKAPI">IKAPI</Transition>
+		</STAR>
+		<STAR Name="IKAP1F" Airport="WAGG" Runways="34">
+			<Route Runway="10">ESKIL/OLVUM/DUMOM/VEBKA/DABEP</Route>
+			<Transition Name="IKAPI">IKAPI</Transition>
 		</STAR>
 		<STAR Name="LAMU1J" Airport="WAGG" Runways="34">
 			<Route Runway="34">PKY/DABEP</Route>
@@ -4326,6 +4383,11 @@
 			<Route Runway="13">AVBOD/ADMOB/KIDET/KURUS</Route>
 			<Transition Name="0">0</Transition>
 			<Transition Name="AVKAT">AVKAT</Transition>
+		</SID>
+		<SID Name="KURU1B" Airport="WAHS" Runways="31">
+			<Route Runway="24">KURUS</Route>
+			<Transition Name="0">0</Transition>
+			<Transition Name="KIDET">KIDET</Transition>
 		</SID>
 		<SID Name="PURW1E" Airport="WAHS" Runways="13">
 			<Route Runway="13">PURWO</Route>
@@ -7258,6 +7320,16 @@
 			<Transition Name="0">0</Transition>
 			<Transition Name="JITLM">JITLM</Transition>
 		</SID>
+		<SID Name="KIRD1C" Airport="WIDD" Runways="04">
+			<Route Runway="16">TPG/KIRDA</Route>
+			<Transition Name="0">0</Transition>
+			<Transition Name="D294P">D294P</Transition>
+		</SID>
+		<SID Name="KIRD1D" Airport="WIDD" Runways="22">
+			<Route Runway="34">TPG/KIRDA</Route>
+			<Transition Name="0">0</Transition>
+			<Transition Name="D294P">D294P</Transition>
+		</SID>
 		<SID Name="NE1C" Airport="WIDD" Runways="04">
 			<Route Runway="04">TPG/NE</Route>
 			<Transition Name="0">0</Transition>
@@ -7387,6 +7459,16 @@
 			<Route Runway="22">TUSNU</Route>
 			<Transition Name="0">0</Transition>
 			<Transition Name="JITLM">JITLM</Transition>
+		</SID>
+		<SID Name="KIRD1A" Airport="WIDN" Runways="04">
+			<Route Runway="16">KIRDA</Route>
+			<Transition Name="0">0</Transition>
+			<Transition Name="TPG">TPG</Transition>
+		</SID>
+		<SID Name="KIRD1B" Airport="WIDN" Runways="22">
+			<Route Runway="34">KIRDA</Route>
+			<Transition Name="0">0</Transition>
+			<Transition Name="TPG">TPG</Transition>
 		</SID>
 		<SID Name="NE1A" Airport="WIDN" Runways="04">
 			<Route Runway="04">NE</Route>
@@ -7941,6 +8023,10 @@
 		</SID>
 		<SID Name="REND1H" Airport="WIHH" Runways="24">
 			<Route Runway="24">UGRUT/ESDUR/BIGRU/PW/POMUB/RENDA</Route>
+			<Transition Name="NUMLI">NUMLI</Transition>
+		</SID>
+		<SID Name="RIMT1K" Airport="WIHH" Runways="24">
+			<Route Runway="32">UXEBI/OSTEN/MUKUD/PARBA/KIKIB/RIMTI</Route>
 			<Transition Name="NUMLI">NUMLI</Transition>
 		</SID>
 		<SID Name="RIMT1L" Airport="WIHH" Runways="06">
@@ -8662,6 +8748,14 @@
 			<Route Runway="31">PARDI</Route>
 			<Transition Name="JMB">JMB</Transition>
 		</SID>
+		<SID Name="PLB1E" Airport="WIJJ" Runways="13">
+			<Route Runway="16">PLB</Route>
+			<Transition Name="JMB">JMB</Transition>
+		</SID>
+		<SID Name="PLB1F" Airport="WIJJ" Runways="31">
+			<Route Runway="34">PLB</Route>
+			<Transition Name="JMB">JMB</Transition>
+		</SID>
 		<STAR Name="IGLU1C" Airport="WIJJ" Runways="13">
 			<Route Runway="13">D273S/AVPEG</Route>
 			<Transition Name="IGLUP">IGLUP</Transition>
@@ -8693,6 +8787,10 @@
 		<STAR Name="NIPE1D" Airport="WIJJ" Runways="31">
 			<Route Runway="31">JMB/OLVOD</Route>
 			<Transition Name="NIPES">NIPES</Transition>
+		</STAR>
+		<STAR Name="PLB1G" Airport="WIJJ" Runways="13">
+			<Route Runway="16">JMB/AVPEG</Route>
+			<Transition Name="PLB">PLB</Transition>
 		</STAR>
 		<STAR Name="PLB1H" Airport="WIJJ" Runways="31">
 			<Route Runway="31">D141X/OLVOD</Route>

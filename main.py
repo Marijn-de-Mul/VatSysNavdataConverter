@@ -85,7 +85,7 @@ for filename in os.listdir('Navdata/Proc/'):
                             continue
                         if not re.match(r'^\d{1,2}[A-Z]?$', data[2]): 
                             continue
-                        current_procedure = data[1]
+                        current_procedure = (airport_code, data[1])
                         current_runway = data[2]
                         current_dict = sids if data[0] == 'SID' else stars
                         current_dict.setdefault(current_procedure, {})[current_runway] = []
@@ -107,9 +107,8 @@ for filename in os.listdir('Navdata/Proc/'):
                         if not data[1].isdigit():
                             approaches[current_approach]['route'].append({'type': data[0], 'name': data[1]})
 
-            for procedure_name, runways in sids.items():
-                if procedure_name in valid_procedures:
-                    for runway, waypoints in runways.items():
+            for (airport_code, procedure_name), runways in sids.items():
+                for runway, waypoints in runways.items():
                         procedure = ET.SubElement(sidstars, 'SID', Name=procedure_name, Airport=airport_code, Runways=runway)
                         waypoint_names = [waypoint['name'] for waypoint in waypoints if waypoint['type'] == 'TF']
                         if waypoint_names:
@@ -119,9 +118,8 @@ for filename in os.listdir('Navdata/Proc/'):
                             if waypoint['type'] != 'TF' and waypoint['name'] not in added_transitions:
                                 ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
                                 added_transitions.add(waypoint['name'])
-            for procedure_name, runways in stars.items():
-                if procedure_name in valid_procedures:
-                    for runway, waypoints in runways.items():
+            for (airport_code, procedure_name), runways in stars.items():
+                for runway, waypoints in runways.items():
                         procedure = ET.SubElement(sidstars, 'STAR', Name=procedure_name, Airport=airport_code, Runways=runway)
                         waypoint_names = [waypoint['name'] for waypoint in waypoints if waypoint['type'] == 'TF']
                         if waypoint_names:
