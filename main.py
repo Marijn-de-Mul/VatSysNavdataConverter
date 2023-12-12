@@ -1,22 +1,31 @@
+# Libraries
 import xml.etree.ElementTree as ET
 import os
 import xml.dom.minidom
 import re
 
-def format_xml(element):
-    dom = xml.dom.minidom.parseString(ET.tostring(element, 'utf-8')) 
-    pretty_xml = dom.toprettyxml()  
-    return pretty_xml
+# Configuration
+lat_range = (-13, +7) 
+lon_range = (+91, +142) 
 
+# ET Initialization
 ET.register_namespace('', "http://www.w3.org/2001/XMLSchema-instance")
 ET.register_namespace('xsd', "http://www.w3.org/2001/XMLSchema")
 
 root = ET.Element('{http://www.w3.org/2001/XMLSchema-instance}Airspace')
 
-system_runways = ET.SubElement(root, 'SystemRunways')
+# Position Formatting
+def format_position(lat, lon):
+    lat_sign = '+' if lat >= 0 else '-'
+    lon_sign = '+' if lon >= 0 else '-'
+    lat = abs(lat)
+    lon = abs(lon)
+    lat_str = f"{lat_sign}{lat:02.4f}".zfill(8)
+    lon_str = f"{lon_sign}{lon:03.4f}".zfill(9)
+    return f"{lat_str}{lon_str}"
 
-lat_range = (-13, +7)
-lon_range = (+91, +142)
+# SystemRunways Initialization
+system_runways = ET.SubElement(root, 'SystemRunways')
 
 procedure_to_runway = {}
 
@@ -38,11 +47,10 @@ for filename in os.listdir('Navdata/Proc/'):
                         if re.match(r'^\d{1,2}[A-Z]?$', data[2]):
                             runways[data[2]] = ET.SubElement(airport, 'Runway', Name=data[2], DataRunway=data[2])
                     if data[2] in runways: 
-                        # if airport_code == 'WIII' and data[2] in ['06', '24']:
-                        #     continue
                         ET.SubElement(runways[data[2]], data[0], Name=data[1])
                         procedure_to_runway[data[1]] = data[2]  
 
+# SIDSTARs Initialization
 sidstars = ET.SubElement(root, 'SIDSTARs')
 
 for filename in os.listdir('Navdata/Proc/'):
@@ -56,7 +64,7 @@ for filename in os.listdir('Navdata/Proc/'):
         if airport is not None:
             valid_runways = {runway.get('Name') for runway in airport.findall('Runway')}
             valid_procedures = {procedure for procedure, runway in procedure_to_runway.items() if runway in valid_runways}
-            if not valid_runways or not valid_procedures:  # Skip this airport if there are no valid runways or procedures
+            if not valid_runways or not valid_procedures: 
                 continue
             with open(f'Navdata/Proc/{filename}', 'r') as f:
                 for line in f:
@@ -111,15 +119,7 @@ for filename in os.listdir('Navdata/Proc/'):
                             ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
                             added_transitions.add(waypoint['name'])
 
-def format_position(lat, lon):
-    lat_sign = '+' if lat >= 0 else '-'
-    lon_sign = '+' if lon >= 0 else '-'
-    lat = abs(lat)
-    lon = abs(lon)
-    lat_str = f"{lat_sign}{lat:02.4f}".zfill(8)
-    lon_str = f"{lon_sign}{lon:03.4f}".zfill(9)
-    return f"{lat_str}{lon_str}"
-
+# Airports Initialization
 airports = ET.SubElement(root, 'Airports')
 airport_dict = {}
 
@@ -153,6 +153,7 @@ with open('Navdata/Airports.txt', 'r') as f:
             if airport is not None:
                 ET.SubElement(airport, 'Runway', Name=runway_name, Position=format_position(float_lat, float_lon))
 
+# Airways Initialization
 airways_dict = {}
 
 with open('Navdata/ATS.txt', 'r') as f:
@@ -192,6 +193,7 @@ for airway_name, waypoints in airways_dict.items():
     airway = ET.SubElement(airways, 'Airway', Name=airway_name)
     airway.text = '/'.join(waypoints)
 
+# Intersections Initialization
 intersections = ET.SubElement(root, 'Intersections')
 
 with open('Navdata/Waypoints.txt', 'r') as f:
@@ -202,8 +204,6 @@ with open('Navdata/Waypoints.txt', 'r') as f:
         name = data[0]
         lat = float(data[1])
         lon = float(data[2])
-        lat_range = (-13, +7) 
-        lon_range = (+91, +142) 
         if lat_range[0] <= lat <= lat_range[1] and lon_range[0] <= lon <= lon_range[1]:
             point = ET.SubElement(intersections, 'Point', Name=name, Type="Fix")
             point.text = format_position(lat, lon)
@@ -219,13 +219,17 @@ with open('Navdata/Navaids.txt', 'r') as f:
         frequency = data[2]
         lat = float(data[6])
         lon = float(data[7])
-        lat_range = (-13, +7) 
-        lon_range = (+91, +142) 
         if lat_range[0] <= lat <= lat_range[1] and lon_range[0] <= lon <= lon_range[1]:
             if (name, frequency, lat, lon) not in navaids_set:
                 point = ET.SubElement(intersections, 'Point', Name=name, Type="Navaid", NavaidType="None", Frequency=frequency)
                 point.text = format_position(lat, lon)
                 navaids_set.add((name, frequency, lat, lon))  
+
+# XML Fomatting
+def format_xml(element):
+    dom = xml.dom.minidom.parseString(ET.tostring(element, 'utf-8')) 
+    pretty_xml = dom.toprettyxml()  
+    return pretty_xml
 
 pretty_xml = format_xml(root)
 with open('Airspace.xml', 'w') as f:
