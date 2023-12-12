@@ -109,8 +109,6 @@ for filename in os.listdir('Navdata/Proc/'):
             for procedure_name, waypoints in sids.items():
                 if procedure_name in valid_procedures:
                     runways = procedure_to_runway.get(procedure_name, 'Unknown')
-                    if runways == 'ALL':
-                        runways = ','.join(valid_runways)
                     procedure = ET.SubElement(sidstars, 'SID', Name=procedure_name, Airport=airport_code, Runways=runways)
                     waypoint_names = [waypoint['name'] for waypoint in waypoints if waypoint['type'] == 'TF']
                     if waypoint_names:
@@ -123,18 +121,10 @@ for filename in os.listdir('Navdata/Proc/'):
             for procedure_name, waypoints in stars.items():
                 if procedure_name in valid_procedures:
                     runways = procedure_to_runway.get(procedure_name, 'Unknown')
-                    if 'ALL' in runways:
-                        runways = ','.join(valid_runways)
-                    else:
-                        runways = ','.join(runway for runway in runways.split(',') if runway != 'ALL')
                     procedure = ET.SubElement(sidstars, 'STAR', Name=procedure_name, Airport=airport_code, Runways=runways)
                     waypoint_names = [waypoint['name'] for waypoint in waypoints if waypoint['type'] == 'TF']
                     if waypoint_names:
                         route_runway = procedure_to_runway.get(procedure_name, 'Unknown')
-                        if 'ALL' in route_runway:
-                            route_runway = ','.join(valid_runways)
-                        else:
-                            route_runway = ','.join(runway for runway in route_runway.split(',') if runway != 'ALL')
                         ET.SubElement(procedure, 'Route', Runway=route_runway).text = '/'.join(waypoint_names)
                     added_transitions = set()
                     for waypoint in waypoints:
