@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 import os
 import xml.dom.minidom
 import re
+from collections import defaultdict
 
 # Configuration
 lat_range = (-13, +7) 
@@ -23,6 +24,10 @@ def format_position(lat, lon):
     lat_str = f"{lat_sign}{lat:02.4f}".zfill(8)
     lon_str = f"{lon_sign}{lon:03.4f}".zfill(9)
     return f"{lat_str}{lon_str}"
+
+# Remove Consecutive Duplicates
+def remove_consecutive_duplicates(lst):
+    return [v for i, v in enumerate(lst) if i == 0 or v != lst[i-1]]
 
 # SystemRunways Initialization
 system_runways = ET.SubElement(root, 'SystemRunways')
@@ -61,6 +66,10 @@ for filename in os.listdir('Navdata/Proc/'):
         stars = {}
         current_procedure = None
         current_dict = None
+        approaches = {}
+        current_approach = None
+        current_approach_runway = None
+        current_transition = None
         if airport is not None:
             valid_runways = {runway.get('Name') for runway in airport.findall('Runway')}
             valid_procedures = {procedure for procedure, runway in procedure_to_runway.items() if runway in valid_runways}
@@ -79,6 +88,20 @@ for filename in os.listdir('Navdata/Proc/'):
                         current_procedure = data[1]
                         current_dict = stars
                         current_dict[current_procedure] = []
+                    if data[0] == 'APPTR':
+                        current_approach = data[1]
+                        current_approach_runway = data[2]
+                        current_transition = data[3]
+                        approaches[current_approach] = {'runway': current_approach_runway, 'transitions': defaultdict(list), 'route': []}
+                    elif data[0] == 'FINAL' and current_approach:
+                        approaches[current_approach]['route'].append({'type': data[0], 'name': data[1]})
+                        current_transition = None
+                    elif current_approach and current_transition and data[0] in ['TF', 'CA', 'CF', 'DF', 'FA', 'FC', 'FD', 'FM', 'HA', 'HF', 'HM', 'IF', 'RF', 'VA', 'VD', 'VI', 'VM', 'VR', 'HF', 'DF']:
+                        if not data[1].isdigit():
+                            approaches[current_approach]['transitions'][current_transition].append({'type': data[0], 'name': data[1]})
+                    elif current_approach and data[0] in ['TF', 'CA', 'CF', 'DF', 'FA', 'FC', 'FD', 'FM', 'HA', 'HF', 'HM', 'IF', 'RF', 'VA', 'VD', 'VI', 'VM', 'VR', 'HF', 'DF']:
+                        if not data[1].isdigit():
+                            approaches[current_approach]['route'].append({'type': data[0], 'name': data[1]})
                     elif current_procedure and data[0] in ['TF', 'CA', 'CF', 'DF', 'FA', 'FC', 'FD', 'FM', 'HA', 'HF', 'HM', 'IF', 'RF', 'VA', 'VD', 'VI', 'VM', 'VR', 'HF', 'DF']:
                         if not data[1].isdigit():
                             current_dict[current_procedure].append({'type': data[0], 'name': data[1]})
@@ -118,6 +141,19 @@ for filename in os.listdir('Navdata/Proc/'):
                         if waypoint['type'] != 'TF' and waypoint['name'] not in added_transitions:
                             ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
                             added_transitions.add(waypoint['name'])
+            for approach_name, approach_data in approaches.items():
+                approach = ET.SubElement(sidstars, 'Approach', Name=approach_name, Airport=airport_code, Runway=approach_data['runway'])
+                for transition_name, waypoints in approach_data['transitions'].items():
+                    waypoint_names = [waypoint['name'] for waypoint in waypoints]
+                    waypoint_names = remove_consecutive_duplicates(waypoint_names)
+                    if waypoint_names:
+                        ET.SubElement(approach, 'Transition', Name=transition_name).text = '/'.join(waypoint_names)
+                route_names = [waypoint['name'] for waypoint in approach_data['route']]
+                route_names = remove_consecutive_duplicates(route_names)
+                if route_names and route_names[0] == approach_name:
+                    route_names = route_names[1:]
+                if route_names:
+                    ET.SubElement(approach, 'Route').text = '/'.join(route_names)
 
 # Airports Initialization
 airports = ET.SubElement(root, 'Airports')
