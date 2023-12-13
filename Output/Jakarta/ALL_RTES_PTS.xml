@@ -43,6 +43,8 @@
     <Line Name="R455" Pattern="Dotted" CustomColourName="SubtleGrey">PAPSA.R455.PNK</Line>
     <Line Name="R461" Pattern="Dotted" CustomColourName="SubtleGrey">MDN.R461.PUGER</Line>
     <Line Name="R469" Pattern="Dotted" CustomColourName="SubtleGrey">PKU.R469.TAROS</Line>
+  </Map>
+  <Map Type="System" Name="AIRWAY_T" Priority="1" Center="-03.0+103.25" CustomColourName="SubtleGrey">
     <Line Name="T1" Pattern="Dotted" CustomColourName="SubtleGrey">CLP.T1.PROGO</Line>
     <Line Name="T10" Pattern="Dotted" CustomColourName="SubtleGrey">CKG.T10.BAC</Line>
     <Line Name="T12" Pattern="Dotted" CustomColourName="SubtleGrey">PAVGO.T12.XMX</Line>
@@ -53,6 +55,8 @@
     <Line Name="T7" Pattern="Dotted" CustomColourName="SubtleGrey">BAC.T7.TOPUK</Line>
     <Line Name="T8" Pattern="Dotted" CustomColourName="SubtleGrey">CKG.T8.BAC</Line>
     <Line Name="T9" Pattern="Dotted" CustomColourName="SubtleGrey">DKI.T9.TAVIP</Line>
+  </Map>
+  <Map Type="System" Name="AIRWAY_W" Priority="1" Center="-03.0+103.25" CustomColourName="SubtleGrey">
     <Line Name="W11" Pattern="Dotted" CustomColourName="SubtleGrey">BND.W11.BAC</Line>
     <Line Name="W12" Pattern="Dotted" CustomColourName="SubtleGrey">CKG.W12.BAC</Line>
     <Line Name="W12E" Pattern="Dotted" CustomColourName="SubtleGrey">PLB.W12E.DKI</Line>
@@ -77,6 +81,8 @@
     <Line Name="W38" Pattern="Dotted" CustomColourName="SubtleGrey">PNK.W38.DKI</Line>
     <Line Name="W38W" Pattern="Dotted" CustomColourName="SubtleGrey">TPN.W38W.AMBOY</Line>
     <Line Name="W45" Pattern="Dotted" CustomColourName="SubtleGrey">HLM.W45.ANY</Line>
+  </Map>
+  <Map Type="System" Name="AIRWAY_Z" Priority="1" Center="-03.0+103.25" CustomColourName="SubtleGrey">
     <Line Name="Z1" Pattern="Dotted" CustomColourName="SubtleGrey">BAC.Z1.ISLEN</Line>
     <Line Name="Z2" Pattern="Dotted" CustomColourName="SubtleGrey">BAC.Z2.KUCAN</Line>
     <Line Name="Z21" Pattern="Dotted" CustomColourName="SubtleGrey">AEKGO.Z21.DES</Line>

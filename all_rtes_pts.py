@@ -32,6 +32,13 @@ def create_symbol_element(waypoints):
 
     return symbol_element
 
+def get_map_type(airway_name):
+    first_letter = airway_name[0]
+    if first_letter in ['T', 'W', 'Z']:
+        return f"AIRWAY_{first_letter}"
+    else:
+        return "AIRWAY_INTL"
+
 jakarta_polygon_coords = [
     (6.000000, 92.000000),
     (6.000000, 97.500000),
@@ -124,8 +131,15 @@ def process_fir(fir_name, polygon, line_pattern):
 
     root = ET.Element("Maps")
 
-    map_element = create_map_element("System", "AIRWAY_INTL", 1, center, "SubtleGrey")
-    root.append(map_element)
+    map_elements = {
+        "AIRWAY_INTL": create_map_element("System", "AIRWAY_INTL", 1, center, "SubtleGrey"),
+        "AIRWAY_T": create_map_element("System", "AIRWAY_T", 1, center, "SubtleGrey"),
+        "AIRWAY_W": create_map_element("System", "AIRWAY_W", 1, center, "SubtleGrey"),
+        "AIRWAY_Z": create_map_element("System", "AIRWAY_Z", 1, center, "SubtleGrey"),
+    }
+
+    for map_element in map_elements.values():
+        root.append(map_element)
 
     airways_set = set()
 
@@ -142,8 +156,9 @@ def process_fir(fir_name, polygon, line_pattern):
                 airways_set.add(components[1])
 
                 if waypoints:
-                    line_element = create_line_element(airway_name, "Dotted", "SubtleGrey", waypoints)
-                    map_element.append(line_element)
+                    map_type = get_map_type(airway_name)
+                    line_element = create_line_element(airway_name, line_pattern, "SubtleGrey", waypoints)
+                    map_elements[map_type].append(line_element)
                     waypoints = []
 
                 airway_name = components[1]
@@ -162,8 +177,9 @@ def process_fir(fir_name, polygon, line_pattern):
                         waypoints.append(point2)
 
         if waypoints:
+            map_type = get_map_type(airway_name)
             line_element = create_line_element(airway_name, line_pattern, "SubtleGrey", waypoints)
-            map_element.append(line_element)
+            map_elements[map_type].append(line_element)
             waypoints = []
     
     waypoints_data = []
@@ -201,8 +217,9 @@ def process_fir(fir_name, polygon, line_pattern):
 
     for airway_name, waypoints in airway_to_waypoints.items():
         if len(waypoints) > 1:
+            map_type = get_map_type(airway_name)
             line_element = create_line_element(airway_name, line_pattern, "SubtleGrey", waypoints)
-            map_element.append(line_element)
+            map_elements[map_type].append(line_element)
 
 
     tree = ET.ElementTree(root)
