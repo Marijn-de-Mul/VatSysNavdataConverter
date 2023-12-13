@@ -5,6 +5,7 @@ import xml.dom.minidom
 import re
 from collections import defaultdict
 import all_airports
+import all_rtes_pts
 
 # Configuration
 lat_range = (-13, +7) 
