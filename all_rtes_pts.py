@@ -12,7 +12,6 @@ def create_map_element(Type, Name, Priority, Center, CustomColourName):
 def create_line_element(Name, Pattern, CustomColourName, waypoints):
     line_element = ET.Element("Line", {"Name": Name, "Pattern": Pattern, "CustomColourName": CustomColourName})
 
-    # Create a text content for the Line element from the waypoints
     waypoints_text = f"{waypoints[0][0]}.{Name}.{waypoints[-1][0]}"
     line_element.text = waypoints_text
 
