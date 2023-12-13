@@ -106,7 +106,7 @@ ujung_polygon_coords = [
 jakarta_polygon = Polygon(jakarta_polygon_coords)
 ujung_polygon = Polygon(ujung_polygon_coords)
 
-def process_fir(fir_name, polygon):
+def process_fir(fir_name, polygon, line_pattern):
     min_latitude = min(p[0] for p in polygon.exterior.coords)
     max_latitude = max(p[0] for p in polygon.exterior.coords)
     min_longitude = min(p[1] for p in polygon.exterior.coords)
@@ -163,7 +163,7 @@ def process_fir(fir_name, polygon):
                         waypoints.append(point2)
 
         if waypoints:
-            line_element = create_line_element(airway_name, "Dotted", "SubtleGrey", waypoints)
+            line_element = create_line_element(airway_name, line_pattern, "SubtleGrey", waypoints)
             map_element.append(line_element)
             waypoints = []
     
@@ -201,9 +201,10 @@ def process_fir(fir_name, polygon):
             airway_to_waypoints[waypoint[0]].append(waypoint)
 
     for airway_name, waypoints in airway_to_waypoints.items():
-        if waypoints:
-            line_element = create_line_element(airway_name, "Dotted", "SubtleGrey", waypoints)
+        if len(waypoints) > 1:
+            line_element = create_line_element(airway_name, line_pattern, "SubtleGrey", waypoints)
             map_element.append(line_element)
+
 
     tree = ET.ElementTree(root)
 
@@ -218,5 +219,5 @@ def process_fir(fir_name, polygon):
     with open(f"Output/{fir_name}/ALL_RTES_PTS.xml", "w") as files:
         files.write(pretty_xml_str)
 
-process_fir("Jakarta", jakarta_polygon)
-process_fir("Ujung", ujung_polygon)
+process_fir("Jakarta", jakarta_polygon, "Dotted")
+process_fir("Ujung", ujung_polygon, "Dashed")

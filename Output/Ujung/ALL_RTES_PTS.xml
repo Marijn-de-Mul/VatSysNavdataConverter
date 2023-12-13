@@ -2434,12 +2434,5 @@
       <Point>VLN</Point>
       <Point>VLN</Point>
     </Symbol>
-    <Line Name="UM403" Pattern="Dotted" CustomColourName="SubtleGrey">UM403.UM403.UM403</Line>
-    <Line Name="UB403" Pattern="Dotted" CustomColourName="SubtleGrey">UB403.UB403.UB403</Line>
-    <Line Name="UM402" Pattern="Dotted" CustomColourName="SubtleGrey">UM402.UM402.UM402</Line>
-    <Line Name="UB404" Pattern="Dotted" CustomColourName="SubtleGrey">UB404.UB404.UB404</Line>
-    <Line Name="W2" Pattern="Dotted" CustomColourName="SubtleGrey">W2.W2.W2</Line>
-    <Line Name="W3" Pattern="Dotted" CustomColourName="SubtleGrey">W3.W3.W3</Line>
-    <Line Name="W1" Pattern="Dotted" CustomColourName="SubtleGrey">W1.W1.W1</Line>
   </Map>
 </Maps>
