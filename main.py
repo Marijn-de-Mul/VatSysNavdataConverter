@@ -6,6 +6,7 @@ import re
 from collections import defaultdict
 import all_airports
 import all_rtes_pts
+import vatis_airports
 
 # Configuration
 lat_range = (-13, +7) 
