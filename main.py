@@ -4,6 +4,7 @@ import os
 import xml.dom.minidom
 import re
 from collections import defaultdict
+import all_airports
 
 # Configuration
 lat_range = (-13, +7) 
@@ -256,6 +257,8 @@ def format_xml(element):
     pretty_xml = dom.toprettyxml()  
     return pretty_xml
 
+os.makedirs("Output", exist_ok=True)
+
 pretty_xml = format_xml(root)
-with open('Airspace.xml', 'w') as f:
+with open('Output/Airspace.xml', 'w') as f:
     f.write(pretty_xml)
