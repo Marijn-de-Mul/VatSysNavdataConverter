@@ -19,16 +19,17 @@ def create_line_element(Name, Pattern, CustomColourName, waypoints):
 
 def create_point_element(waypoint):
     point_element = ET.Element("Point")
-    point_element.text = waypoint[0]
+    point_element.text = waypoint  
 
     return point_element
 
-def create_symbol_element(waypoints):
+def create_symbol_element(waypoints, airway_waypoints):
     symbol_element = ET.Element("Symbol", {"Type": "SolidTriangle"})
 
     for waypoint in waypoints:
-        point_element = create_point_element(waypoint)
-        symbol_element.append(point_element)
+        if waypoint[0] in airway_waypoints:
+            point_element = create_point_element(waypoint)
+            symbol_element.append(point_element)
 
     return symbol_element
 
@@ -138,10 +139,25 @@ def process_fir(fir_name, polygon, line_pattern):
         "AIRWAY_Z": create_map_element("System", "AIRWAY_Z", 1, center, "SubtleGrey"),
     }
 
+    map_symbols = {
+        "AIRWAY_INTL": ET.Element("Symbol", {"Type": "SolidTriangle"}),
+        "AIRWAY_T": ET.Element("Symbol", {"Type": "SolidTriangle"}),
+        "AIRWAY_W": ET.Element("Symbol", {"Type": "SolidTriangle"}),
+        "AIRWAY_Z": ET.Element("Symbol", {"Type": "SolidTriangle"}),
+    }
+
+    symbol_elements = {
+        "AIRWAY_INTL": ET.Element("Symbol", {"Type": "SolidTriangle"}),
+        "AIRWAY_T": ET.Element("Symbol", {"Type": "SolidTriangle"}),
+        "AIRWAY_W": ET.Element("Symbol", {"Type": "SolidTriangle"}),
+        "AIRWAY_Z": ET.Element("Symbol", {"Type": "SolidTriangle"}),
+    }
+
     for map_element in map_elements.values():
         root.append(map_element)
 
     airways_set = set()
+    airway_waypoints = {}
 
     with open("Navdata/ATS.txt", "r") as file:
         waypoints = []
@@ -162,6 +178,7 @@ def process_fir(fir_name, polygon, line_pattern):
                     waypoints = []
 
                 airway_name = components[1]
+                airway_waypoints[airway_name] = []
 
             elif components[0] == "S":
                 point1 = (components[1], float(components[2]), float(components[3]))
@@ -173,54 +190,30 @@ def process_fir(fir_name, polygon, line_pattern):
                 if buffered_polygon.covers(Point(point1[1], point1[2])) and buffered_polygon.covers(Point(point2[1], point2[2])):
                     if point1 not in waypoints:
                         waypoints.append(point1)
+                        airway_waypoints[airway_name].append(point1[0]) 
                     if point2 not in waypoints:
                         waypoints.append(point2)
+                        airway_waypoints[airway_name].append(point2[0])  
 
         if waypoints:
             map_type = get_map_type(airway_name)
             line_element = create_line_element(airway_name, line_pattern, "SubtleGrey", waypoints)
             map_elements[map_type].append(line_element)
             waypoints = []
-    
-    waypoints_data = []
-    symbol_waypoints = []
 
-    coordinate_pattern = re.compile(r'\d+[ESNW]')
-    for filename in ["Navdata/Waypoints.txt", "Navdata/Navaids.txt"]:
-        with open(filename, "r") as file:
-            for line in file:
-            
-                components = line.strip().split(",")
+    symbol_element = ET.Element("Symbol", {"Type": "SolidTriangle"})  
 
-                if filename == "Navdata/Waypoints.txt":
-                    waypoint = (components[0], float(components[1]), float(components[2]))
-                    if buffered_polygon.covers(Point(waypoint[1], waypoint[2])):
-                        waypoints_data.append(waypoint)
-                        if not coordinate_pattern.search(waypoint[0]):
-                            symbol_waypoints.append(waypoint)
-                elif filename == "Navdata/Navaids.txt":
-                    waypoint = (components[0], float(components[7]), float(components[8]))
-                    if buffered_polygon.covers(Point(waypoint[1], waypoint[2])):
-                        waypoints_data.append(waypoint)
-                        if not coordinate_pattern.search(waypoint[0]):
-                            symbol_waypoints.append(waypoint)
+    for airway_name, waypoints in airway_waypoints.items():
+        if waypoints:  
+            map_type = get_map_type(airway_name)  
+            for waypoint in waypoints:
+                point_element = create_point_element(waypoint)  
+                symbol_elements[map_type].append(point_element) 
 
-    symbol_element = create_symbol_element(symbol_waypoints)
+    map_elements[map_type].append(symbol_element)
 
-    map_element.append(symbol_element)
-
-    airway_to_waypoints = {airway: [] for airway in airways_set}
-
-    for waypoint in waypoints_data:
-        if waypoint[0] in airway_to_waypoints:
-            airway_to_waypoints[waypoint[0]].append(waypoint)
-
-    for airway_name, waypoints in airway_to_waypoints.items():
-        if len(waypoints) > 1:
-            map_type = get_map_type(airway_name)
-            line_element = create_line_element(airway_name, line_pattern, "SubtleGrey", waypoints)
-            map_elements[map_type].append(line_element)
-
+    for map_type, symbol_element in symbol_elements.items():
+        map_elements[map_type].append(symbol_element)
 
     tree = ET.ElementTree(root)
 
