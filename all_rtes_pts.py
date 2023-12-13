@@ -3,6 +3,10 @@ import xml.dom.minidom
 import os
 import re
 from shapely.geometry import Point, Polygon
+import copy
+
+def copy_map_elements(map_elements):
+    return copy.deepcopy(map_elements)
 
 def create_map_element(Type, Name, Priority, Center, CustomColourName):
     map_element = ET.Element("Map", {"Type": Type, "Name": Name, "Priority": str(Priority), "Center": Center, "CustomColourName": CustomColourName})
@@ -208,12 +212,39 @@ def process_fir(fir_name, polygon, line_pattern):
             map_type = get_map_type(airway_name)  
             for waypoint in waypoints:
                 point_element = create_point_element(waypoint)  
-                symbol_elements[map_type].append(point_element) 
+                map_symbols[map_type].append(point_element) 
 
-    map_elements[map_type].append(symbol_element)
-
-    for map_type, symbol_element in symbol_elements.items():
+    for map_type, symbol_element in map_symbols.items():
         map_elements[map_type].append(symbol_element)
+    
+    copied_map_elements = copy_map_elements(map_elements)
+
+    for map_type, map_element in copied_map_elements.items():
+        map_element.attrib["Type"] = "System"
+        map_element.attrib["Name"] = f"{map_type}_NAMES"
+        if "CustomColourName" in map_element.attrib:
+            del map_element.attrib["CustomColourName"]
+
+        # Remove all <Line> tags and their content
+        for line_element in map_element.findall('Line'):
+            map_element.remove(line_element)
+
+        # Get all Symbol elements in map_element
+        symbol_elements = map_element.findall('Symbol')
+
+        for symbol_element in symbol_elements:
+            if symbol_element.tag == 'Symbol':
+                label_attrib = symbol_element.attrib.copy()
+                if 'Type' in label_attrib:
+                    del label_attrib['Type']
+                label_element = ET.Element('Label', label_attrib)
+                label_element[:] = symbol_element[:]
+                index = symbol_elements.index(symbol_element)
+                map_element.insert(index, label_element)
+                map_element.remove(symbol_element)
+
+    for map_element in copied_map_elements.values():
+        root.append(map_element)
 
     tree = ET.ElementTree(root)
 
