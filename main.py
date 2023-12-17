@@ -9,8 +9,8 @@ import all_rtes_pts
 import vatis_airports
 
 # Configuration
-lat_range = (-13, +7) 
-lon_range = (+91, +142) 
+lat_range = (-35, +19) 
+lon_range = (+76, +163) 
 
 # ET Initialization
 ET.register_namespace('', "http://www.w3.org/2001/XMLSchema-instance")
