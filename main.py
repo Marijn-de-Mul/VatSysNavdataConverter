@@ -7,10 +7,11 @@ from collections import defaultdict
 import all_airports
 import all_rtes_pts
 import vatis_airports
+from collections import OrderedDict
 
 # Configuration
-lat_range = (-33, +13) 
-lon_range = (+80, +155) 
+lat_range = (-11.00, 6.00)
+lon_range = (95.00, 141.00)
 
 # ET Initialization
 ET.register_namespace('', "http://www.w3.org/2001/XMLSchema-instance")
@@ -31,6 +32,9 @@ def format_position(lat, lon):
 # Remove Consecutive Duplicates
 def remove_consecutive_duplicates(lst):
     return [v for i, v in enumerate(lst) if i == 0 or v != lst[i-1]]
+
+def is_in_range(lat, lon, lat_range, lon_range):
+    return lat_range[0] <= lat <= lat_range[1] and lon_range[0] <= lon <= lon_range[1]
 
 # SystemRunways Initialization
 system_runways = ET.SubElement(root, 'SystemRunways')
@@ -189,7 +193,7 @@ with open('Navdata/Airports.txt', 'r') as f:
             airport = airport_dict.get(airport_code) 
             if airport is not None:
                 ET.SubElement(airport, 'Runway', Name=runway_name, Position=format_position(float_lat, float_lon))
-
+                
 # Airways Initialization
 airways_dict = {}
 
@@ -202,33 +206,29 @@ with open('Navdata/ATS.txt', 'r') as f:
             continue
         if data[0] == 'A':
             if airway_name is not None and waypoints:
-                if airway_name in airways_dict and len(airways_dict[airway_name]) < len(waypoints):
-                    airways_dict[airway_name] = waypoints
-                elif airway_name not in airways_dict:
-                    airways_dict[airway_name] = waypoints
+                if all(is_in_range(lat, lon, lat_range, lon_range) for wp, (lat, lon) in waypoints):
+                    airways_dict[airway_name] = [wp for wp, _ in waypoints]
                 waypoints = []
             airway_name = data[1]
         elif data[0] == 'S' and airway_name is not None:
-            waypoint = data[1]
-            next_waypoint = data[4]
-            lat = float(data[2])
-            lon = float(data[3])
-            if lat_range[0] <= lat <= lat_range[1] and lon_range[0] <= lon <= lon_range[1]:
-                waypoints.append(waypoint)
-            lat_next = float(data[5])
-            lon_next = float(data[6])
-            if lat_range[0] <= lat_next <= lat_range[1] and lon_range[0] <= lon_next <= lon_range[1]:
-                waypoints.append(next_waypoint)
+            waypoint1 = data[1]
+            lat1 = float(data[2])
+            lon1 = float(data[3])
+            waypoint2 = data[4]
+            lat2 = float(data[5])
+            lon2 = float(data[6])
+            waypoints.append((waypoint1, (lat1, lon1)))
+            waypoints.append((waypoint2, (lat2, lon2)))
     if airway_name is not None and waypoints:
-        if airway_name in airways_dict and len(airways_dict[airway_name]) < len(waypoints):
-            airways_dict[airway_name] = waypoints
-        elif airway_name not in airways_dict:
-            airways_dict[airway_name] = waypoints
+        if all(is_in_range(lat, lon, lat_range, lon_range) for wp, (lat, lon) in waypoints):
+            airways_dict[airway_name] = [wp for wp, _ in waypoints]
 
 airways = ET.SubElement(root, 'Airways')
 for airway_name, waypoints in airways_dict.items():
-    airway = ET.SubElement(airways, 'Airway', Name=airway_name)
-    airway.text = '/'.join(waypoints)
+    unique_waypoints = list(OrderedDict.fromkeys(waypoints))  
+    if unique_waypoints:  
+        airway = ET.SubElement(airways, 'Airway', Name=airway_name)
+        airway.text = '/'.join(unique_waypoints)
 
 # Intersections Initialization
 intersections = ET.SubElement(root, 'Intersections')

@@ -30,6 +30,12 @@ for filename in os.listdir("Navdata/Proc"):
     elif icao_code.startswith("WA"):
         point_elem = ET.SubElement(ujung_label, "Point")
         point_elem.text = icao_code
+    elif icao_code.startswith("WP"):
+        point_elem = ET.SubElement(ujung_label, "Point")
+        point_elem.text = icao_code
+    elif icao_code.startswith("WR"):
+        point_elem = ET.SubElement(ujung_label, "Point")
+        point_elem.text = icao_code
 
 # Function to write an XML tree to a file
 def write_tree(root, filename):
