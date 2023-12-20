@@ -9,8 +9,8 @@ import all_rtes_pts
 import vatis_airports
 
 # Configuration
-lat_range = (-35, +19) 
-lon_range = (+76, +163) 
+lat_range = (-33, +13) 
+lon_range = (+80, +155) 
 
 # ET Initialization
 ET.register_namespace('', "http://www.w3.org/2001/XMLSchema-instance")
@@ -38,7 +38,7 @@ system_runways = ET.SubElement(root, 'SystemRunways')
 procedure_to_runway = {}
 
 for filename in os.listdir('Navdata/Proc/'):
-    if filename.startswith(('WI', 'WA')) and filename.endswith('.txt'):
+    if filename.startswith(('WI', 'WA', 'WP', 'WR')) and filename.endswith('.txt'):
         airport_code = filename[:-4]
         runways = {} 
         sid_exists = False
@@ -62,7 +62,7 @@ for filename in os.listdir('Navdata/Proc/'):
 sidstars = ET.SubElement(root, 'SIDSTARs')
 
 for filename in os.listdir('Navdata/Proc/'):
-    if filename.startswith(('WI', 'WA')) and filename.endswith('.txt'):
+    if filename.startswith(('WI', 'WA', 'WP', 'WR')) and filename.endswith('.txt'):
         airport_code = filename[:-4] 
         airport = system_runways.find(f"./Airport[@Name='{airport_code}']")
         sids = {}
@@ -112,27 +112,36 @@ for filename in os.listdir('Navdata/Proc/'):
 
             for (airport_code, procedure_name), runways in sids.items():
                 for runway, waypoints in runways.items():
-                        procedure = ET.SubElement(sidstars, 'SID', Name=procedure_name, Airport=airport_code, Runways=runway)
-                        waypoint_names = [waypoint['name'] for waypoint in waypoints if waypoint['type'] == 'TF']
-                        if waypoint_names:
-                            ET.SubElement(procedure, 'Route', Runway=procedure_to_runway.get(procedure_name, 'Unknown')).text = '/'.join(waypoint_names)
-                        added_transitions = set()
-                        for waypoint in waypoints:
-                            if waypoint['type'] != 'TF' and waypoint['name'] not in added_transitions:
-                                ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
-                                added_transitions.add(waypoint['name'])
+                    procedure = ET.SubElement(sidstars, 'SID', Name=procedure_name, Airport=airport_code, Runways=runway)
+                    waypoint_names = [waypoint['name'] for waypoint in waypoints if waypoint['type'] == 'TF']
+                    added_transitions = set()
+                    for waypoint in waypoints:
+                        if waypoint['type'] != 'TF' and waypoint['name'] not in added_transitions and waypoint['name'] != '0':
+                            added_transitions.add(waypoint['name'])
+                    if len(added_transitions) == 1:
+                        waypoint_names.insert(0, next(iter(added_transitions)))
+                    if waypoint_names:
+                        route_runway = procedure_to_runway.get(procedure_name, 'Unknown')
+                        ET.SubElement(procedure, 'Route', Runway=route_runway).text = '/'.join(waypoint_names)
+                    for waypoint in waypoints:
+                        if waypoint['type'] != 'TF' and waypoint['name'] not in added_transitions and waypoint['name'] != '0':
+                            ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
             for (airport_code, procedure_name), runways in stars.items():
                 for runway, waypoints in runways.items():
-                        procedure = ET.SubElement(sidstars, 'STAR', Name=procedure_name, Airport=airport_code, Runways=runway)
-                        waypoint_names = [waypoint['name'] for waypoint in waypoints if waypoint['type'] == 'TF']
-                        if waypoint_names:
-                            route_runway = procedure_to_runway.get(procedure_name, 'Unknown')
-                            ET.SubElement(procedure, 'Route', Runway=route_runway).text = '/'.join(waypoint_names)
-                        added_transitions = set()
-                        for waypoint in waypoints:
-                            if waypoint['type'] != 'TF' and waypoint['name'] not in added_transitions:
-                                ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
-                                added_transitions.add(waypoint['name'])
+                    procedure = ET.SubElement(sidstars, 'STAR', Name=procedure_name, Airport=airport_code, Runways=runway)
+                    waypoint_names = [waypoint['name'] for waypoint in waypoints if waypoint['type'] == 'TF']
+                    added_transitions = set()
+                    for waypoint in waypoints:
+                        if waypoint['type'] != 'TF' and waypoint['name'] not in added_transitions:
+                            added_transitions.add(waypoint['name'])
+                    if len(added_transitions) == 1:
+                        waypoint_names.insert(0, next(iter(added_transitions)))
+                    if waypoint_names:
+                        route_runway = procedure_to_runway.get(procedure_name, 'Unknown')
+                        ET.SubElement(procedure, 'Route', Runway=route_runway).text = '/'.join(waypoint_names)
+                    for waypoint in waypoints:
+                        if waypoint['type'] != 'TF' and waypoint['name'] not in added_transitions:
+                            ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
             for approach_name, approach_data in approaches.items():
                 approach = ET.SubElement(sidstars, 'Approach', Name=approach_name, Airport=airport_code, Runway=approach_data['runway'])
                 for transition_name, waypoints in approach_data['transitions'].items():
@@ -165,7 +174,7 @@ with open('Navdata/Airports.txt', 'r') as f:
                 float_lon = float(lon)
             except ValueError:
                 continue
-            if airport_code.startswith(('WI', 'WA')):  
+            if airport_code.startswith(('WI', 'WA', 'WP', 'WR')):  
                 position = format_position(float_lat, float_lon)
                 airport = ET.SubElement(airports, 'Airport', ICAO=airport_code, Position=position, Elevation=elevation)
                 airport_dict[airport_code] = airport
