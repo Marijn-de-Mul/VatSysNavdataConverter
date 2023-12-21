@@ -2193,11 +2193,11 @@
 		<STAR Name="BIMA1B" Airport="WAAA" Runways="21">
 			<Route Runway="21">BIMAK/AYONO/AFITA/APULA/DAKAD/KAILI/ARAJA</Route>
 		</STAR>
-		<STAR Name="BIMA1F" Airport="WAAA" Runways="13,21,31,03">
-			<Route Runway="13">00MK5/00MK5</Route>
-			<Route Runway="21">00MK5/00MK5</Route>
+		<STAR Name="BIMA1F" Airport="WAAA" Runways="31,13,03,21">
 			<Route Runway="31">00MK5/00MK5</Route>
+			<Route Runway="13">00MK5/00MK5</Route>
 			<Route Runway="03">00MK5/00MK5</Route>
+			<Route Runway="21">00MK5/00MK5</Route>
 		</STAR>
 		<STAR Name="BIMA1F" Airport="WAAA" Runways="13">
 			<Route Runway="13">00MK5/00MK5</Route>
@@ -2217,11 +2217,11 @@
 		<STAR Name="ENDO1D" Airport="WAAA" Runways="21">
 			<Route Runway="21">ENDOG/UMAYA/AYONO/AFITA/APULA/DAKAD/KAILI/ARAJA</Route>
 		</STAR>
-		<STAR Name="ENDO1L" Airport="WAAA" Runways="13,21,31,03">
-			<Route Runway="13">ENDOG/MKS/MKS</Route>
-			<Route Runway="21">ENDOG/MKS/MKS</Route>
+		<STAR Name="ENDO1L" Airport="WAAA" Runways="31,13,03,21">
 			<Route Runway="31">ENDOG/MKS/MKS</Route>
+			<Route Runway="13">ENDOG/MKS/MKS</Route>
 			<Route Runway="03">ENDOG/MKS/MKS</Route>
+			<Route Runway="21">ENDOG/MKS/MKS</Route>
 		</STAR>
 		<STAR Name="ENDO1L" Airport="WAAA" Runways="13">
 			<Route Runway="13">ENDOG/MKS/MKS</Route>
@@ -2259,11 +2259,11 @@
 		<STAR Name="LEKE1D" Airport="WAAA" Runways="21">
 			<Route Runway="21">LEKEX/MITHA/REAGA/UYOSO/ARAJA</Route>
 		</STAR>
-		<STAR Name="LEKE1H" Airport="WAAA" Runways="13,21,31,03">
-			<Route Runway="13">00MK1/00MK1</Route>
-			<Route Runway="21">00MK1/00MK1</Route>
+		<STAR Name="LEKE1H" Airport="WAAA" Runways="31,13,03,21">
 			<Route Runway="31">00MK1/00MK1</Route>
+			<Route Runway="13">00MK1/00MK1</Route>
 			<Route Runway="03">00MK1/00MK1</Route>
+			<Route Runway="21">00MK1/00MK1</Route>
 		</STAR>
 		<STAR Name="LEKE1H" Airport="WAAA" Runways="13">
 			<Route Runway="13">00MK1/00MK1</Route>
@@ -2277,11 +2277,11 @@
 		<STAR Name="LIPO1D" Airport="WAAA" Runways="21">
 			<Route Runway="21">LIPOT/ARAUF/UMAYA/AYONO/AFITA/APULA/DAKAD/KAILI/ARAJA</Route>
 		</STAR>
-		<STAR Name="LIPO1L" Airport="WAAA" Runways="13,21,31,03">
-			<Route Runway="13">00MK4/00MK4</Route>
-			<Route Runway="21">00MK4/00MK4</Route>
+		<STAR Name="LIPO1L" Airport="WAAA" Runways="31,13,03,21">
 			<Route Runway="31">00MK4/00MK4</Route>
+			<Route Runway="13">00MK4/00MK4</Route>
 			<Route Runway="03">00MK4/00MK4</Route>
+			<Route Runway="21">00MK4/00MK4</Route>
 		</STAR>
 		<STAR Name="LIPO1L" Airport="WAAA" Runways="13">
 			<Route Runway="13">00MK4/00MK4</Route>
@@ -2295,11 +2295,11 @@
 		<STAR Name="NETO1D" Airport="WAAA" Runways="21">
 			<Route Runway="21">NETTO/IMADE/AQIBA/REAGA/UYOSO/ARAJA</Route>
 		</STAR>
-		<STAR Name="NIVE1E" Airport="WAAA" Runways="13,21,31,03">
-			<Route Runway="13">NIVEK/MKS/MKS</Route>
-			<Route Runway="21">NIVEK/MKS/MKS</Route>
+		<STAR Name="NIVE1E" Airport="WAAA" Runways="31,13,03,21">
 			<Route Runway="31">NIVEK/MKS/MKS</Route>
+			<Route Runway="13">NIVEK/MKS/MKS</Route>
 			<Route Runway="03">NIVEK/MKS/MKS</Route>
+			<Route Runway="21">NIVEK/MKS/MKS</Route>
 		</STAR>
 		<STAR Name="NIVE1E" Airport="WAAA" Runways="13">
 			<Route Runway="13">NIVEK/MKS/MKS</Route>
@@ -2313,11 +2313,11 @@
 		<STAR Name="NUKP1D" Airport="WAAA" Runways="21">
 			<Route Runway="21">NUKPO/IMADE/AQIBA/REAGA/UYOSO/ARAJA</Route>
 		</STAR>
-		<STAR Name="NUKP1H" Airport="WAAA" Runways="13,21,31,03">
-			<Route Runway="13">00MK3/00MK3</Route>
-			<Route Runway="21">00MK3/00MK3</Route>
+		<STAR Name="NUKP1H" Airport="WAAA" Runways="31,13,03,21">
 			<Route Runway="31">00MK3/00MK3</Route>
+			<Route Runway="13">00MK3/00MK3</Route>
 			<Route Runway="03">00MK3/00MK3</Route>
+			<Route Runway="21">00MK3/00MK3</Route>
 		</STAR>
 		<STAR Name="NUKP1H" Airport="WAAA" Runways="13">
 			<Route Runway="13">00MK3/00MK3</Route>
@@ -2331,11 +2331,11 @@
 		<STAR Name="SUGT1D" Airport="WAAA" Runways="21">
 			<Route Runway="21">SUGTA/MITHA/REAGA/UYOSO/ARAJA</Route>
 		</STAR>
-		<STAR Name="SUGT1H" Airport="WAAA" Runways="13,21,31,03">
-			<Route Runway="13">00MK2/00MK2</Route>
-			<Route Runway="21">00MK2/00MK2</Route>
+		<STAR Name="SUGT1H" Airport="WAAA" Runways="31,13,03,21">
 			<Route Runway="31">00MK2/00MK2</Route>
+			<Route Runway="13">00MK2/00MK2</Route>
 			<Route Runway="03">00MK2/00MK2</Route>
+			<Route Runway="21">00MK2/00MK2</Route>
 		</STAR>
 		<STAR Name="SUGT1H" Airport="WAAA" Runways="13">
 			<Route Runway="13">00MK2/00MK2</Route>
@@ -2349,11 +2349,11 @@
 		<STAR Name="VENR1D" Airport="WAAA" Runways="21">
 			<Route Runway="21">VENRU/GOLUT/MITHA/REAGA/UYOSO/ARAJA</Route>
 		</STAR>
-		<STAR Name="VENR1H" Airport="WAAA" Runways="13,21,31,03">
-			<Route Runway="13">VENRU/MKS/MKS</Route>
-			<Route Runway="21">VENRU/MKS/MKS</Route>
+		<STAR Name="VENR1H" Airport="WAAA" Runways="31,13,03,21">
 			<Route Runway="31">VENRU/MKS/MKS</Route>
+			<Route Runway="13">VENRU/MKS/MKS</Route>
 			<Route Runway="03">VENRU/MKS/MKS</Route>
+			<Route Runway="21">VENRU/MKS/MKS</Route>
 		</STAR>
 		<STAR Name="VENR1H" Airport="WAAA" Runways="13">
 			<Route Runway="13">VENRU/MKS/MKS</Route>
@@ -2505,37 +2505,37 @@
 		<SID Name="SEGL1D" Airport="WABB" Runways="29">
 			<Route Runway="29">BIK/SEGLO</Route>
 		</SID>
-		<STAR Name="FILM1E" Airport="WABB" Runways="29,11">
-			<Route Runway="29">FILMO/BI60A/BIK</Route>
+		<STAR Name="FILM1E" Airport="WABB" Runways="11,29">
 			<Route Runway="11">FILMO/BI60A/BIK</Route>
+			<Route Runway="29">FILMO/BI60A/BIK</Route>
 		</STAR>
-		<STAR Name="IBOG1K" Airport="WABB" Runways="29,11">
-			<Route Runway="29">IBOGO/BI60C/BIK</Route>
+		<STAR Name="IBOG1K" Airport="WABB" Runways="11,29">
 			<Route Runway="11">IBOGO/BI60C/BIK</Route>
+			<Route Runway="29">IBOGO/BI60C/BIK</Route>
 		</STAR>
-		<STAR Name="JODR1F" Airport="WABB" Runways="29,11">
-			<Route Runway="29">JODRA/BI60D/BIK</Route>
+		<STAR Name="JODR1F" Airport="WABB" Runways="11,29">
 			<Route Runway="11">JODRA/BI60D/BIK</Route>
+			<Route Runway="29">JODRA/BI60D/BIK</Route>
 		</STAR>
-		<STAR Name="LINL1F" Airport="WABB" Runways="29,11">
-			<Route Runway="29">LINLU/BI60C/BIK</Route>
+		<STAR Name="LINL1F" Airport="WABB" Runways="11,29">
 			<Route Runway="11">LINLU/BI60C/BIK</Route>
+			<Route Runway="29">LINLU/BI60C/BIK</Route>
 		</STAR>
-		<STAR Name="NOBY1F" Airport="WABB" Runways="29,11">
-			<Route Runway="29">NOBBY/BIK</Route>
+		<STAR Name="NOBY1F" Airport="WABB" Runways="11,29">
 			<Route Runway="11">NOBBY/BIK</Route>
+			<Route Runway="29">NOBBY/BIK</Route>
 		</STAR>
-		<STAR Name="ONTA1F" Airport="WABB" Runways="29,11">
-			<Route Runway="29">ONTAL/BI60B/BIK</Route>
+		<STAR Name="ONTA1F" Airport="WABB" Runways="11,29">
 			<Route Runway="11">ONTAL/BI60B/BIK</Route>
+			<Route Runway="29">ONTAL/BI60B/BIK</Route>
 		</STAR>
-		<STAR Name="PEBD1F" Airport="WABB" Runways="29,11">
-			<Route Runway="29">PEBDA/BI60B/BIK</Route>
+		<STAR Name="PEBD1F" Airport="WABB" Runways="11,29">
 			<Route Runway="11">PEBDA/BI60B/BIK</Route>
+			<Route Runway="29">PEBDA/BI60B/BIK</Route>
 		</STAR>
-		<STAR Name="SEGL1E" Airport="WABB" Runways="29,11">
-			<Route Runway="29">BI60A/BIK/ANEPO/GERAL/RILGA/BB503/BB502/BB501/RW11/JAKMA/NULOF/HADEE/BB602/BB601/BB603</Route>
+		<STAR Name="SEGL1E" Airport="WABB" Runways="11,29">
 			<Route Runway="11">BI60A/BIK/ANEPO/GERAL/RILGA/BB503/BB502/BB501/RW11/JAKMA/NULOF/HADEE/BB602/BB601/BB603</Route>
+			<Route Runway="29">BI60A/BIK/ANEPO/GERAL/RILGA/BB503/BB502/BB501/RW11/JAKMA/NULOF/HADEE/BB602/BB601/BB603</Route>
 		</STAR>
 		<Approach Name="I11" Airport="WABB" Runway="11">
 			<Transition Name="BIK">BIK/CI11</Transition>
@@ -3666,17 +3666,17 @@
 		<SID Name="YOGY1B" Airport="WAHH" Runways="27">
 			<Route Runway="27">SO/PURWO</Route>
 		</SID>
-		<STAR Name="ANY1A" Airport="WAHH" Runways="27,09">
-			<Route Runway="27">ANY/PURWO/SO/OF/GURLA</Route>
+		<STAR Name="ANY1A" Airport="WAHH" Runways="09,27">
 			<Route Runway="09">ANY/PURWO/SO/OF/GURLA</Route>
+			<Route Runway="27">ANY/PURWO/SO/OF/GURLA</Route>
 		</STAR>
-		<STAR Name="LASE1F" Airport="WAHH" Runways="27,09">
-			<Route Runway="27">LASEM/PURWO/SO/OF/GURLA</Route>
+		<STAR Name="LASE1F" Airport="WAHH" Runways="09,27">
 			<Route Runway="09">LASEM/PURWO/SO/OF/GURLA</Route>
+			<Route Runway="27">LASEM/PURWO/SO/OF/GURLA</Route>
 		</STAR>
-		<STAR Name="LILP1C" Airport="WAHH" Runways="27,09">
-			<Route Runway="27">GURLA/HH401/HH402/RW09</Route>
+		<STAR Name="LILP1C" Airport="WAHH" Runways="09,27">
 			<Route Runway="09">GURLA/HH401/HH402/RW09</Route>
+			<Route Runway="27">GURLA/HH401/HH402/RW09</Route>
 		</STAR>
 		<Approach Name="D09" Airport="WAHH" Runway="09">
 			<Transition Name="GURLA">GURLA/CD09</Transition>
@@ -3722,13 +3722,13 @@
 		<SID Name="SO2B" Airport="WAHI" Runways="29">
 			<Route Runway="29">PAWON/SERMO/MULUS/OPIRO/RINOH/VASRI/IFADI/JOG/OF/SO</Route>
 		</SID>
-		<STAR Name="CLP2H" Airport="WAHI" Runways="29,11">
-			<Route Runway="29">CLP/VASRI/IKORA/ABDEG/OGOMA</Route>
+		<STAR Name="CLP2H" Airport="WAHI" Runways="11,29">
 			<Route Runway="11">CLP/VASRI/IKORA/ABDEG/OGOMA</Route>
+			<Route Runway="29">CLP/VASRI/IKORA/ABDEG/OGOMA</Route>
 		</STAR>
-		<STAR Name="SO2C" Airport="WAHI" Runways="29,11">
-			<Route Runway="29">OF/JOG/VASRI/IKORA/ABDEG/OGOMA/OGENI/ASIAM/DUKIK/UDUGU/HK402/OGOMA/OGENI/ASIAM/DUKIK/UDUGU/HK402/HK401/RW11/OGOMA/OGENI/DEHEN/HK502/HK501/RW29</Route>
+		<STAR Name="SO2C" Airport="WAHI" Runways="11,29">
 			<Route Runway="11">OF/JOG/VASRI/IKORA/ABDEG/OGOMA/OGENI/ASIAM/DUKIK/UDUGU/HK402/OGOMA/OGENI/ASIAM/DUKIK/UDUGU/HK402/HK401/RW11/OGOMA/OGENI/DEHEN/HK502/HK501/RW29</Route>
+			<Route Runway="29">OF/JOG/VASRI/IKORA/ABDEG/OGOMA/OGENI/ASIAM/DUKIK/UDUGU/HK402/OGOMA/OGENI/ASIAM/DUKIK/UDUGU/HK402/HK401/RW11/OGOMA/OGENI/DEHEN/HK502/HK501/RW29</Route>
 		</STAR>
 		<Approach Name="I11" Airport="WAHI" Runway="11">
 			<Transition Name="OGOMA">OGOMA/OGENI/ASIAM/DUKIK/UDUGU/HK402</Transition>
@@ -3792,21 +3792,21 @@
 		<SID Name="PURW1B" Airport="WAHQ" Runways="26">
 			<Route Runway="26">PURWO</Route>
 		</SID>
-		<STAR Name="JOG1C" Airport="WAHQ" Runways="08,26">
-			<Route Runway="08">JOG/OF/SO/SLO</Route>
+		<STAR Name="JOG1C" Airport="WAHQ" Runways="26,08">
 			<Route Runway="26">JOG/OF/SO/SLO</Route>
+			<Route Runway="08">JOG/OF/SO/SLO</Route>
 		</STAR>
-		<STAR Name="JOG1D" Airport="WAHQ" Runways="08,26">
-			<Route Runway="08">JOG/OF/SO</Route>
+		<STAR Name="JOG1D" Airport="WAHQ" Runways="26,08">
 			<Route Runway="26">JOG/OF/SO</Route>
+			<Route Runway="08">JOG/OF/SO</Route>
 		</STAR>
-		<STAR Name="PURW1C" Airport="WAHQ" Runways="08,26">
-			<Route Runway="08">PURWO/SO/SLO</Route>
+		<STAR Name="PURW1C" Airport="WAHQ" Runways="26,08">
 			<Route Runway="26">PURWO/SO/SLO</Route>
+			<Route Runway="08">PURWO/SO/SLO</Route>
 		</STAR>
-		<STAR Name="PURW1D" Airport="WAHQ" Runways="08,26">
-			<Route Runway="08">SO/HQ601/HQ602/HQ603/HQ604/HQ605/RW26</Route>
+		<STAR Name="PURW1D" Airport="WAHQ" Runways="26,08">
 			<Route Runway="26">SO/HQ601/HQ602/HQ603/HQ604/HQ605/RW26</Route>
+			<Route Runway="08">SO/HQ601/HQ602/HQ603/HQ604/HQ605/RW26</Route>
 		</STAR>
 		<Approach Name="D26-Y" Airport="WAHQ" Runway="26">
 			<Transition Name="SLO">SLO/CD26Y</Transition>
@@ -4304,9 +4304,9 @@
 		<STAR Name="ARIT1D" Airport="WAMM" Runways="36">
 			<Route Runway="36">ARITO/ASATU/SUREG/PINOS/NOMOG/PONAR</Route>
 		</STAR>
-		<STAR Name="BOND1E" Airport="WAMM" Runways="18,36">
-			<Route Runway="18">BONDA/MNO</Route>
+		<STAR Name="BOND1E" Airport="WAMM" Runways="36,18">
 			<Route Runway="36">BONDA/MNO</Route>
+			<Route Runway="18">BONDA/MNO</Route>
 		</STAR>
 		<STAR Name="DIAN1C" Airport="WAMM" Runways="18">
 			<Route Runway="18">DIANI/LAVOD/POPAF/NOKOV/MULAN</Route>
@@ -4314,9 +4314,9 @@
 		<STAR Name="DIAN1D" Airport="WAMM" Runways="36">
 			<Route Runway="36">DIANI/ASATU/SUREG/PINOS/NOMOG/PONAR</Route>
 		</STAR>
-		<STAR Name="GONT1E" Airport="WAMM" Runways="18,36">
-			<Route Runway="18">GONTA/MWB/MNO</Route>
+		<STAR Name="GONT1E" Airport="WAMM" Runways="36,18">
 			<Route Runway="36">GONTA/MWB/MNO</Route>
+			<Route Runway="18">GONTA/MWB/MNO</Route>
 		</STAR>
 		<STAR Name="GONT1L" Airport="WAMM" Runways="18">
 			<Route Runway="18">GONTA/MAMKO/LESBO/LEGUS/GOPRI/NOKOV/MULAN</Route>
@@ -4324,9 +4324,9 @@
 		<STAR Name="GONT1M" Airport="WAMM" Runways="36">
 			<Route Runway="36">GONTA/ESLAT/PINOS/NOMOG/PONAR</Route>
 		</STAR>
-		<STAR Name="GOTS1E" Airport="WAMM" Runways="18,36">
-			<Route Runway="18">GOTSA/MWB/MNO</Route>
+		<STAR Name="GOTS1E" Airport="WAMM" Runways="36,18">
 			<Route Runway="36">GOTSA/MWB/MNO</Route>
+			<Route Runway="18">GOTSA/MWB/MNO</Route>
 		</STAR>
 		<STAR Name="GOTS1L" Airport="WAMM" Runways="18">
 			<Route Runway="18">GOTSA/TEBAX/ONOTA/LEGUS/GOPRI/NOKOV/MULAN</Route>
@@ -4334,9 +4334,9 @@
 		<STAR Name="GOTS1M" Airport="WAMM" Runways="36">
 			<Route Runway="36">GOTSA/ESLAT/PINOS/NOMOG/PONAR</Route>
 		</STAR>
-		<STAR Name="HALM1G" Airport="WAMM" Runways="18,36">
-			<Route Runway="18">HALMO/MWB/MNO</Route>
+		<STAR Name="HALM1G" Airport="WAMM" Runways="36,18">
 			<Route Runway="36">HALMO/MWB/MNO</Route>
+			<Route Runway="18">HALMO/MWB/MNO</Route>
 		</STAR>
 		<STAR Name="HALM1M" Airport="WAMM" Runways="18">
 			<Route Runway="18">HALMO/SUKMA/DONSU/DUBMI/BUSKI/NOBES/MULAN</Route>
@@ -4344,9 +4344,9 @@
 		<STAR Name="HALM1N" Airport="WAMM" Runways="36">
 			<Route Runway="36">HALMO/SUPOP/BILAV/MENOT</Route>
 		</STAR>
-		<STAR Name="LUAN1E" Airport="WAMM" Runways="18,36">
-			<Route Runway="18">LUANG/MWB/MNO</Route>
+		<STAR Name="LUAN1E" Airport="WAMM" Runways="36,18">
 			<Route Runway="36">LUANG/MWB/MNO</Route>
+			<Route Runway="18">LUANG/MWB/MNO</Route>
 		</STAR>
 		<STAR Name="LUAN1K" Airport="WAMM" Runways="18">
 			<Route Runway="18">LUANG/MAMKO/LESBO/LEGUS/GOPRI/NOKOV/MULAN</Route>
@@ -4366,9 +4366,9 @@
 		<STAR Name="PEDN1D" Airport="WAMM" Runways="36">
 			<Route Runway="36">PEDNO/RISTA/BONDA/ALGIV/SUSIM/KARSO/MENOT</Route>
 		</STAR>
-		<STAR Name="RUMB1E" Airport="WAMM" Runways="18,36">
-			<Route Runway="18">RUMBO/MWB/MNO</Route>
+		<STAR Name="RUMB1E" Airport="WAMM" Runways="36,18">
 			<Route Runway="36">RUMBO/MWB/MNO</Route>
+			<Route Runway="18">RUMBO/MWB/MNO</Route>
 		</STAR>
 		<STAR Name="RUMB1K" Airport="WAMM" Runways="18">
 			<Route Runway="18">RUMBO/PUBOS/MILEV/DUBMI/BUSKI/NOBES/MULAN</Route>
@@ -4376,9 +4376,9 @@
 		<STAR Name="RUMB1L" Airport="WAMM" Runways="36">
 			<Route Runway="36">RUMBO/PASTU/MENOT</Route>
 		</STAR>
-		<STAR Name="SOSO1E" Airport="WAMM" Runways="18,36">
-			<Route Runway="18">SOSOK/MWB/MNO</Route>
+		<STAR Name="SOSO1E" Airport="WAMM" Runways="36,18">
 			<Route Runway="36">SOSOK/MWB/MNO</Route>
+			<Route Runway="18">SOSOK/MWB/MNO</Route>
 		</STAR>
 		<STAR Name="SOSO1K" Airport="WAMM" Runways="18">
 			<Route Runway="18">SOSOK/PUBOS/MILEV/DUBMI/BUSKI/NOBES/MULAN</Route>
@@ -4707,9 +4707,9 @@
 		<SID Name="SULI1C" Airport="WAPP" Runways="22">
 			<Route Runway="22">MUDEK/KANBA/ENBIN/ATREN/VIGAL/OLPIN/SULIS</Route>
 		</SID>
-		<STAR Name="ATOM1B" Airport="WAPP" Runways="22,04">
-			<Route Runway="22">ATOMY/AMN/AUDRI</Route>
+		<STAR Name="ATOM1B" Airport="WAPP" Runways="04,22">
 			<Route Runway="04">ATOMY/AMN/AUDRI</Route>
+			<Route Runway="22">ATOMY/AMN/AUDRI</Route>
 		</STAR>
 		<STAR Name="ATOM1E" Airport="WAPP" Runways="04">
 			<Route Runway="04">ATOMY/SUKTI/BIGRI/GORGU</Route>
@@ -4720,9 +4720,9 @@
 		<STAR Name="ATOM1H" Airport="WAPP" Runways="04">
 			<Route Runway="04">ATOMY/VIGIN/AKORI/IBUKO/AUDRI</Route>
 		</STAR>
-		<STAR Name="BELB1B" Airport="WAPP" Runways="22,04">
-			<Route Runway="22">BELBA/AMN/AUDRI</Route>
+		<STAR Name="BELB1B" Airport="WAPP" Runways="04,22">
 			<Route Runway="04">BELBA/AMN/AUDRI</Route>
+			<Route Runway="22">BELBA/AMN/AUDRI</Route>
 		</STAR>
 		<STAR Name="BELB1D" Airport="WAPP" Runways="04">
 			<Route Runway="04">BELBA/BEDOG/NONOR/IBUKO/AUDRI</Route>
@@ -4733,16 +4733,16 @@
 		<STAR Name="BELB1F" Airport="WAPP" Runways="22">
 			<Route Runway="22">BELBA/MULSA/ENLAS</Route>
 		</STAR>
-		<STAR Name="BUBT1B" Airport="WAPP" Runways="22,04">
-			<Route Runway="22">BUBTU/AM30D/AUDRI</Route>
+		<STAR Name="BUBT1B" Airport="WAPP" Runways="04,22">
 			<Route Runway="04">BUBTU/AM30D/AUDRI</Route>
+			<Route Runway="22">BUBTU/AM30D/AUDRI</Route>
 		</STAR>
 		<STAR Name="BUBT1D" Airport="WAPP" Runways="04">
 			<Route Runway="04">BUBTU/BIRUK/LAGIK/IPLIN/AUDRI</Route>
 		</STAR>
-		<STAR Name="FALA1B" Airport="WAPP" Runways="22,04">
-			<Route Runway="22">FALAM/AMN/AUDRI</Route>
+		<STAR Name="FALA1B" Airport="WAPP" Runways="04,22">
 			<Route Runway="04">FALAM/AMN/AUDRI</Route>
+			<Route Runway="22">FALAM/AMN/AUDRI</Route>
 		</STAR>
 		<STAR Name="FALA1E" Airport="WAPP" Runways="04">
 			<Route Runway="04">FALAM/GIVED/PAPNI/GORGU</Route>
@@ -4753,23 +4753,23 @@
 		<STAR Name="FALA1H" Airport="WAPP" Runways="04">
 			<Route Runway="04">FALAM/VIGIN/AKORI/IBUKO/AUDRI</Route>
 		</STAR>
-		<STAR Name="GOMB1B" Airport="WAPP" Runways="22,04">
-			<Route Runway="22">GOMBY/AM30C/D131T/D184O/AUDRI</Route>
+		<STAR Name="GOMB1B" Airport="WAPP" Runways="04,22">
 			<Route Runway="04">GOMBY/AM30C/D131T/D184O/AUDRI</Route>
+			<Route Runway="22">GOMBY/AM30C/D131T/D184O/AUDRI</Route>
 		</STAR>
 		<STAR Name="GOMB1D" Airport="WAPP" Runways="04">
 			<Route Runway="04">GOMBY/LUGNI/LAGIK/IPLIN/AUDRI</Route>
 		</STAR>
-		<STAR Name="HANT1B" Airport="WAPP" Runways="22,04">
-			<Route Runway="22">HANTA/AMN/AUDRI</Route>
+		<STAR Name="HANT1B" Airport="WAPP" Runways="04,22">
 			<Route Runway="04">HANTA/AMN/AUDRI</Route>
+			<Route Runway="22">HANTA/AMN/AUDRI</Route>
 		</STAR>
 		<STAR Name="HANT1D" Airport="WAPP" Runways="04">
 			<Route Runway="04">HANTA/REKAG/KAMOR/IPLIN/AUDRI</Route>
 		</STAR>
-		<STAR Name="HOLB1B" Airport="WAPP" Runways="22,04">
-			<Route Runway="22">HOLBA/AM30E/AUDRI</Route>
+		<STAR Name="HOLB1B" Airport="WAPP" Runways="04,22">
 			<Route Runway="04">HOLBA/AM30E/AUDRI</Route>
+			<Route Runway="22">HOLBA/AM30E/AUDRI</Route>
 		</STAR>
 		<STAR Name="HOLB1D" Airport="WAPP" Runways="04">
 			<Route Runway="04">HOLBA/BIBRO/AUDRI</Route>
@@ -4780,9 +4780,9 @@
 		<STAR Name="HOLB1F" Airport="WAPP" Runways="22">
 			<Route Runway="22">HOLBA/PUSRI/ATMUR/DAKIB</Route>
 		</STAR>
-		<STAR Name="SASK1B" Airport="WAPP" Runways="22,04">
-			<Route Runway="22">SASKA/AM30A/AUDRI</Route>
+		<STAR Name="SASK1B" Airport="WAPP" Runways="04,22">
 			<Route Runway="04">SASKA/AM30A/AUDRI</Route>
+			<Route Runway="22">SASKA/AM30A/AUDRI</Route>
 		</STAR>
 		<STAR Name="SASK1D" Airport="WAPP" Runways="04">
 			<Route Runway="04">SASKA/BIBRO/AUDRI</Route>
@@ -4793,23 +4793,23 @@
 		<STAR Name="SASK1F" Airport="WAPP" Runways="22">
 			<Route Runway="22">SASKA/PULUK/ATMUR/DAKIB</Route>
 		</STAR>
-		<STAR Name="SOBI1B" Airport="WAPP" Runways="22,04">
-			<Route Runway="22">SOBIA/AMN/AUDRI</Route>
+		<STAR Name="SOBI1B" Airport="WAPP" Runways="04,22">
 			<Route Runway="04">SOBIA/AMN/AUDRI</Route>
+			<Route Runway="22">SOBIA/AMN/AUDRI</Route>
 		</STAR>
 		<STAR Name="SOBI1H" Airport="WAPP" Runways="04">
 			<Route Runway="04">SOBIA/REKAG/KAMOR/IPLIN/AUDRI</Route>
 		</STAR>
-		<STAR Name="SULI1B" Airport="WAPP" Runways="22,04">
-			<Route Runway="22">SULIS/AM30B/AUDRI</Route>
+		<STAR Name="SULI1B" Airport="WAPP" Runways="04,22">
 			<Route Runway="04">SULIS/AM30B/AUDRI</Route>
+			<Route Runway="22">SULIS/AM30B/AUDRI</Route>
 		</STAR>
 		<STAR Name="SULI1D" Airport="WAPP" Runways="04">
 			<Route Runway="04">SULIS/PAKDU/NONOR/IBUKO/AUDRI</Route>
 		</STAR>
-		<STAR Name="TARI1A" Airport="WAPP" Runways="22,04">
-			<Route Runway="22">GOMBY/AM30C/D131T/D184O/AUDRI/CD04/AUDRI/AUDRI/PP417/PP413/PP411/PP410/PP407/PP404/PP403/PP402/GORGU/PP421/PP422/RW04/PP424/ASSAN/AUDRI/PP610/PP609/PP608/PP616/PP613/PP609/PP608/PP619/PP618/PP614/PP613/PP609/PP608/PP607/PP605/RW22/PP603/PP602/DAKIB</Route>
+		<STAR Name="TARI1A" Airport="WAPP" Runways="04,22">
 			<Route Runway="04">GOMBY/AM30C/D131T/D184O/AUDRI/CD04/AUDRI/AUDRI/PP417/PP413/PP411/PP410/PP407/PP404/PP403/PP402/GORGU/PP421/PP422/RW04/PP424/ASSAN/AUDRI/PP610/PP609/PP608/PP616/PP613/PP609/PP608/PP619/PP618/PP614/PP613/PP609/PP608/PP607/PP605/RW22/PP603/PP602/DAKIB</Route>
+			<Route Runway="22">GOMBY/AM30C/D131T/D184O/AUDRI/CD04/AUDRI/AUDRI/PP417/PP413/PP411/PP410/PP407/PP404/PP403/PP402/GORGU/PP421/PP422/RW04/PP424/ASSAN/AUDRI/PP610/PP609/PP608/PP616/PP613/PP609/PP608/PP619/PP618/PP614/PP613/PP609/PP608/PP607/PP605/RW22/PP603/PP602/DAKIB</Route>
 		</STAR>
 		<Approach Name="D04" Airport="WAPP" Runway="04">
 			<Transition Name="AUDRI">AUDRI/CD04</Transition>
@@ -9292,66 +9292,82 @@
 		</Airport>
 	</Airports>
 	<Airways>
-		<Airway Name="A211">MWB/DIANI/GARUT/ARIRU/TRK/BAXAL/VTW</Airway>
-		<Airway Name="A215">KEVOK/MKS/EMONA/LEBON/MKE/OSERO/ASIXA/NOGOT/PY</Airway>
+		<Airway Name="A211">VTW/BAXAL/TRK/ARIRU/GARUT/DIANI/MWB</Airway>
+		<Airway Name="A215">PY/NOGOT/ASIXA/OSERO/MKE/LEBON/EMONA/MKS/KEVOK</Airway>
+		<Airway Name="A339">VALRA/POKOS/CIN/NIKOM/GUNAM/IDOTO/IKUMA/ELBIS/PINIR/OSUVI/SADEP/PEBKU/DOTIR/BOLUG/POXEL/SHREE/WRNNR/TILLY/KEITH/SABGU/MAKDA/TAXON/BOLED/MAPDO/YOSHI</Airway>
 		<Airway Name="A344">PKN/IKAPI/HOSTY/MUBOT</Airway>
-		<Airway Name="A450">BLI/PEDET/LIPOT/MKS/KENDO/TALIA/TELES/AMRUD/LEGID/CAHYO/TNUGE/PIGFA/LOEBB/BUCAT/UNZ/BAGBE/HOPPY/FONUG/STINE/DEWSS/JIMOS/NGUEN/NATIE/RESEE/SYSTA/BRIUN/HOOPA/KATHS</Airway>
-		<Airway Name="A458">DN/ZAARS/BELKI/KILIK/ALEGO/KPG</Airway>
-		<Airway Name="A576">PIMOK/REKOP/SALAX</Airway>
-		<Airway Name="A576S">RAFIS/ANY</Airway>
+		<Airway Name="A450">KATHS/HOOPA/BRIUN/SYSTA/RESEE/NATIE/NGUEN/JIMOS/DEWSS/STINE/FONUG/HOPPY/BAGBE/UNZ/BUCAT/LOEBB/PIGFA/TNUGE/CAHYO/LEGID/AMRUD/TELES/TALIA/KENDO/MKS/LIPOT/PEDET/BLI</Airway>
+		<Airway Name="A458">KPG/ALEGO/KILIK/BELKI/ZAARS/DN</Airway>
+		<Airway Name="A461">LEC/AGAGO/IDANU/ELLOW/AS/DIGLA/BOYDI/MONIC/AGUST/DN/OCTOB/ADKUL/BUTPA/AMN/BONDA/NITIP/TANAL/ZAM/TINDO/LIMAN/WAKAN/OCORO/PUSIT/SAJ/TAPAP/VERDE/TAALA/MIA/CAB/SANRO/AVMUP/MUMOT/NOMAN/BIGEX/BEKOL/IDUMA/SHL/YIN/MIKIP/MOLSO/BUBDA/MEXON/LIG/PAVTU/LUMKO/AKUBA/DAPRO/LKO/UBTAG/HOK/ESDOS/OBLIK/ZHO/IDULA/AKOMA/WXI</Airway>
+		<Airway Name="A576">SALAX/REKOP/PIMOK/BONSU/SJ</Airway>
+		<Airway Name="A576S">ANY/RAFIS</Airway>
 		<Airway Name="A585">AD/HAWKY/VEPOK/FRAZA/ABTOD/CDU/BEZZA/PINAV/LANOP/BIDAP/GUKON/PD/OSOTO/DOMOM/SAPDA/IPKON/IMABA/HLM/CKG/DOLTA/GUSKO/PLB/JATAM/PKU/MDN</Airway>
-		<Airway Name="A587">MUBOT/KETUT/ONOXA/NIKOM/JATAR/DOPUK/DEENO/AS</Airway>
+		<Airway Name="A587">AS/DEENO/DOPUK/JATAR/NIKOM/ONOXA/KETUT/MUBOT</Airway>
 		<Airway Name="B325">HLM/GUPUB/MUPAP/AKUKO/EPGUP/CC</Airway>
-		<Airway Name="B349">BOPLO/KALIV/MALEO/BLI</Airway>
-		<Airway Name="B456">DOTUB/VANKA/JPA</Airway>
+		<Airway Name="B349">BLI/MALEO/KALIV/BOPLO</Airway>
+		<Airway Name="B456">JPA/VANKA/DOTUB</Airway>
+		<Airway Name="B462">MK/OVRON/NONIR/APISO/PY/EMPRA/KIBAV/KAPPU/KADAB/OLGAN/BIK/MIMIK/BIDOR/POXEL/SADOK/TAC/MASAG/ARREX/MASBA/IPATA/SABIG/CAMBA/MIA/CAB/ESSYL/DIPID/PAYAS/LAO/TADAO/MINIO/MEVIN/MAGMA/SADEK/KAZIK/MJC</Airway>
+		<Airway Name="B466">VBA/SUKAT/GUNIP/TASEK/BOSTI/TOSOK/SANOB/ANOKO/APASI/ATIDA/AVNOS/MMV</Airway>
+		<Airway Name="B469">VPK/PADLI/PU90/BIKTA/VMR/PU30/AKOMA/PU10/PU/SJ/BAVAL/FIRJ1/NE/TODAK/BIDAK/BIKAL/HLM/RENDA/TOPAR/LAMOB/IDOKU/CAR/BORVI/TOPIR</Airway>
 		<Airway Name="B470">SJ/UDONI/FIRJ2/ANITO/PKP/BOSLO/BUNIK/DKI</Airway>
-		<Airway Name="B587">OPABA/ROOKI/VEVAV/GULOP</Airway>
-		<Airway Name="G200">KADEM/GUPOX/DUBAG/RUNUT/CC/EMVAS/TATOD/IKEXO/XMX</Airway>
-		<Airway Name="G209">PLB/TERKA/TKG/XMX/ISRAN/MALBI/IDOKU/LM</Airway>
-		<Airway Name="G326">BLI/SRITI/NYOMA/ONOXA/GUNAM/ARG/BOYDI/TNK/BIKER/VINAX/DODRO/TAVEV/ROM/RILGO/LIKTO/WOODY/BN</Airway>
-		<Airway Name="G337">PKU/BIBUL/BKL/XMX</Airway>
-		<Airway Name="G459">BIK/LEMAN/AGIGU/PASNI/BEGMI/SOVRO/WP</Airway>
+		<Airway Name="B472">LIGPA/IBAGO/TAPER/LAMBO/IOO/GULFO/BSAYA/NANAS/ALDIN/COT/SURAH/TBOLI/ANIMU/SELSO/TEMON/TIRAM/TOREX/VILON/IDELU/GV/GUGUK/NTN</Airway>
+		<Airway Name="B473">LIGPA/LAIYA/MINOR/ROX/BUNGA/VICTA/DELOR/CARLO/RASEC/LAMOK/LOWAY/FORTA/LIRYX/LUMVI/ANKIN/RABIV/DAO/EDLOR/DAPEL/ELNIT/SAMGE/OLENG/OPABA/PEBTA/WP/MEMOS/OVLET/CS</Airway>
+		<Airway Name="B587">GULOP/VEVAV/ROOKI/OPABA</Airway>
+		<Airway Name="G200">XMX/IKEXO/TATOD/EMVAS/CC/RUNUT/DUBAG/GUPOX/KADEM</Airway>
+		<Airway Name="G209">LM/IDOKU/MALBI/ISRAN/XMX/TKG/TERKA/PLB</Airway>
+		<Airway Name="G326">BN/WOODY/LIKTO/RILGO/ROM/TAVEV/DODRO/VINAX/BIKER/TNK/BOYDI/ARG/GUNAM/ONOXA/NYOMA/SRITI/BLI</Airway>
+		<Airway Name="G337">XMX/BKL/BIBUL/PKU</Airway>
+		<Airway Name="G459">WP/SOVRO/BEGMI/PASNI/AGIGU/LEMAN/BIK</Airway>
 		<Airway Name="G461">PAGAI/PABIO/PLB/BORAS/BIDAK/BIKAL/HLM/KASAL/CA/PIALA/ANY/BA/SBR</Airway>
-		<Airway Name="G464">BLI/AGUDA/KOLTA/PKN/SUGIK/BUKTU/PNK</Airway>
-		<Airway Name="G468">MDN/GOTLA/GUNIP/ANGUN/VPG</Airway>
+		<Airway Name="G464">PNK/BUKTU/SUGIK/PKN/KOLTA/AGUDA/BLI</Airway>
+		<Airway Name="G468">VPG/ANGUN/GUNIP/GOTLA/MDN</Airway>
+		<Airway Name="G578">GURAG/OMDOB/DILIS/TODEK/TAGPI/TAMSI/TAC/PONSO/KAWIT/PACIN/MCT/LAMOK/AROLA/ALDIN/PARAL/ZAM/TABUL/GORAI/GABUS/GURNI/EMTAS/GAJAH/BLI/MURAI/LIPRA/EGATU/ONALA/TAYER/GOLUX/PD</Airway>
 		<Airway Name="G579">CKG/DOLTA/GUSKO/PLB/PARDI/FIRJ3/REPOV/REMES/SJ/LEGOL/LAPOL/GUMPU/VJB</Airway>
-		<Airway Name="J199">PEBTA/ROOKI/NOPAG/TATAP/IKUMA/MAKNI/KPG</Airway>
-		<Airway Name="L504">MWB/ARITO/ESGAR/AGUSI/NUGRO/OSRUT/ADKON/PNK/BAVUS/OBDOS</Airway>
+		<Airway Name="J199">KPG/MAKNI/IKUMA/TATAP/NOPAG/ROOKI/PEBTA</Airway>
+		<Airway Name="L504">OBDOS/BAVUS/PNK/ADKON/OSRUT/NUGRO/AGUSI/ESGAR/ARITO/MWB</Airway>
 		<Airway Name="L511">PKP/MIMIX/RUPKA/SBR/BOPLO</Airway>
 		<Airway Name="L644">AC/LEDUP/LOSON/BODOD/CN/DUDIS/MABLI/OPULA/ONAPO/OMLIV/OMBAP/OLSAM/OBLOT/OBGET/KIKOR/GUKNO/TPN/ABASA/DKI</Airway>
+		<Airway Name="L762">ASUNA/MIBEL/AKPAG/MOZES/MDN/ANSAX</Airway>
 		<Airway Name="L764">PKP/IKIBU/LEMUS/LAMOB</Airway>
-		<Airway Name="L774">MDN/BENBA/MERIM/ISBIX/KETIV/ELATI/DAOVO/IDEVI/UBNIS/LELED</Airway>
+		<Airway Name="L774">LELED/UBNIS/IDEVI/DAOVO/ELATI/KETIV/ISBIX/MERIM/BENBA/MDN</Airway>
 		<Airway Name="L895">PKP/MIMIX/TATAN/SAPDA</Airway>
-		<Airway Name="L897">XMX/NIRIS/PILEK/KETIV/MATLU/LAKIP/IBADA/DOPLA/MTL/KIMOP/KAT</Airway>
-		<Airway Name="M300">SALAX/TUNJA/MOZES/PEKDO/OKABU/BULVA/AKPUM/TOPIN/RULKA/IDUDO/ESPAP/ATETA/RUNOT/MDI/CLC/MOLRU/ORISA/DOLPI/VASTU/OSIRI/NITIX/MESAN/LEMAX/KADOL/LOTAV/GADMA/GOLBA/EMURU</Airway>
-		<Airway Name="M522">BLI/DOBMA/KEVOK/ELANG/NUGRO/MAMOK/ELPOX/ELADO/VJN/ENBAX/NODIN/VINIK</Airway>
-		<Airway Name="M766">SBR/MOVMO/BLI/PALBO/GABIT/SOTRA/SATNA/IDOTO/LARAB/JACKI/DN</Airway>
+		<Airway Name="L896">MMV/ADKIT/DUGOS/ANSAS/RULKA/SULEN/NISOK/PAKRA/OBMAT/ELDEM/GUVIL/BOLAK/ESLOG/SAPDA</Airway>
+		<Airway Name="L897">KAT/KIMOP/MTL/DOPLA/IBADA/LAKIP/MATLU/KETIV/PILEK/NIRIS/XMX</Airway>
+		<Airway Name="M300">EMURU/GOLBA/GADMA/LOTAV/KADOL/LEMAX/MESAN/NITIX/OSIRI/VASTU/DOLPI/ORISA/MOLRU/CLC/MDI/RUNOT/ATETA/ESPAP/IDUDO/RULKA/TOPIN/AKPUM/BULVA/OKABU/PEKDO/MOZES/TUNJA/SALAX</Airway>
+		<Airway Name="M522">VINIK/NODIN/ENBAX/VJN/ELADO/ELPOX/MAMOK/NUGRO/ELANG/KEVOK/DOBMA/BLI</Airway>
+		<Airway Name="M635">VTK/TPG/ATPOM/SURGA/GUKNO/LAKUN/MASRI/RAFIS/TAVIP/SUMDI/RAMPY/UDONO/BLI/GAGAK/ATMAP</Airway>
+		<Airway Name="M766">DN/JACKI/LARAB/IDOTO/SATNA/SOTRA/GABIT/PALBO/BLI/MOVMO/SBR/LASEM/CUCUT/MADIN/KIDET/IMU/DKI/RIMTI/TKG/TOLIT/BKL/PAGAI/OBMAT/ODIRU/ISBIX/SELSU/GUTOX/UDIVO/OBDAL/GODAV/PEBSA/ALGET/ELGAS/KAT</Airway>
+		<Airway Name="M768">DN/ANUPA/AVMAN/ELBIS/ADNAT/PORAK/LADOP/MAMOK/BRTMA/BRU/DOGOG/ASISU/TODAM/LAGOT/AKMON/MOXON/DAGAG/ELSAS/ASEBO/LANHI/LOSON/TSH</Airway>
 		<Airway Name="M772">BUKTU/ANIPU/VSI/RIZAN/DARMU/AGUPO/BOMPO/ANIRU/ASISU/BIDAG/LAXOR/VAVUM/DODUG/EMPUL/DABGI/ATBUD/ASOBA/DULOP</Airway>
+		<Airway Name="M774">TPG/OBDOS/KADAR/UNTEP/OLVES/LAWIB/TRIBO/TANUR/PKN/LAMUD/KEVOK/KEONG/POVOT/KIKEM</Airway>
 		<Airway Name="N563">SALAX/ELROK/AMVIL/MDN/UDOLI/OTKUL/URDAM/MEMAK/SADRI/XOKRO/ADKIT/AKMIL/LEKAP/UGRIX/GUNIM/IKATI/NOBOD/KAKIB/OPIRA/NINOB/MEPAT/LEGEN/KATBI/REXOD/EMURU/TULBU/MEKNA/KURTA/SODEX/ELUDA/NOBTO/SIGMO/VUXOD/UMIBU/KUGTO/BOSEV/ITKEV/KUSBA/TAGDU/IMGUX/ALPOB</Airway>
-		<Airway Name="N628">PKU/BALAB/ODIRU/KETIV/BASEV/DABAP/DADAR/SABEK/RUGBI/ISMAT/SAKMU/LEVLU/BUSUX/GITOP/PRA</Airway>
+		<Airway Name="N628">PRA/GITOP/BUSUX/LEVLU/SAKMU/ISMAT/RUGBI/SABEK/DADAR/DABAP/BASEV/KETIV/ODIRU/BALAB/PKU</Airway>
+		<Airway Name="N633">PEDPI/PANDU/SAKEG/PIBED/POSOD/OBMAT/TAPIN/PKU/SALAX/RUMID/VKL</Airway>
 		<Airway Name="N646">ATMAL/GUVIL/BOLUD/PKU</Airway>
-		<Airway Name="N752">PLB/DUNAM/BOLAK/ATMAL</Airway>
-		<Airway Name="N875">ENREP/NOPAT/DAMOG/SUSAR/MUMSO/ELGOR/LEBIN/BOBOB/ESPIT/NIMIX/ARUPA/PNK</Airway>
+		<Airway Name="N752">AVNEX/POKIP/NONOG/UPNOT/MALBI/ATMAL/BOLAK/DUNAM/PLB</Airway>
+		<Airway Name="N875">PNK/ARUPA/NIMIX/ESPIT/BOBOB/LEBIN/ELGOR/MUMSO/SUSAR/DAMOG/NOPAT/ENREP</Airway>
 		<Airway Name="P570">PKU/BIRAS/KAGAS/DOLEM/MABIX/NIXUL/SULEN/POPAK/TEBIT/VEVET/TEMAX/KAT/IBOTU/BASUR/TVM/DOTAT/POMAN/OLNIK/OTABI/NIVUD/METIP/LADIB/TEGOR/KITAL/GOLNI/TAVKO/BONOM/EMURU/TOLDA/GIDAN/ITURA/MIXAM</Airway>
-		<Airway Name="P648">VJN/PIMEP/VJN80/BUTAX/UDERO/ALEMO/OKADA/ADKON/BUKTU/TRIBO/RAFIS/AMBOY/OSODO/DKI</Airway>
-		<Airway Name="P756">MDN/OKABU/INANG/MABIX/NISOK/OBDAL/LAKIP/EGODU/RUXER/UBKIN/SABDI/TENIV/GOKAM/MLE</Airway>
-		<Airway Name="R206">HLM/LADIR/XMX/ATMAL/LATOX/METAB/ESMUM/PD</Airway>
-		<Airway Name="R223">ELANG/AGSON/BUTAX/BRU</Airway>
-		<Airway Name="R340">AMN/GUTEV/AVNOL/IGOPO/DUMAV/SURVO</Airway>
-		<Airway Name="R342">MWB/BONDA/PEDNO/JINET/BURIA/ANIMU/GSA/KABAY/MEGOM/ORDEP/DAO</Airway>
+		<Airway Name="P627">KALBI/KABTA/KADAP/DABAP/KALOX/MATLU/GUTOX/NIXUL/BEDAX/POVUS/IGEBO/SANOB/NILAM/LEKIR/DUKUN/RUSET/ANPUB/PUT</Airway>
+		<Airway Name="P648">DKI/OSODO/AMBOY/RAFIS/TRIBO/BUKTU/ADKON/OKADA/ALEMO/UDERO/BUTAX/VJN80/PIMEP/VJN</Airway>
+		<Airway Name="P756">MLE/GOKAM/TENIV/SABDI/UBKIN/RUXER/EGODU/LAKIP/OBDAL/NISOK/MABIX/INANG/OKABU/MDN</Airway>
+		<Airway Name="R206">PD/ESMUM/METAB/LATOX/ATMAL/XMX/LADIR/HLM</Airway>
+		<Airway Name="R223">BRU/BUTAX/AGSON/ELANG</Airway>
+		<Airway Name="R340">SURVO/DUMAV/IGOPO/AVNOL/GUTEV/AMN</Airway>
+		<Airway Name="R342">DAO/ORDEP/MEGOM/KABAY/GSA/ANIMU/BURIA/JINET/PEDNO/BONDA/MWB</Airway>
 		<Airway Name="R455">PNK/PAPSA/VKG</Airway>
-		<Airway Name="R461">VKL/VIDEX/INTOT/VESIS/PUGER/MDN</Airway>
-		<Airway Name="R469">SAMKO/BOBAG/ASUNA/TAROS/PKU</Airway>
-		<Airway Name="R592">METUM/PUPIT/GIWOT/JALAK/BLI</Airway>
+		<Airway Name="R461">MDN/PUGER/VESIS/INTOT/VIDEX/VKL</Airway>
+		<Airway Name="R469">PKU/TAROS/ASUNA/BOBAG/SAMKO</Airway>
+		<Airway Name="R590">COT/SEBUL/PEDNO/DULON/AMN/BUTPA</Airway>
+		<Airway Name="R592">BLI/JALAK/GIWOT/PUPIT/METUM</Airway>
 		<Airway Name="T1">CLP/PROGO/ARUPI/KIDUL/BLI</Airway>
 		<Airway Name="T10">CKG/PATKU/GOMEL/ENSAV/TORUR/OVSET/AKPER/OPUNG/BAC</Airway>
 		<Airway Name="T11">ANY/WAWAN/IKAPI/KAYAN/AGTAK</Airway>
-		<Airway Name="T12">XMX/PAVGO/NODAB/BIBGA/NUNLA/MERIB/OPEGA/KAGMI/KALBO/IPMOR/PH</Airway>
+		<Airway Name="T12">PH/IPMOR/KALBO/KAGMI/OPEGA/MERIB/NUNLA/BIBGA/NODAB/PAVGO/XMX</Airway>
 		<Airway Name="T13">SBR/RAMPY/IKAPI</Airway>
 		<Airway Name="T14">MWB/GONTA/OBDEX/BIKPI/BPN/AJAMA/LAVOV/SUMDI/SPIKO/AKSOX/DKI</Airway>
-		<Airway Name="T15">MKS/ENDOG</Airway>
+		<Airway Name="T15">SBR/PEDSO/ENDOG/MKS/SUGTA/HIPNO/SASKA/GOMBY</Airway>
 		<Airway Name="T16">EMONA/ENDOG/KOLTA/SBR</Airway>
-		<Airway Name="T17">JPA/ANLEP/OVGOD/TMK</Airway>
+		<Airway Name="T17">GOMBY/TEGEN/TMK/OVGOD/ANLEP/JPA</Airway>
 		<Airway Name="T18">TMK/ESNES/TARIV/BUBTU/EMONA/MKS</Airway>
 		<Airway Name="T19">BA/AGUDA/SOVKA/TEPOS/BELOR/KPG</Airway>
 		<Airway Name="T2">SBR/LASEM/BLACK/KALUT</Airway>
@@ -9365,115 +9381,116 @@
 		<Airway Name="T7">BAC/IVRAR/LAVEL/ODISO/MKB/BEPNO/SOVMI/TORUR/TOPUK</Airway>
 		<Airway Name="T8">CKG/ORAPO/IGBOR/LANAG/SOVMI/DOTMA/POMIG/BUDGA/BAC</Airway>
 		<Airway Name="T9">DKI/EGUKO/TAVIP/LAMUD/BUTNU/PKY/SILJA/AGTAK/ELAPA/LADOP/UDEVA/ARITO/MWB</Airway>
-		<Airway Name="W11">BAC/DUAMO/MDN/NOKEL/MKB/NONAP/ALADO/TKG</Airway>
-		<Airway Name="W12">BAC/OPUNG/JILAT/MDN/MEDIA/PKU/AD/KUALA/JMB/PLB</Airway>
-		<Airway Name="W12E">DKI/BIKAL/BIDAK</Airway>
+		<Airway Name="W11">BND/CKG/RIMTI/TKG/ALADO/NONAP/MKB/NOKEL/MDN/DUAMO/BAC</Airway>
+		<Airway Name="W12">CKG/DOLTA/GUSKO/PLB/JMB/KUALA/AD/PKU/MEDIA/MDN/JILAT/OPUNG/BAC</Airway>
+		<Airway Name="W12E">PLB/BORAS/BIDAK/BIKAL/DKI</Airway>
 		<Airway Name="W13">BLI/SIPUT/CUCUT/MADIN/KIDET/IMU/KIMON/DKI</Airway>
 		<Airway Name="W14">DKI/ABASA/ALTAR/TPN/EGAVO/OLVES/PNK</Airway>
-		<Airway Name="W15">MWB/GOTSA/LADOP/BPN/HAMOL/OMLIT/PKY/LAMUD/TAVIP/EGUKO/ISNED/DKI</Airway>
-		<Airway Name="W15N">TAVIP/PKN/PKY</Airway>
+		<Airway Name="W15">DKI/ISNED/EGUKO/TAVIP/LAMUD/PKY/OMLIT/HAMOL/BPN/LADOP/GOTSA/MWB</Airway>
+		<Airway Name="W15N">PKY/PKN/TAVIP</Airway>
 		<Airway Name="W16">SBR/LASEM/CUCUT/MADIN/KIDET/IMU</Airway>
-		<Airway Name="W16S">BND/CA</Airway>
-		<Airway Name="W17">JOG/LILPO/CLP/BND/PW/HLM</Airway>
-		<Airway Name="W17N">ANY/PURWO/SO/JOG</Airway>
-		<Airway Name="W17S">CA/CLP</Airway>
-		<Airway Name="W18">TRK/SOSVO/MABOT/BPN/TUTKU/BDM/DOSDO/DUNIA/SUMDI/SPIKO/AKSOX/PAPMU/DKI</Airway>
+		<Airway Name="W16S">KIDET/CA/BND</Airway>
+		<Airway Name="W17">HLM/PW/BND/CLP/LILPO/JOG</Airway>
+		<Airway Name="W17N">JOG/SO/PURWO/ANY/KIDET</Airway>
+		<Airway Name="W17S">CLP/CA/IMU</Airway>
+		<Airway Name="W18">DKI/PAPMU/AKSOX/SPIKO/SUMDI/DUNIA/DOSDO/BDM/TUTKU/BPN/MABOT/SOSVO/TRK</Airway>
 		<Airway Name="W19">BAC/ELDEL/MKB/LEBEG/BKL/TOLIT/TKG/BIDOV/MAGIG/DKI</Airway>
-		<Airway Name="W21">TKG/TERKA/PLB/ISKUT/LEBEG/MKB</Airway>
-		<Airway Name="W22">TPG/TUSNU/PKU/UGIGI/OSNIS/MKB</Airway>
-		<Airway Name="W23">PNK/UNTEP/GUKNO/LIANA/PKP/TODAK/PLB/RAWAS/BKL</Airway>
-		<Airway Name="W24">TPG/NE/NIPES/PLB</Airway>
-		<Airway Name="W25">TPN/LIMLU/IBORU/PLB/PASOL/MKB</Airway>
-		<Airway Name="W26">DKI/BUNIK/BOSLO/PKP/KIRDA/TPG</Airway>
+		<Airway Name="W21">MKB/LEBEG/ISKUT/PLB/TERKA/TKG/OTBIN/BND</Airway>
+		<Airway Name="W22">MKB/OSNIS/UGIGI/PKU/TUSNU/TPG</Airway>
+		<Airway Name="W23">BKL/RAWAS/PLB/TODAK/PKP/LIANA/GUKNO/UNTEP/PNK</Airway>
+		<Airway Name="W24">PLB/NIPES/NE/TPG</Airway>
+		<Airway Name="W25">MKB/PASOL/PLB/IBORU/LIMLU/TPN</Airway>
+		<Airway Name="W26">TPG/KIRDA/PKP/BOSLO/BUNIK/DKI</Airway>
 		<Airway Name="W26E">DKI/ALTAR/PKP</Airway>
-		<Airway Name="W31">PKY/BDM/IKAPI/RAMPY/SBR</Airway>
+		<Airway Name="W31">SBR/RAMPY/IKAPI/BDM/PKY</Airway>
 		<Airway Name="W31W">IKAPI/RITBO/ROPIA/SBR</Airway>
-		<Airway Name="W32">MWB/LUANG/ENTEG/DIOLA/VENRU/MKS/ENDOG/DASTY/SUSIL/PEDSO/SBR</Airway>
+		<Airway Name="W32">SBR/PEDSO/SUSIL/DASTY/ENDOG/MKS/VENRU/DIOLA/ENTEG/LUANG/MWB</Airway>
 		<Airway Name="W32N">SUSIL/KOLTA/ATANO/SBR</Airway>
-		<Airway Name="W33">DIL/MUBRA/KPG/WGP/LEDOM/ANGSA/BLI/MOVMO/SBR</Airway>
-		<Airway Name="W34">LMB/AGUNG/ENTAS/SBR</Airway>
-		<Airway Name="W35">KPG/NUVPI/MOF/RURSU/NETTO/MKS/GURNI/BDM/BUTNU/ENPIN/TEPEV/PNK</Airway>
-		<Airway Name="W36">MIL/GOBAL/MUDAL/TELES/ENTEG/ARINI/RIKMU/PAL/EMSIV/DOMKI/BPN/DUDUG/ELANG/ISRID/OSRUT</Airway>
-		<Airway Name="W37">DIL/DOVIK/LUSIA/NUKPO/MKS/GAMAL/BPN</Airway>
-		<Airway Name="W38">DKI/DENDY/AMBOY</Airway>
+		<Airway Name="W33">SBR/MOVMO/BLI/ANGSA/LEDOM/WGP/KPG/MUBRA/DIL</Airway>
+		<Airway Name="W34">SBR/ENTAS/AGUNG/LMB</Airway>
+		<Airway Name="W35">PNK/TEPEV/ENPIN/BUTNU/BDM/GURNI/MKS/NETTO/RURSU/MOF/NUVPI/KPG</Airway>
+		<Airway Name="W36">OSRUT/ISRID/ELANG/DUDUG/BPN/DOMKI/EMSIV/PAL/RIKMU/ARINI/ENTEG/TELES/MUDAL/GOBAL/MIL</Airway>
+		<Airway Name="W37">BPN/GAMAL/MKS/NUKPO/LUSIA/DOVIK/DIL</Airway>
+		<Airway Name="W38">PNK/MASRI/AMBOY/DENDY/DKI</Airway>
 		<Airway Name="W38W">TPN/AMBOY</Airway>
-		<Airway Name="W41">JPA/KUBIA/JODRA/BIK/SEGLO/MKW/MIL/DAPTI/ALOBA/KABSU/IDPAP/KDI/LEKEX/MKS/LIPOT/PEDET/BLI</Airway>
-		<Airway Name="W42">DIL/MUBRA/ELKEK/MOF/APORU/NAFIZ/RUTEN/TOGEM/NMA/MUBOT/PEBGU/LMB/BLI</Airway>
-		<Airway Name="W43">BACAU/KPG/WGP/MUBOT/AGUNG/ENTAS/SBR</Airway>
-		<Airway Name="W44">MIL/RUMIT/POSAT/FALAM/AMN/SASKA/EMONA/LEDIR/KEONG/SULAR/PIKAP/BLI</Airway>
+		<Airway Name="W41">BLI/PEDET/LIPOT/MKS/LEKEX/KDI/IDPAP/KABSU/ALOBA/DAPTI/MIL/MKW/SEGLO/BIK/JODRA/KUBIA/JPA</Airway>
+		<Airway Name="W42">BLI/LMB/PEBGU/MUBOT/NMA/TOGEM/RUTEN/NAFIZ/APORU/MOF/ELKEK/MUBRA/DIL</Airway>
+		<Airway Name="W43">SBR/ENTAS/AGUNG/MUBOT/WGP/KPG/BACAU</Airway>
+		<Airway Name="W44">BLI/PIKAP/SULAR/KEONG/LEDIR/EMONA/SASKA/AMN/FALAM/POSAT/RUMIT/MIL</Airway>
 		<Airway Name="W45">HLM/KASAL/CA/PIALA/ANY/BA/SBR/ENTAS/BLI</Airway>
-		<Airway Name="W46">BPN/ISRUL/HULAT/HOSTY/MALGI/BLI</Airway>
-		<Airway Name="W51">MWB/GONTA/GTL/DALGU/PAL/NIVEK/MKS</Airway>
-		<Airway Name="W52">MKS/BIMAK/BIKOD/AKINO/SIPUT/LASEM/ANY</Airway>
-		<Airway Name="W53">BIK/ONTAL/HELIT/JOLAM/RUSUX/ATOMY/AMN/HOLBA/HIPNO/SUGTA/MKS</Airway>
-		<Airway Name="W54">MKE/JOLIA/EROSY/LALOV/LEBON/FOLOT/TARIV/GOMBY/AMN/SULIS/RALTO/KDI/LEKEX/MKS</Airway>
-		<Airway Name="W55">BACAU/VALGO/BUBTU/AMN/BELBA/IDAMI/RUMBO/MWB</Airway>
-		<Airway Name="W61">MWB/HALMO/FORMY/FATOL/FASAL/FILMO/BIK</Airway>
-		<Airway Name="W62">MKE/ZW/LINLU/BIK</Airway>
-		<Airway Name="W63">MKE/EKIKA/UBDUT/TMK/IBOGO/BIK</Airway>
-		<Airway Name="W64">TMK/BUNKU/NOBBY/BIK</Airway>
-		<Airway Name="W65">AMN/SOBIA/IRSON/KMN/PEBDA/BIK</Airway>
-		<Airway Name="W66">MKE/UPNUM/ZX/IDINA/JPA</Airway>
-		<Airway Name="W67">MWB/SOSOK/FIMBA/MIL/JOLAM/KMN/ANROL/TMK/ZW/MALIO/JPA</Airway>
-		<Airway Name="W68">AMN/HANTA/KIKOS/TEGEN/TMK/OVGOD/ANLEP/JPA</Airway>
-		<Airway Name="W69">TMK/ESNES/FOLOT/UNSEP/HUMAI/NMA</Airway>
-		<Airway Name="W71">JPA/LAVAR/BUNKU/KMN</Airway>
+		<Airway Name="W459">VSI/AGPOP/OKTOG/AGOBA</Airway>
+		<Airway Name="W46">BLI/MALGI/HOSTY/HULAT/ISRUL/BPN</Airway>
+		<Airway Name="W51">MKS/NIVEK/PAL/DALGU/GTL/GONTA/MWB</Airway>
+		<Airway Name="W52">ANY/LASEM/SIPUT/AKINO/BIKOD/BIMAK/MKS</Airway>
+		<Airway Name="W53">MKS/SUGTA/HIPNO/HOLBA/AMN/ATOMY/RUSUX/JOLAM/HELIT/ONTAL/BIK</Airway>
+		<Airway Name="W54">MKS/LEKEX/KDI/RALTO/SULIS/AMN/GOMBY/TARIV/FOLOT/LEBON/LALOV/EROSY/JOLIA/MKE</Airway>
+		<Airway Name="W55">MWB/RUMBO/IDAMI/BELBA/AMN/BUBTU/VALGO/BACAU</Airway>
+		<Airway Name="W61">BIK/FILMO/FASAL/FATOL/FORMY/HALMO/MWB</Airway>
+		<Airway Name="W62">BIK/LINLU/ZW/MKE</Airway>
+		<Airway Name="W63">BIK/IBOGO/TMK/UBDUT/EKIKA/MKE</Airway>
+		<Airway Name="W64">BIK/NOBBY/BUNKU/TMK</Airway>
+		<Airway Name="W65">BIK/PEBDA/KMN/IRSON/SOBIA/AMN</Airway>
+		<Airway Name="W66">JPA/IDINA/ZX/UPNUM/MKE</Airway>
+		<Airway Name="W67">JPA/MALIO/ZW/TMK/ANROL/KMN/JOLAM/MIL/FIMBA/SOSOK/MWB</Airway>
+		<Airway Name="W68">JPA/ANLEP/OVGOD/TMK/TEGEN/KIKOS/HANTA/AMN</Airway>
+		<Airway Name="W69">NMA/HUMAI/UNSEP/FOLOT/ESNES/TMK</Airway>
+		<Airway Name="W71">KMN/BUNKU/LAVAR/JPA</Airway>
 		<Airway Name="Y340">SALAX/BATAR</Airway>
-		<Airway Name="Z1">ISLEN/UMAWE/LAWAH/BAC</Airway>
+		<Airway Name="Z1">BAC/LAWAH/UMAWE/ISLEN</Airway>
 		<Airway Name="Z10">PATBO/POPUS/TODOT/ANUPA</Airway>
 		<Airway Name="Z12">DIL/BACAU/ELBIS</Airway>
-		<Airway Name="Z2">KUCAN/ASARO/AKBUR/BAC</Airway>
-		<Airway Name="Z21">DES/ISBET/SIBIS/ISMEP/AEKGO</Airway>
-		<Airway Name="Z22">ISMEP/GUPUV</Airway>
-		<Airway Name="Z23">DES/GEWAH/UNVIV/BINAK</Airway>
-		<Airway Name="Z24">GEWAH/KUCAN/DOTUX/SINAB</Airway>
-		<Airway Name="Z25">DES/ISKOS/JILAT/ASARO</Airway>
-		<Airway Name="Z26">DES/KABUP/ISLEN</Airway>
-		<Airway Name="Z3">UNVIV/DOTUX/MIMIL/IVRAR/UDODO/BAC/ABANG</Airway>
-		<Airway Name="Z4">IVRAR/SINAB</Airway>
-		<Airway Name="Z601">BIPAR/WAHAI/AMN</Airway>
-		<Airway Name="Z602">BIPAR/ATOMY/MAHAI/AMN/NAMRO</Airway>
-		<Airway Name="Z603">NEIRA/GOMBY/AMN/DADUL</Airway>
-		<Airway Name="Z604">DULET/LEBON/FOLOT/GOMBY</Airway>
-		<Airway Name="Z605">ISPIS/BOSDO/AMN</Airway>
-		<Airway Name="Z606">AMN/BUBTU/LASIL</Airway>
-		<Airway Name="Z641">KMN/FAKFA/AGTOP/TEMIN/AIMAS/MIL/PUPEM</Airway>
-		<Airway Name="Z642">BIK/NUMFO/MKW/ONERI/WERUR/MIL</Airway>
-		<Airway Name="Z643">LILBU/MIL</Airway>
-		<Airway Name="Z644">MERDE/GODET/AIMAS</Airway>
-		<Airway Name="Z645">KMN/SUDOT/TEMIN</Airway>
-		<Airway Name="Z647">SUDOT/LATUB/MERDE/MKW</Airway>
-		<Airway Name="Z648">LATUB/RANSI/MKW</Airway>
-		<Airway Name="Z649">BIRET/SERUI/BIK</Airway>
-		<Airway Name="Z652">KMN/BIRET</Airway>
-		<Airway Name="Z653">MARBU/IBITI/DUGAT/TOWAI/KMN</Airway>
-		<Airway Name="Z661">GUKIR/FAOWI/DUOFO/BIRET</Airway>
-		<Airway Name="Z662">IBITI/JITAK/AGIMU/JILLA/NOBOT/BEOGA/SUAPA/BIRET</Airway>
-		<Airway Name="Z663">TMK/WAGHE/LEBAS/BIRET</Airway>
-		<Airway Name="Z664">DUOFO/SUAPA/TMK</Airway>
-		<Airway Name="Z665">JILLA/TMK</Airway>
-		<Airway Name="Z666">KEYAM/PUPAN/AGIMU/TMK</Airway>
-		<Airway Name="Z667">SURUS/SILIM/PUPAN</Airway>
-		<Airway Name="Z668">ANGRU/RIKRA/NINIA/ATELO/SILIM</Airway>
-		<Airway Name="Z669">DEKAI/SURUS/KEYAM/AGIMU</Airway>
-		<Airway Name="Z671">JITAK/TMK</Airway>
-		<Airway Name="Z672">TMK/DUGAT</Airway>
-		<Airway Name="Z673">ORIKO/ZW</Airway>
-		<Airway Name="Z674">KARSU/ZW</Airway>
-		<Airway Name="Z675">RIKRA/ZW</Airway>
-		<Airway Name="Z676">ZW/TIOMI/KUAGE/NOBOT</Airway>
-		<Airway Name="Z677">TIOMI/OSUBI</Airway>
-		<Airway Name="Z678">ZW/BOKON/RURNO</Airway>
-		<Airway Name="Z679">JPA/ALATU/MINIL</Airway>
-		<Airway Name="Z681">JPA/BORME/MINIL/VIDAM/MKE</Airway>
-		<Airway Name="Z682">JPA/ANLEP/RURNO/OSUBI/MULIA/SINAK/NOBOT</Airway>
-		<Airway Name="Z683">SINAK/BEOGA</Airway>
-		<Airway Name="Z684">JPA/BESKA/FAOWI</Airway>
-		<Airway Name="Z685">JPA/GUKIR/SERUI</Airway>
-		<Airway Name="Z686">MKE/GUPSU/AKTAL</Airway>
-		<Airway Name="Z687">SENGO/MARBU/ABADE/MKE</Airway>
-		<Airway Name="Z688">VIDAM/LEDEK/MARBU</Airway>
-		<Airway Name="Z689">NINIA/DEKAI/LEDEK</Airway>
+		<Airway Name="Z2">BAC/AKBUR/ASARO/KUCAN</Airway>
+		<Airway Name="Z21">AEKGO/ISMEP/SIBIS/ISBET/DES</Airway>
+		<Airway Name="Z22">GUPUV/ISMEP</Airway>
+		<Airway Name="Z23">BINAK/UNVIV/GEWAH/DES</Airway>
+		<Airway Name="Z24">SINAB/DOTUX/KUCAN/GEWAH</Airway>
+		<Airway Name="Z25">ASARO/JILAT/ISKOS/DES</Airway>
+		<Airway Name="Z26">ISLEN/KABUP/DES</Airway>
+		<Airway Name="Z3">ABANG/BAC/UDODO/IVRAR/MIMIL/DOTUX/UNVIV</Airway>
+		<Airway Name="Z4">SINAB/IVRAR</Airway>
+		<Airway Name="Z601">AMN/WAHAI/BIPAR</Airway>
+		<Airway Name="Z602">NAMRO/AMN/MAHAI/ATOMY/BIPAR</Airway>
+		<Airway Name="Z603">DADUL/AMN/GOMBY/NEIRA</Airway>
+		<Airway Name="Z604">GOMBY/FOLOT/LEBON/DULET</Airway>
+		<Airway Name="Z605">AMN/BOSDO/ISPIS</Airway>
+		<Airway Name="Z606">LASIL/BUBTU/AMN</Airway>
+		<Airway Name="Z641">PUPEM/MIL/AIMAS/TEMIN/AGTOP/FAKFA/KMN</Airway>
+		<Airway Name="Z642">MIL/WERUR/ONERI/MKW/NUMFO/BIK</Airway>
+		<Airway Name="Z643">MIL/LILBU</Airway>
+		<Airway Name="Z644">AIMAS/GODET/MERDE</Airway>
+		<Airway Name="Z645">TEMIN/SUDOT/KMN</Airway>
+		<Airway Name="Z647">MKW/MERDE/LATUB/SUDOT</Airway>
+		<Airway Name="Z648">MKW/RANSI/LATUB</Airway>
+		<Airway Name="Z649">BIK/SERUI/BIRET</Airway>
+		<Airway Name="Z652">BIRET/KMN</Airway>
+		<Airway Name="Z653">KMN/TOWAI/DUGAT/IBITI/MARBU</Airway>
+		<Airway Name="Z661">BIRET/DUOFO/FAOWI/GUKIR</Airway>
+		<Airway Name="Z662">BIRET/SUAPA/BEOGA/NOBOT/JILLA/AGIMU/JITAK/IBITI</Airway>
+		<Airway Name="Z663">BIRET/LEBAS/WAGHE/TMK</Airway>
+		<Airway Name="Z664">TMK/SUAPA/DUOFO</Airway>
+		<Airway Name="Z665">TMK/JILLA</Airway>
+		<Airway Name="Z666">TMK/AGIMU/PUPAN/KEYAM</Airway>
+		<Airway Name="Z667">PUPAN/SILIM/SURUS</Airway>
+		<Airway Name="Z668">SILIM/ATELO/NINIA/RIKRA/ANGRU</Airway>
+		<Airway Name="Z669">AGIMU/KEYAM/SURUS/DEKAI</Airway>
+		<Airway Name="Z671">TMK/JITAK</Airway>
+		<Airway Name="Z672">DUGAT/TMK</Airway>
+		<Airway Name="Z673">ZW/ORIKO</Airway>
+		<Airway Name="Z674">ZW/KARSU</Airway>
+		<Airway Name="Z675">ZW/RIKRA</Airway>
+		<Airway Name="Z676">NOBOT/KUAGE/TIOMI/ZW</Airway>
+		<Airway Name="Z677">OSUBI/TIOMI</Airway>
+		<Airway Name="Z678">RURNO/BOKON/ZW</Airway>
+		<Airway Name="Z679">MINIL/ALATU/JPA</Airway>
+		<Airway Name="Z681">MKE/VIDAM/MINIL/BORME/JPA</Airway>
+		<Airway Name="Z682">NOBOT/SINAK/MULIA/OSUBI/RURNO/ANLEP/JPA</Airway>
+		<Airway Name="Z683">BEOGA/SINAK</Airway>
+		<Airway Name="Z684">FAOWI/BESKA/JPA</Airway>
+		<Airway Name="Z685">SERUI/GUKIR/JPA</Airway>
+		<Airway Name="Z686">AKTAL/GUPSU/MKE</Airway>
+		<Airway Name="Z687">MKE/ABADE/MARBU/SENGO</Airway>
+		<Airway Name="Z688">MARBU/LEDEK/VIDAM</Airway>
+		<Airway Name="Z689">LEDEK/DEKAI/NINIA</Airway>
 		<Airway Name="Z69">JULIE/METAN/DIL</Airway>
 		<Airway Name="Z86">IKUMA/ISMUD/DIL</Airway>
 	</Airways>

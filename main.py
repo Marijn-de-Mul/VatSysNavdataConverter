@@ -273,6 +273,7 @@ fir_coords = [
     (-12.000000, 123.333333),
     (-12.000000, 107.000000)
 ]
+
 # Create a Polygon object
 fir = Polygon(fir_coords)
 
@@ -288,10 +289,15 @@ with open('Navdata/ATS.txt', 'r') as f:
             continue
         if data[0] == 'A':
             if airway_name is not None and waypoints:
-                start_point = Point(waypoints[0][1])
-                end_point = Point(waypoints[-1][1])
-                if fir.contains(start_point) or fir.contains(end_point):
-                    airways_dict[airway_name] = [wp for wp, _ in waypoints]
+                # Check if either start or end points are within the FIR but not on the border, or if any waypoint is within the FIR
+                if any((fir.contains(Point(wp[1])) and not fir.touches(Point(wp[1]))) for wp in waypoints) or \
+                   ((fir.contains(Point(waypoints[0][1])) and not fir.touches(Point(waypoints[0][1]))) or (fir.contains(Point(waypoints[-1][1])) and not fir.touches(Point(waypoints[-1][1])))):
+                    # If the airway name already exists in the dictionary and the current airway has more waypoints, update the dictionary
+                    if airway_name in airways_dict and len(waypoints) > len(airways_dict[airway_name]):
+                        airways_dict[airway_name] = [wp for wp, _ in waypoints]
+                    # If the airway name does not exist in the dictionary, add it
+                    elif airway_name not in airways_dict:
+                        airways_dict[airway_name] = [wp for wp, _ in waypoints]
                 waypoints = []
             airway_name = data[1]
         elif data[0] == 'S' and airway_name is not None:
@@ -304,10 +310,15 @@ with open('Navdata/ATS.txt', 'r') as f:
             waypoints.append((waypoint1, (lat1, lon1)))
             waypoints.append((waypoint2, (lat2, lon2)))
     if airway_name is not None and waypoints:
-        start_point = Point(waypoints[0][1])
-        end_point = Point(waypoints[-1][1])
-        if fir.contains(start_point) or fir.contains(end_point):
-            airways_dict[airway_name] = [wp for wp, _ in waypoints]
+        # Check if either start or end points are within the FIR but not on the border, or if any waypoint is within the FIR
+        if any((fir.contains(Point(wp[1])) and not fir.touches(Point(wp[1]))) for wp in waypoints) or \
+           ((fir.contains(Point(waypoints[0][1])) and not fir.touches(Point(waypoints[0][1]))) or (fir.contains(Point(waypoints[-1][1])) and not fir.touches(Point(waypoints[-1][1])))):
+            # If the airway name already exists in the dictionary and the current airway has more waypoints, update the dictionary
+            if airway_name in airways_dict and len(waypoints) > len(airways_dict[airway_name]):
+                airways_dict[airway_name] = [wp for wp, _ in waypoints]
+            # If the airway name does not exist in the dictionary, add it
+            elif airway_name not in airways_dict:
+                airways_dict[airway_name] = [wp for wp, _ in waypoints]
 
 airways = ET.SubElement(root, 'Airways')
 for airway_name, waypoints in airways_dict.items():
@@ -315,7 +326,6 @@ for airway_name, waypoints in airways_dict.items():
     if unique_waypoints:  
         airway = ET.SubElement(airways, 'Airway', Name=airway_name)
         airway.text = '/'.join(unique_waypoints)
-
 # Intersections Initialization
 intersections = ET.SubElement(root, 'Intersections')
 
