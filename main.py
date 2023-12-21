@@ -42,7 +42,7 @@ system_runways = ET.SubElement(root, 'SystemRunways')
 procedure_to_runway = {}
 
 for filename in os.listdir('Navdata/Proc/'):
-    if filename.startswith(('WI', 'WA', 'WP', 'WR')) and filename.endswith('.txt'):
+    if filename.startswith(('WI', 'WA', 'WR')) and filename.endswith('.txt'):
         airport_code = filename[:-4]
         runways = {} 
         sid_exists = False
@@ -66,7 +66,7 @@ for filename in os.listdir('Navdata/Proc/'):
 sidstars = ET.SubElement(root, 'SIDSTARs')
 
 for filename in os.listdir('Navdata/Proc/'):
-    if filename.startswith(('WI', 'WA', 'WP', 'WR')) and filename.endswith('.txt'):
+    if filename.startswith(('WI', 'WA', 'WR')) and filename.endswith('.txt'):
         airport_code = filename[:-4] 
         airport = system_runways.find(f"./Airport[@Name='{airport_code}']")
         sids = {}
@@ -87,18 +87,25 @@ for filename in os.listdir('Navdata/Proc/'):
                     data = line.strip().split(',')
                     if len(data) < 2:  
                         continue
+                    runway_regex = re.compile(r'^\d{1,2}[LRC]?$')
+
                     if data[0] == 'SID' or data[0] == 'STAR':
-                        if data[2] == 'ALL': 
-                            continue
-                        if not re.match(r'^\d{1,2}[A-Z]?$', data[2]): 
-                            continue
                         current_procedure = (airport_code, data[1])
-                        current_runway = data[2]
                         current_dict = sids if data[0] == 'SID' else stars
-                        current_dict.setdefault(current_procedure, {})[current_runway] = []
+
+                        if data[2] == 'ALL':
+                            current_runway = ','.join(valid_runways)
+                            current_dict.setdefault(current_procedure, {})[current_runway] = []
+                        else:
+                            # Only add the runway if it's a valid runway number
+                            if runway_regex.match(data[2]):
+                                current_runway = data[2]
+                                current_dict.setdefault(current_procedure, {})[current_runway] = []
                     elif data[0] in ['IF', 'TF', 'CF', 'DF', 'FA', 'CA', 'RF', 'AF']:
                         waypoint = {'type': data[0], 'name': data[1]}
-                        current_dict[current_procedure][current_runway].append(waypoint)
+                        if current_procedure in current_dict:
+                            for runway in current_dict[current_procedure]:
+                                current_dict[current_procedure][runway].append(waypoint)
                     if data[0] == 'APPTR':
                         current_approach = data[1]
                         current_approach_runway = data[2]
@@ -132,7 +139,8 @@ for filename in os.listdir('Navdata/Proc/'):
                             ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
             for (airport_code, procedure_name), runways in stars.items():
                 for runway, waypoints in runways.items():
-                    procedure = ET.SubElement(sidstars, 'STAR', Name=procedure_name, Airport=airport_code, Runways=runway)
+                    runway_list = runway.split(',')
+                    procedure = ET.SubElement(sidstars, 'STAR', Name=procedure_name, Airport=airport_code, Runways=','.join(runway_list))
                     waypoint_names = [waypoint['name'] for waypoint in waypoints if waypoint['type'] == 'TF']
                     added_transitions = set()
                     for waypoint in waypoints:
@@ -141,8 +149,8 @@ for filename in os.listdir('Navdata/Proc/'):
                     if len(added_transitions) == 1:
                         waypoint_names.insert(0, next(iter(added_transitions)))
                     if waypoint_names:
-                        route_runway = procedure_to_runway.get(procedure_name, 'Unknown')
-                        ET.SubElement(procedure, 'Route', Runway=route_runway).text = '/'.join(waypoint_names)
+                        for r in runway.split(','):
+                            ET.SubElement(procedure, 'Route', Runway=r).text = '/'.join(waypoint_names)
                     for waypoint in waypoints:
                         if waypoint['type'] != 'TF' and waypoint['name'] not in added_transitions:
                             ET.SubElement(procedure, 'Transition', Name=waypoint['name']).text = waypoint['name']
