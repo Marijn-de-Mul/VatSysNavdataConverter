@@ -11,8 +11,8 @@ import vatis_airports
 from collections import OrderedDict
 
 # Configuration
-lat_range = (-13, +7)
-lon_range = (+91, +142)
+lat_range = (-60, +60)
+lon_range = (+50, +180)
 
 # ET Initialization
 ET.register_namespace('', "http://www.w3.org/2001/XMLSchema-instance")
