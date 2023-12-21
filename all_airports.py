@@ -22,20 +22,25 @@ def create_tree():
 jakarta_root, jakarta_label = create_tree()
 ujung_root, ujung_label = create_tree()
 
-for filename in os.listdir("Navdata/Proc"):
-    icao_code = os.path.splitext(filename)[0]
-    if icao_code.startswith("WI"):
-        point_elem = ET.SubElement(jakarta_label, "Point")
-        point_elem.text = icao_code
-    elif icao_code.startswith("WA"):
-        point_elem = ET.SubElement(ujung_label, "Point")
-        point_elem.text = icao_code
-    elif icao_code.startswith("WP"):
-        point_elem = ET.SubElement(ujung_label, "Point")
-        point_elem.text = icao_code
-    elif icao_code.startswith("WR"):
-        point_elem = ET.SubElement(ujung_label, "Point")
-        point_elem.text = icao_code
+with open('Navdata/Airports.txt', 'r') as f:
+    for line in f:
+        data = line.strip().split(',')
+        if len(data) < 2:  
+            continue
+        if data[0] == 'A':
+            icao_code = data[1]
+            if icao_code.startswith("WI"):
+                point_elem = ET.SubElement(jakarta_label, "Point")
+                point_elem.text = icao_code
+            elif icao_code.startswith("WA"):
+                point_elem = ET.SubElement(ujung_label, "Point")
+                point_elem.text = icao_code
+            elif icao_code.startswith("WP"):
+                point_elem = ET.SubElement(ujung_label, "Point")
+                point_elem.text = icao_code
+            elif icao_code.startswith("WR"):
+                point_elem = ET.SubElement(ujung_label, "Point")
+                point_elem.text = icao_code
 
 # Function to write an XML tree to a file
 def write_tree(root, filename):

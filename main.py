@@ -55,7 +55,11 @@ for filename in os.listdir('Navdata/Proc/'):
                 if data[0] in ['SID', 'STAR']:
                     if not airport: 
                         airport = ET.SubElement(system_runways, 'Airport', Name=airport_code)
-                    if data[2] not in runways:
+                    if data[2] == 'ALL':
+                        for runway_name, runway_element in runways.items():
+                            ET.SubElement(runway_element, data[0], Name=data[1])
+                            procedure_to_runway[data[1]] = runway_name
+                    elif data[2] not in runways:
                         if re.match(r'^\d{1,2}[A-Z]?$', data[2]):
                             runways[data[2]] = ET.SubElement(airport, 'Runway', Name=data[2], DataRunway=data[2])
                     if data[2] in runways: 
