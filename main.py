@@ -40,6 +40,7 @@ def is_in_range(lat, lon, lat_range, lon_range):
 system_runways = ET.SubElement(root, 'SystemRunways')
 
 procedure_to_runway = {}
+runway_to_procedures = {}
 
 for filename in os.listdir('Navdata/Proc/'):
     if filename.startswith(('WI', 'WA', 'WR')) and filename.endswith('.txt'):
@@ -57,14 +58,20 @@ for filename in os.listdir('Navdata/Proc/'):
                         airport = ET.SubElement(system_runways, 'Airport', Name=airport_code)
                     if data[2] == 'ALL':
                         for runway_name, runway_element in runways.items():
-                            ET.SubElement(runway_element, data[0], Name=data[1])
-                            procedure_to_runway[data[1]] = runway_name
+                            if data[1] not in runway_to_procedures.get(runway_name, set()):
+                                ET.SubElement(runway_element, data[0], Name=data[1])
+                                procedure_to_runway[data[1]] = runway_name
+                                runway_to_procedures[runway_name] = runway_to_procedures.get(runway_name, set())
+                                runway_to_procedures[runway_name].add(data[1])
                     elif data[2] not in runways:
                         if re.match(r'^\d{1,2}[A-Z]?$', data[2]):
                             runways[data[2]] = ET.SubElement(airport, 'Runway', Name=data[2], DataRunway=data[2])
                     if data[2] in runways: 
-                        ET.SubElement(runways[data[2]], data[0], Name=data[1])
-                        procedure_to_runway[data[1]] = data[2]  
+                        if data[1] not in runway_to_procedures.get(data[2], set()):
+                            ET.SubElement(runways[data[2]], data[0], Name=data[1])
+                            procedure_to_runway[data[1]] = data[2]
+                            runway_to_procedures[data[2]] = runway_to_procedures.get(data[2], set())
+                            runway_to_procedures[data[2]].add(data[1])
 
 # SIDSTARs Initialization
 sidstars = ET.SubElement(root, 'SIDSTARs')
