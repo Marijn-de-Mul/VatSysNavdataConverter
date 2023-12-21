@@ -4,14 +4,15 @@ import os
 import xml.dom.minidom
 import re
 from collections import defaultdict
+from shapely.geometry import Point, Polygon
 import all_airports
 import all_rtes_pts
 import vatis_airports
 from collections import OrderedDict
 
 # Configuration
-lat_range = (-11.00, 6.00)
-lon_range = (95.00, 141.00)
+lat_range = (-13, +7)
+lon_range = (+91, +142)
 
 # ET Initialization
 ET.register_namespace('', "http://www.w3.org/2001/XMLSchema-instance")
@@ -212,7 +213,69 @@ with open('Navdata/Airports.txt', 'r') as f:
             airport = airport_dict.get(airport_code) 
             if airport is not None:
                 ET.SubElement(airport, 'Runway', Name=runway_name, Position=format_position(float_lat, float_lon))
-                
+
+# Define the FIR coordinates
+fir_coords = [
+    (-12.000000, 107.000000),
+    (-2.000000, 92.000000),
+    (6.000000, 92.000000),
+    (6.000000, 97.500000),
+    (1.650000, 102.166667),
+    (1.619952, 102.161432),
+    (1.359425, 102.140931),
+    (1.098927, 102.161432),
+    (0.844865, 102.222429),
+    (0.603488, 102.322430),
+    (0.380732, 102.458980),
+    (0.182079, 102.628729),
+    (0.012414, 102.827506),
+    (-0.124086, 103.050421),
+    (-0.224060, 103.291987),
+    (-0.566667, 104.216667),
+    (-0.483000, 104.576000),
+    (-0.283333, 104.866667),
+    (0.000000, 104.766667),
+    (0.000000, 105.166667),
+    (-0.833333, 106.000000),
+    (0.000000, 108.000000),
+    (0.000000, 109.000000),
+    (0.250000, 109.000000),
+    (0.767222, 108.683056),
+    (1.692500, 109.007222),
+    (2.115278, 109.496111),
+    (2.123333, 109.715833),
+    (1.761111, 109.729445),
+    (1.552500, 109.845000),
+    (1.310833, 110.067222),
+    (1.069167, 110.317222),
+    (0.959445, 110.515000),
+    (1.019722, 110.820000),
+    (1.124167, 111.188056),
+    (1.080278, 111.803056),
+    (1.434445, 112.160278),
+    (1.656667, 112.613333),
+    (1.588056, 113.080278),
+    (1.486667, 113.102222),
+    (1.216667, 113.583333),
+    (4.555278, 115.514722),
+    (4.642778, 117.331111),
+    (4.000000, 118.000000),
+    (4.000000, 132.533333),
+    (3.500000, 133.000000),
+    (3.500000, 141.000000),
+    (-6.320556, 141.000000),
+    (-6.892778, 141.018333),
+    (-9.616667, 141.033333),
+    (-9.833333, 141.000000),
+    (-9.833333, 139.666667),
+    (-7.000000, 135.000000),
+    (-9.333333, 126.833333),
+    (-12.000000, 123.333333),
+    (-12.000000, 107.000000)
+]
+# Create a Polygon object
+fir = Polygon(fir_coords)
+
 # Airways Initialization
 airways_dict = {}
 
@@ -225,7 +288,9 @@ with open('Navdata/ATS.txt', 'r') as f:
             continue
         if data[0] == 'A':
             if airway_name is not None and waypoints:
-                if all(is_in_range(lat, lon, lat_range, lon_range) for wp, (lat, lon) in waypoints):
+                start_point = Point(waypoints[0][1])
+                end_point = Point(waypoints[-1][1])
+                if fir.contains(start_point) or fir.contains(end_point):
                     airways_dict[airway_name] = [wp for wp, _ in waypoints]
                 waypoints = []
             airway_name = data[1]
@@ -239,7 +304,9 @@ with open('Navdata/ATS.txt', 'r') as f:
             waypoints.append((waypoint1, (lat1, lon1)))
             waypoints.append((waypoint2, (lat2, lon2)))
     if airway_name is not None and waypoints:
-        if all(is_in_range(lat, lon, lat_range, lon_range) for wp, (lat, lon) in waypoints):
+        start_point = Point(waypoints[0][1])
+        end_point = Point(waypoints[-1][1])
+        if fir.contains(start_point) or fir.contains(end_point):
             airways_dict[airway_name] = [wp for wp, _ in waypoints]
 
 airways = ET.SubElement(root, 'Airways')
