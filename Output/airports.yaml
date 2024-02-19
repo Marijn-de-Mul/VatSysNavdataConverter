@@ -551,9 +551,9 @@
   Lat: -1.159722
   Lon: 132.465278
 - ID: WASF
-  Name: TOREA
-  Lat: -2.919444
-  Lon: 132.264167
+  Name: SIBORU
+  Lat: -2.928056
+  Lon: 132.089444
 - ID: WASI
   Name: INANWATAN
   Lat: -2.126667
@@ -595,7 +595,7 @@
   Lat: -8.6375
   Lon: 122.236944
 - ID: WATE
-  Name: HAJI HASAN AROEBOESM
+  Name: H. HASAN AROEBOESMAN
   Lat: -8.848056
   Lon: 121.663333
 - ID: WATG
@@ -819,9 +819,9 @@
   Lat: 1.612222
   Lon: 101.433333
 - ID: WIBG
-  Name: PASIR PANGARAIAN
-  Lat: 0.846667
-  Lon: 100.370278
+  Name: TUANKU TAMBUSAI
+  Lat: 0.845
+  Lon: 100.375
 - ID: WIBI
   Name: PULAI
   Lat: 0.216111

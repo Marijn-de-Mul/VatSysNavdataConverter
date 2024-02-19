@@ -2,7 +2,7 @@
 <Maps>
   <Map Type="System" Name="AIRWAY_INTL" Priority="1" Center="-03.0+103.25" CustomColourName="SubtleGrey">
     <Line Name="A576S" Pattern="Dotted" CustomColourName="SubtleGrey">ANY.A576S.RAFIS</Line>
-    <Line Name="A585" Pattern="Dotted" CustomColourName="SubtleGrey">MDN.A585.GUSKO</Line>
+    <Line Name="A585" Pattern="Dotted" CustomColourName="SubtleGrey">ISVUR.A585.GUSKO</Line>
     <Line Name="B325" Pattern="Dotted" CustomColourName="SubtleGrey">HLM.B325.MUPAP</Line>
     <Line Name="B338" Pattern="Dotted" CustomColourName="SubtleGrey">FIRJ4.B338.ANITO</Line>
     <Line Name="B466" Pattern="Dotted" CustomColourName="SubtleGrey">TASEK.B466.TOSOK</Line>
@@ -12,14 +12,14 @@
     <Line Name="G337" Pattern="Dotted" CustomColourName="SubtleGrey">XMX.G337.PKU</Line>
     <Line Name="G461" Pattern="Dotted" CustomColourName="SubtleGrey">PAGAI.G461.ANY</Line>
     <Line Name="G464" Pattern="Dotted" CustomColourName="SubtleGrey">PNK.G464.SUGIK</Line>
-    <Line Name="G468" Pattern="Dotted" CustomColourName="SubtleGrey">GOTLA.G468.MDN</Line>
+    <Line Name="G468" Pattern="Dotted" CustomColourName="SubtleGrey">GOTLA.G468.ISVUR</Line>
     <Line Name="G579" Pattern="Dotted" CustomColourName="SubtleGrey">CKG.G579.PARDI</Line>
     <Line Name="L504" Pattern="Dotted" CustomColourName="SubtleGrey">BAVUS.L504.OSRUT</Line>
     <Line Name="L511" Pattern="Dotted" CustomColourName="SubtleGrey">PKP.L511.RUPKA</Line>
     <Line Name="L644" Pattern="Dotted" CustomColourName="SubtleGrey">KIKOR.L644.DKI</Line>
     <Line Name="L762" Pattern="Dotted" CustomColourName="SubtleGrey">MIBEL.L762.ANSAX</Line>
     <Line Name="L764" Pattern="Dotted" CustomColourName="SubtleGrey">PKP.L764.LAMOB</Line>
-    <Line Name="L774" Pattern="Dotted" CustomColourName="SubtleGrey">KETIV.L774.MDN</Line>
+    <Line Name="L774" Pattern="Dotted" CustomColourName="SubtleGrey">KETIV.L774.ISVUR</Line>
     <Line Name="L895" Pattern="Dotted" CustomColourName="SubtleGrey">PKP.L895.SAPDA</Line>
     <Line Name="L896" Pattern="Dotted" CustomColourName="SubtleGrey">NISOK.L896.SAPDA</Line>
     <Line Name="L897" Pattern="Dotted" CustomColourName="SubtleGrey">KETIV.L897.XMX</Line>
@@ -38,15 +38,15 @@
     <Line Name="P574" Pattern="Dotted" CustomColourName="SubtleGrey">ANSAX.P574.PUGER</Line>
     <Line Name="P627" Pattern="Dotted" CustomColourName="SubtleGrey">NIXUL.P627.POVUS</Line>
     <Line Name="P648" Pattern="Dotted" CustomColourName="SubtleGrey">DKI.P648.OKADA</Line>
-    <Line Name="P756" Pattern="Dotted" CustomColourName="SubtleGrey">NISOK.P756.MDN</Line>
+    <Line Name="P756" Pattern="Dotted" CustomColourName="SubtleGrey">NISOK.P756.ISVUR</Line>
     <Line Name="R206" Pattern="Dotted" CustomColourName="SubtleGrey">ATMAL.R206.HLM</Line>
     <Line Name="R455" Pattern="Dotted" CustomColourName="SubtleGrey">PAPSA.R455.PNK</Line>
-    <Line Name="R461" Pattern="Dotted" CustomColourName="SubtleGrey">MDN.R461.PUGER</Line>
+    <Line Name="R461" Pattern="Dotted" CustomColourName="SubtleGrey">ISVUR.R461.PUGER</Line>
     <Line Name="R469" Pattern="Dotted" CustomColourName="SubtleGrey">PKU.R469.TAROS</Line>
     <Symbol Type="SolidTriangle">
       <Point>ANY</Point>
       <Point>RAFIS</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>PKU</Point>
       <Point>JATAM</Point>
       <Point>PLB</Point>
@@ -102,7 +102,7 @@
       <Point>BUKTU</Point>
       <Point>SUGIK</Point>
       <Point>GOTLA</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>CKG</Point>
       <Point>DOLTA</Point>
       <Point>GUSKO</Point>
@@ -123,7 +123,7 @@
       <Point>MIBEL</Point>
       <Point>AKPAG</Point>
       <Point>MOZES</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>ANSAX</Point>
       <Point>PKP</Point>
       <Point>IKIBU</Point>
@@ -133,7 +133,7 @@
       <Point>ISBIX</Point>
       <Point>MERIM</Point>
       <Point>BENBA</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>PKP</Point>
       <Point>MIMIX</Point>
       <Point>TATAN</Point>
@@ -189,7 +189,7 @@
       <Point>URDAM</Point>
       <Point>OTKUL</Point>
       <Point>UDOLI</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>AMVIL</Point>
       <Point>ELROK</Point>
       <Point>SALAX</Point>
@@ -235,14 +235,14 @@
       <Point>MABIX</Point>
       <Point>INANG</Point>
       <Point>OKABU</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>ATMAL</Point>
       <Point>XMX</Point>
       <Point>LADIR</Point>
       <Point>HLM</Point>
       <Point>PAPSA</Point>
       <Point>PNK</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>PUGER</Point>
       <Point>PKU</Point>
       <Point>TAROS</Point>
@@ -363,7 +363,7 @@
       <Point>NONAP</Point>
       <Point>MKB</Point>
       <Point>NOKEL</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>DUAMO</Point>
       <Point>BAC</Point>
       <Point>CKG</Point>
@@ -372,10 +372,10 @@
       <Point>PLB</Point>
       <Point>JMB</Point>
       <Point>KUALA</Point>
-      <Point>AD</Point>
+      <Point>AVKUR</Point>
       <Point>PKU</Point>
       <Point>MEDIA</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>JILAT</Point>
       <Point>OPUNG</Point>
       <Point>BAC</Point>
@@ -544,7 +544,7 @@
     <Label>
       <Point>ANY</Point>
       <Point>RAFIS</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>PKU</Point>
       <Point>JATAM</Point>
       <Point>PLB</Point>
@@ -600,7 +600,7 @@
       <Point>BUKTU</Point>
       <Point>SUGIK</Point>
       <Point>GOTLA</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>CKG</Point>
       <Point>DOLTA</Point>
       <Point>GUSKO</Point>
@@ -621,7 +621,7 @@
       <Point>MIBEL</Point>
       <Point>AKPAG</Point>
       <Point>MOZES</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>ANSAX</Point>
       <Point>PKP</Point>
       <Point>IKIBU</Point>
@@ -631,7 +631,7 @@
       <Point>ISBIX</Point>
       <Point>MERIM</Point>
       <Point>BENBA</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>PKP</Point>
       <Point>MIMIX</Point>
       <Point>TATAN</Point>
@@ -687,7 +687,7 @@
       <Point>URDAM</Point>
       <Point>OTKUL</Point>
       <Point>UDOLI</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>AMVIL</Point>
       <Point>ELROK</Point>
       <Point>SALAX</Point>
@@ -733,14 +733,14 @@
       <Point>MABIX</Point>
       <Point>INANG</Point>
       <Point>OKABU</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>ATMAL</Point>
       <Point>XMX</Point>
       <Point>LADIR</Point>
       <Point>HLM</Point>
       <Point>PAPSA</Point>
       <Point>PNK</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>PUGER</Point>
       <Point>PKU</Point>
       <Point>TAROS</Point>
@@ -827,7 +827,7 @@
       <Point>NONAP</Point>
       <Point>MKB</Point>
       <Point>NOKEL</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>DUAMO</Point>
       <Point>BAC</Point>
       <Point>CKG</Point>
@@ -836,10 +836,10 @@
       <Point>PLB</Point>
       <Point>JMB</Point>
       <Point>KUALA</Point>
-      <Point>AD</Point>
+      <Point>AVKUR</Point>
       <Point>PKU</Point>
       <Point>MEDIA</Point>
-      <Point>MDN</Point>
+      <Point>ISVUR</Point>
       <Point>JILAT</Point>
       <Point>OPUNG</Point>
       <Point>BAC</Point>
